@@ -185,7 +185,7 @@ URL Parameters
 Example Requests
 ------------------------
 
-URL: ``https://apigateway.marinebenchmark.com/V4/{API_CATALOGUE}<URL-parameters>``
+URL: ``https://apigateway.marinebenchmark.com/V4/{API_CATALOGUE_CODE}<URL-parameters>``
 
 Method: **GET**
 
@@ -199,19 +199,38 @@ Example Response
 
 .. code-block:: json
 
-    [[{"TimeSerieCatalogueCode": "MBVESGLOWEK","TimeSerieName": "Vessel Global Weekly -Speed steaming total","StatisticsCatalogueDescription": "","MeasurementDescription": "speed steaming total in period. Steaming is all speed with a speed above 6 knots. Total is speed independent of loaded or unloaded.","TimeSerieUnit": "kn","TimeSerieMeasureCode": "SPEDSTTO"}],[{"Entity1ID": 9236315,"Period": 202001,"Area1ID": 0,"Area2ID": 0,"Value": 7.988872576},{"Entity1ID": 9236315,"Period": 202002,"Area1ID": 0,"Area2ID": 0,"Value": 8.80499174},{"Entity1ID": 9236315,"Period": 202003,"Area1ID": 0,"Area2ID": 0,"Value": 7.892691355}]]
-
-
-
-************************************************
-Bespoke API
-************************************************
-
-Bespoke data API is custom calls created for detailed information per customer. Technically it is a custom defined dataset that can be retrieved via API in formats and mean of delivery stated below. Please see abovefor what arguments are valid for bespoke calls.
-
-If you are interested in custom designed calls please contact Marine Benchmark sales or development to iron out content and layout
-
-
-************************************************
-Generic API
-************************************************
+    [
+        [
+            {
+            "TimeSerieCatalogueCode": "MBVESGLOWEK",
+            "TimeSerieName": "Vessel Global Weekly - Speed steaming total",
+            "StatisticsCatalogueDescription": "Here we will add user descriptions for statistics catalogue",
+            "MeasurementDescription": "speed steaming total in period. Steaming is all speed with a speed above 6 knots. Total is speed independent of loaded or unloaded.",
+            "TimeSerieUnit": "kn",
+            "TimeSerieMeasureCode": "SPEDSTTO"
+            }
+        ],
+        [
+            {
+            "Entity1ID": 9236315,
+            "Period": 202001,
+            "Area1ID": 0,
+            "Area2ID": 0,
+            "Value": 7.988872576
+            },
+            {
+            "Entity1ID": 9236315,
+            "Period": 202002,
+            "Area1ID": 0,
+            "Area2ID": 0,
+            "Value": 8.80499174
+            },
+            {
+            "Entity1ID": 9236315,
+            "Period": 202003,
+            "Area1ID": 0,
+            "Area2ID": 0,
+            "Value": 7.892691355
+            }
+        ]
+    ]

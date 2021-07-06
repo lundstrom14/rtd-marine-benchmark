@@ -11,13 +11,14 @@ Welcome to Marine Benchmark API Configurator Reference v1.4 for Marine Benchmark
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: API Documentation
 
    api_docs
+   api_generic
    api_references
+   api_bespoke
 
-   
 .. toctree::
    :maxdepth: 2
    :caption: WEB PLATFORM
