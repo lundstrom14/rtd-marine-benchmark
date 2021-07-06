@@ -75,7 +75,7 @@ When using special characters or spaces in URL, they must be URL encoded.
 +------------------------+-------------------+
 | Daily (DAY)            | ``YYYYMMDD``      |
 +------------------------+-------------------+
-| Weekly (WEK)           | ``CYYYYWW``       |
+| Weekly (WEK)           | ``YYYYWW``        |
 +------------------------+-------------------+
 | Monthly (MON)          | ``YYYYMM``        |
 +------------------------+-------------------+
