@@ -2,9 +2,11 @@
 Generic API
 ************************************************
 
+Structure
+================================================
 
 API Catalogue Structure
-================================================
+------------------------------------------------
 
 Datasets are reached by a (typically) 11-characters **catalogue code** with the following structure. Example: ``MBVESGLOWEK``
 
@@ -24,7 +26,7 @@ The two first letters are always ``MB`` in the generic API, the next 3 character
 
 
 API Measurement Structure
-================================================
+------------------------------------------------
 
 Measurements are specified by a (typically) 8-character **measurement code**. The structure may vary but measurement concerning vessel statistics typically have the following structure.
 Example: ``SPEEDSTLO``
@@ -51,18 +53,18 @@ Example: ``SPEEDSTLO``
 
 .. Available catalogues and corresponding measures for vessel statistics can be found in `References`_
 
-************************************************
+
 Web Based API Configurator
-************************************************
+================================================
 
 General
-================================================
+------------------------------------------------
 
 For developers convenience Marine Benchmark has developed a `web based configurator`_ where you can build URL calls and arguments.
 This is a graphical user interface to construct and configure generic API calls. The configurator lets you choose category, subcategory, catalogue with multiple data parameters and conditions to construct powerful API calls.
 
 Configurator URL
-================================================
+------------------------------------------------
 
 The API configurator can be accessed from the following URL. It is used to browse available data and dynamically construct API URLs.
 https://graphicalobjectlibrary.marinebenchmark.com/apiconfigurator/
@@ -73,7 +75,7 @@ https://graphicalobjectlibrary.marinebenchmark.com/apiconfigurator/
 
 
 Authentication
-================================================
+------------------------
 
 First time visiting the API configurator page you will be asked to enter your credentials in form of an **API key**.
 
