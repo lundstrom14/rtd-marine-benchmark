@@ -1,0 +1,17 @@
+Name,Required,Description,Default Value,Example
+key,required,Credential. An API key is required for every request. 19 characters long (for simple authentication mode)., ,``kd48!kf%3kFmsaRy!qe``
+condition,required,Sets the condition in SQL format. Typically period and an Entity. Also supports multiple entities by comma separation. ,,"::
+
+    Period between 202001 and 202106 and Entity1ID in (9236315)"
+measure,required,Sets the requested measure(s). Multiple measure can be requested by a comma-separation. Aggregate conditions can also be specified but requires the aggregate parameter to be set. ,,"``SPEDMVLO`` (Speed moving loaded) 
+``SPEDMVLO``,``TOFUMVLO``,``TOFUMVUL`` (Speed moving loaded, Total fuel moving loaded, Total fuel moving unloaded)"
+aggregate,optional,Sets the aggregate by clause,,``Period``
+sort,optional,"Sets the dimension to sort by.  Period, Entity1ID, Entity2ID, Area1ID, Area2ID. Sort should be used with care as it can, on the margin, delay answer.",``Period``,``Period``
+labelType,optional,"Sets the label type for the json response.
+0 – Unified (“Value”)
+1 – Code
+2 – Name",0 – Unified ,"0 (“Value”),1 SPSTTO
+2 “Speed steaming total”"
+periodCorrected,optional,Corrects moth to a normalized month consists of 30.45 days month. NB good for compare in graphs but presents skewed values for each individual month.,0,0
+delivery,optional,Sets the delivery method. Available methods are string and file,``string``,``string``
+format,optional,"Sets the delivery format. Available formats are json, xml, csv and compact. ",``json``,``json``

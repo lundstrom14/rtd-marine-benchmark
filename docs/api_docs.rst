@@ -92,15 +92,9 @@ Resources
 Resource Information
 ------------------------
 
-Response formats
-JSON, XML, CSV, Compact
-Response delivery
-String, file
-Requires authentication?
-Yes
 
-.. list-table:: 
-   :widths: 25 25 
+.. list-table:: Resource information
+   :widths: 50 50
    :header-rows: 0
 
    * - Response formats
@@ -116,12 +110,96 @@ Yes
 URL Parameters
 ------------------------
 
+.. list-table:: URL parameters
+    :widths: 15 15 40 15 15
+    :width: 100%
+    :header-rows: 1
+    :class: tight-table, url-table
+
+
+    * - Parameter
+      - Required
+      - Description
+      - Default Value
+      - Example value
+    * - ``key``
+      - **required**
+      - Credential. An API key is required for every request. 19 characters long (for simple authentication mode).
+      - 
+      - ``kd48!kf%3kFmsaRy!qe``
+    * - ``condition``
+      - **required**
+      - Sets the condition in SQL format. Typically period and an Entity. Also supports multiple entities by comma separation.
+      -
+      - Period between **202001** and **202106** and **Entity1ID** in (**9236315**)
+    * - ``measure``
+      - **required**
+      - Sets the requested measure(s). Multiple measure can be requested by a comma-separation. Aggregate conditions can also be specified but requires the aggregate parameter to be set.
+      - 
+      - - ``SPEDMVLO``  -    *Speed moving loaded* 
+        - ``SPEDMVLO, TOFUMVLO, TOFUMVUL``   -   *Speed moving loaded, Total fuel moving loaded, Total fuel moving unloaded*
+    * - ``aggregate``
+      - *optional*
+      - Sets the aggregate by clause.
+      - 
+      - ``period``
+    * - ``sort``
+      - *optional*
+      - Sets the dimension to sort by.  Sort should be used with care as it can, on the margin, delay answer. Available options are ``Period``, ``Entity1ID``, ``Value`` (depending on labelType), ``Area1ID`` and more.. Ascending or descending order can also be specified. 
+      - ``Period``
+      - - ``Period asc`` 
+        - ``Value desc``
+    * - ``labelType``
+      - *optional*
+      - Sets the label type for the json response.
+      - ``0``
+      - - ``0`` - Unified
+        - ``1`` - Code   
+        - ``2`` - Name  
+    * - ``periodCorrected``
+      - *optional*
+      - Corrects month to a normalized month. Normalized month consists of 30.45 days. NB good for compare in graphs but presents skewed values for each individual month.
+      - ``0``
+      - - ``0`` - Unified
+        - ``1`` - Code   
+        - ``2`` - Name 
+    * - ``delivery``
+      - *optional*
+      - Sets the delivery method. Available methods are ``string`` and ``file``.
+      - ``string``
+      - ``string`` , ``file``
+    * - ``format``
+      - *optional*
+      - Sets the delivery format. Available formats are ``json``, ``xml``, ``csv`` and ``compact``.
+      - ``json``
+      - ``csv``, ``xml``, ``csv``, ``compact``    
+
+.. Warning::
+   Please note than parameter values **must** be URL encoded. 
+   ``condition=Period%20between%20202001%20and%20202106%20and%20Entity1ID%20in%20(9236315)``
+
+
+
+
 
 Example Requests
 ------------------------
 
+URL: ``https://apigateway.marinebenchmark.com/V4/{API_CATALOGUE}<URL-parameters>``
+
+Method: **GET**
+
+Example request: :: 
+
+    https://apigateway.marinebenchmark.com/V4/MBVESGLOWEK?key=xxxxxxxxxxx&condition=Period%20between%20202001%20and%20202003%20and%20Entity1ID%20in%20(9236315)&measure=SPEDSTTO&sort=Period&labelType=0&periodCorrected=0&delivery=string&format=json 
+
+
 Example Response
 ------------------------
+
+.. code-block:: json
+
+    [[{"TimeSerieCatalogueCode": "MBVESGLOWEK","TimeSerieName": "Vessel Global Weekly -Speed steaming total","StatisticsCatalogueDescription": "","MeasurementDescription": "speed steaming total in period. Steaming is all speed with a speed above 6 knots. Total is speed independent of loaded or unloaded.","TimeSerieUnit": "kn","TimeSerieMeasureCode": "SPEDSTTO"}],[{"Entity1ID": 9236315,"Period": 202001,"Area1ID": 0,"Area2ID": 0,"Value": 7.988872576},{"Entity1ID": 9236315,"Period": 202002,"Area1ID": 0,"Area2ID": 0,"Value": 8.80499174},{"Entity1ID": 9236315,"Period": 202003,"Area1ID": 0,"Area2ID": 0,"Value": 7.892691355}]]
 
 
 

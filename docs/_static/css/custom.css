@@ -1,0 +1,11 @@
+.wy-nav-content {
+    max-width: 1000px !important;
+}
+
+.tight-table td{
+    white-space: normal !important; 
+}
+
+.url-table td:nth-child(3) {
+    font-size: 80% !important;
+}

@@ -171,5 +171,6 @@ texinfo_documents = [
 
 html_last_updated_fmt = '%Y/%m/%d'
 
-
+def setup(app):
+   app.add_stylesheet('css/custom.css')
 
