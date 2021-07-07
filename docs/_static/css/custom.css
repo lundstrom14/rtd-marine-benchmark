@@ -45,3 +45,7 @@ code.file {
 .highlight-json {
     height: 400px !important;
 }
+
+.wy-side-nav-search {
+    background-color: #fcfcfc !important;
+}

@@ -201,7 +201,6 @@ Example Response
             {
             "TimeSerieCatalogueCode": "MBVESGLOWEK",
             "TimeSerieName": "Vessel Global Weekly - Speed steaming total",
-            "StatisticsCatalogueDescription": "Here we will add user descriptions for statistics catalogue",
             "MeasurementDescription": "speed steaming total in period. Steaming is all speed with a speed above 6 knots. Total is speed independent of loaded or unloaded.",
             "TimeSerieUnit": "kn",
             "TimeSerieMeasureCode": "SPEDSTTO"

@@ -132,7 +132,7 @@ We only want the vessel speed in *steaming condition* (+6 kn). By searching for 
 find three matching results. **Speed steaming total**, **Speed steaming loaded** and **Speed steaming unloaded**. Since we do not
 care about the vessel loaded or unloaded condition, we select **Speed steaming total**.
 
-**Measure**: ``SPEEDSTTO - Speed steaming total``
+**Measure(s)**: ``SPEEDSTTO - Speed steaming total``
 
 For data selection we specify that we are interested in the entity :blue:`OLJAREN(9236315)` by setting the state condition in SQL
 format as ``Entity1ID in (9236315)``, and leave the rest of the fields empty, as we are not interested in an aggregated result.
@@ -170,7 +170,7 @@ We are interested in the weekly statistics catalogue.
 We search for |CO2| in the measure field and find multiple matching result. A brief description is available under the field. We
 specify that we are interested in main engine (ME) |CO2| emission for both loaded & unloaded condition.
 
-**Measure**: :green:`COMEMVLO - CO2 emission main engine moving loaded` and :green:`COMEMVUL - CO2 emission main engine moving unloaded`. We also include the selected measure from example 1. 
+**Measure(s)**: :green:`COMEMVLO - CO2 emission main engine moving loaded` and :green:`COMEMVUL - CO2 emission main engine moving unloaded`. We also include the selected measure from example 1. 
 
 For data selection we need to specify that we are interested in the entity :blue:`SEAWAYS TANABE(9196632)` by setting the state
 condition in SQL Server format as ``Entity1ID in (9236315)``, and leave the rest of the fields empty, as we are not interested
@@ -192,8 +192,8 @@ page. Here the query is executed directly in browser to return a JSON string.
 3.  Type size (Fuel consumption)
 ################################################
 
-Say we are interested in the monthly fuel consumption (main engine) of a vessel type size, in this case Tanker / VLCC -
-200'-329.9' dwt (210102). The type size ID can be found in .
+Say we are interested in the monthly fuel consumption (main engine) of a vessel type size, in this case :blue:`Tanker/VLCC -
+200'-329.9' dwt` (210102). The type size ID can be found in .
 .. :: FIX THIS REFERENCE ABOVE 
 
 
@@ -211,18 +211,97 @@ We search for fuel in the measure field and find multiple matching result. A bri
 specify that we are interested in main engine (ME) fuel consumption in moving state (+1 kn), independent of vessel
 conditions (loaded/unloaded).
 
-**Measure**: :green:`MEFUMVTO - ME fuel moving total`
+**Measure(s)**: :green:`MEFUMVTO - ME fuel moving total`
 
-For data selection we need to specify that we are interested in the type size entity :blue:`Tanker / VLCC - 200'-329.9' dwt` (210102) by 
+For data selection we need to specify that we are interested in the type size entity :blue:`Tanker/VLCC - 200'-329.9' dwt`  by 
 setting the state condition in SQL Server format as ``Entity1ID in (210102)``, and leave the rest of the fields
 empty, as we are not interested aggregating the result further.
 
 
 Do not forget to specify the period by sliding the timeline.
 
+.. image:: _static/images/ex3.png
+  :width: 90%
+  :align: center
 
-This is a :green:`test`
+The API URL is dynamically constructed and can be copied, executed directly in browser, or previewed at the bottom of the
+page. Here the query is previewed to be displayed as a graph. 
 
-more thest :blue:`yes`
+.. image:: _static/images/ex3-data.png
+  :width: 90%
+  :align: center
 
+4. Distributions (Water temperature)
+###############################################
+
+Distribution statistics are very powerful and are available from the Vessel distributions and Vessel type size distributions
+subcategory. These contains vessel distribution curves for various parameters such as speed, draft, water temperature and
+more. 
+
+We want the **distance** and **time spent** in various **water temperature** for a specific vessel or vessel type size.
+For example: ``Monthly Water temperature (WT5MON)`` for the VLCC tanker :blue:`PERFECT (9241114)`
+
+**Category**: :green:`Vessel statistics`
+
+**Subcategory**: :green:`Vessel distributions`
+
+**Catalogue**: :green:`Monthly Water temperature`
+
+**Measure(s)**: :green:`TIMEDITO – Time distributed total, DISTDITO – Distance distributed total`
+
+State condition in SQL server format: ``Entity1ID in (9241114)``
+
+Resulting API URL after specifying period between 2020-06 and 2020-08: :: 
+
+    https://apigateway.marinebenchmark.com/v4/MBVEDWT5MON?key=xxxxxxxxxxx&condition=Period%20between%20202006%20and%20202008%20and%20Entity1ID%20in%20(9241114)&sort=Period&LabelType=1&PeriodCorrected=0&sql=true&measure=TIMEDITO,DISTDITO&delivery=string&format=json 
+
+
+The distribution dimension for water temperature is here discretized with 0.5 °C increments. This may vary between different distributions. 
+
+.. literalinclude:: _static/json/watertemp.json
+    :language: json
+
+  
+5. Distributions per type size (Speed)
+################################################
+
+Since distribution statistics also are available per type size (segments), here is another example for speed distribution for
+:blue:`01 Tanker / B VLCC - 200'-329.9' dwt`. The type size IDs can be found in (..).
+
+
+We repeat the same process of choosing correct category, subcategory, and catalogue. For measures we again
+want both time spent and distance traveled.
+
+Category: :green:`Vessel statistics`
+
+Subcategory: :green:`Vessel type size distributions (segment)`
+
+Catalogue: :green:`Monthly Speed05`
+
+Measure(s): :green:`TIMEDITO – Time distributed total, DISTDITO – Distance distributed total`
+
+State condition in SQL server format: ``Entity1ID in (210102)``
+
+
+Resulting API URL after specifying period 2020-06: :: 
+
+    https://apigateway.marinebenchmark.com/v4/MBVDTSP5MON?key=xxxxxxxxxxxxxxxx&condition=Period%20between%20202006%20and%20202006%20and%20Entity1ID%20in%20(210102)&sort=Period&LabelType=1&PeriodCorrected=0&sql=true&measure=TIMEDITO,DISTDITO&delivery=string&format=json
+
+
+The distribution dimension for speed is discretized with 0.5 knot increments.
+
+.. literalinclude:: _static/json/ts-speed.json
+    :language: json
+
+
+6.  Area (..)
+################################################
+
+.. note::
+  TBD..
+
+
+
+
+.. DO NOT REMOVE 
 .. |CO2| replace:: CO\ :sub:`2`\

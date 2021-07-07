@@ -3,7 +3,6 @@
       {
         "TimeSerieCatalogueCode": "MBVESGLOWEK",
         "TimeSerieName": "Vessel Global Weekly - Speed steaming total",
-        "StatisticsCatalogueDescription": "Here we will add user descriptions for statistics catalogue",
         "MeasurementDescription": "speed steaming total in period. Steaming is all speed with a speed above 6 knots. Total is speed independent of loaded or unloaded.",
         "TimeSerieUnit": "kn",
         "TimeSerieMeasureCode": "SPEDSTTO"
@@ -11,20 +10,16 @@
       {
         "TimeSerieCatalogueCode": "MBVESGLOWEK",
         "TimeSerieName": "Vessel Global Weekly - CO2 emission ME moving loaded",
-        "StatisticsCatalogueDescription": "Here we will add user descriptions for statistics catalogue",
         "MeasurementDescription": "CO2 emission ME fuel used  moving loaded in period. Moving is all ME fuel CO2 emission with a speed above 1 knot. Loaded is ME fuel CO2 emission loaded condition.",
         "TimeSerieUnit": "ton",
-        "TimeSerieMeasureCode": "COMEMVLO",
-        "TimeSerieSQLString": null
+        "TimeSerieMeasureCode": "COMEMVLO"
       },
       {
         "TimeSerieCatalogueCode": "MBVESGLOWEK",
         "TimeSerieName": "Vessel Global Weekly - CO2 emission ME moving unloaded",
-        "StatisticsCatalogueDescription": "Here we will add user descriptions for statistics catalogue",
         "MeasurementDescription": "CO2 emission ME fuel used  moving unloaded in period. Moving is all ME fuel CO2 emission with a speed above 1 knot.Unloaded is ME fuel CO2 emission unloaded condition.",
         "TimeSerieUnit": "ton",
-        "TimeSerieMeasureCode": "COMEMVUL",
-        "TimeSerieSQLString": null
+        "TimeSerieMeasureCode": "COMEMVUL"
       }
     ],
     [
