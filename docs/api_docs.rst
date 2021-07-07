@@ -106,7 +106,6 @@ Resource Information
 
 
 
-
 URL Parameters
 ------------------------
 
@@ -174,13 +173,11 @@ URL Parameters
       - ``json``
       - ``csv``, ``xml``, ``csv``, ``compact``    
 
-.. Warning::
+.. Note::
    Please note than parameter values **must** be URL encoded. 
    ``condition=Period%20between%20202001%20and%20202106%20and%20Entity1ID%20in%20(9236315)``
 
-
-
-
+ 
 
 Example Requests
 ------------------------

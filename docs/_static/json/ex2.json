@@ -1,0 +1,239 @@
+[
+    [
+      {
+        "TimeSerieCatalogueCode": "MBVESGLOWEK",
+        "TimeSerieName": "Vessel Global Weekly - Speed steaming total",
+        "StatisticsCatalogueDescription": "Here we will add user descriptions for statistics catalogue",
+        "MeasurementDescription": "speed steaming total in period. Steaming is all speed with a speed above 6 knots. Total is speed independent of loaded or unloaded.",
+        "TimeSerieUnit": "kn",
+        "TimeSerieMeasureCode": "SPEDSTTO"
+      },
+      {
+        "TimeSerieCatalogueCode": "MBVESGLOWEK",
+        "TimeSerieName": "Vessel Global Weekly - CO2 emission ME moving loaded",
+        "StatisticsCatalogueDescription": "Here we will add user descriptions for statistics catalogue",
+        "MeasurementDescription": "CO2 emission ME fuel used  moving loaded in period. Moving is all ME fuel CO2 emission with a speed above 1 knot. Loaded is ME fuel CO2 emission loaded condition.",
+        "TimeSerieUnit": "ton",
+        "TimeSerieMeasureCode": "COMEMVLO",
+        "TimeSerieSQLString": null
+      },
+      {
+        "TimeSerieCatalogueCode": "MBVESGLOWEK",
+        "TimeSerieName": "Vessel Global Weekly - CO2 emission ME moving unloaded",
+        "StatisticsCatalogueDescription": "Here we will add user descriptions for statistics catalogue",
+        "MeasurementDescription": "CO2 emission ME fuel used  moving unloaded in period. Moving is all ME fuel CO2 emission with a speed above 1 knot.Unloaded is ME fuel CO2 emission unloaded condition.",
+        "TimeSerieUnit": "ton",
+        "TimeSerieMeasureCode": "COMEMVUL",
+        "TimeSerieSQLString": null
+      }
+    ],
+    [
+      {
+        "Entity1ID": 9196632,
+        "Period": 202052,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 9.825152248,
+        "COMEMVLO": 0,
+        "COMEMVUL": 277.451785714
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202053,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 9.781765803,
+        "COMEMVLO": 0,
+        "COMEMVUL": 94.361155733
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202101,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 9.384388274,
+        "COMEMVLO": 25.950087109,
+        "COMEMVUL": 98.353044065
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202102,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 10.400112008,
+        "COMEMVLO": 386.090983049,
+        "COMEMVUL": 0
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202103,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 9.742527332,
+        "COMEMVLO": 610.031191552,
+        "COMEMVUL": 0
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202104,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 9.544146377,
+        "COMEMVLO": 601.987228291,
+        "COMEMVUL": 0
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202105,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 9.310582679,
+        "COMEMVLO": 616.352261058,
+        "COMEMVUL": 0
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202106,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 9.628107174,
+        "COMEMVLO": 668.504519397,
+        "COMEMVUL": 0
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202107,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 8.172573283,
+        "COMEMVLO": 419.516187405,
+        "COMEMVUL": 0
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202108,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 9.452051906,
+        "COMEMVLO": 620.575942675,
+        "COMEMVUL": 0
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202109,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 9.06636166,
+        "COMEMVLO": 587.675421308,
+        "COMEMVUL": 0
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202110,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 9.437712552,
+        "COMEMVLO": 433.162403702,
+        "COMEMVUL": 0
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202111,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 8.720337952,
+        "COMEMVLO": 32.644860597,
+        "COMEMVUL": 149.636745548
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202112,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 8.197909278,
+        "COMEMVLO": 0,
+        "COMEMVUL": 47.397663472
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202113,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 8.008203655,
+        "COMEMVLO": 0,
+        "COMEMVUL": 96.575358921
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202114,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 0,
+        "COMEMVLO": 0,
+        "COMEMVUL": 0
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202115,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 9.229853466,
+        "COMEMVLO": 0,
+        "COMEMVUL": 63.384851685
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202116,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 8.663880789,
+        "COMEMVLO": 0,
+        "COMEMVUL": 51.312870561
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202117,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 8.62784789,
+        "COMEMVLO": 0,
+        "COMEMVUL": 70.476315616
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202118,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 8.639898968,
+        "COMEMVLO": 0,
+        "COMEMVUL": 51.961411806
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202119,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 7.990576399,
+        "COMEMVLO": 0,
+        "COMEMVUL": 111.83805265
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202120,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 6.807071043,
+        "COMEMVLO": 0,
+        "COMEMVUL": 12.968561411
+      },
+      {
+        "Entity1ID": 9196632,
+        "Period": 202121,
+        "Area1ID": 0,
+        "Area2ID": 0,
+        "SPEDSTTO": 9.457206319,
+        "COMEMVLO": 0,
+        "COMEMVUL": 123.692038213
+      }
+    ]
+]

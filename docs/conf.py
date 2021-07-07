@@ -174,3 +174,12 @@ html_last_updated_fmt = '%Y/%m/%d'
 def setup(app):
    app.add_stylesheet('css/custom.css')
 
+
+# Create custom classes valid for all files here. For example classes used in _static/css. 
+rst_prolog = """
+.. role:: green
+    :class: mb-green
+
+.. role:: blue
+    :class: mb-blue
+"""

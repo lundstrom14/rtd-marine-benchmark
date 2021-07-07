@@ -81,7 +81,7 @@ First time visiting the API configurator page you will be asked to enter your cr
 
 .. image:: _static/images/key.png
   :width: 100%
-  :alt: Alternative text
+  :alt: configurator-page
 
 
 These options can be changed anytime by selecting the **Settings** button in the topright corner.
@@ -118,31 +118,111 @@ Example Queries
 1.  Single-measure selection (Speed steaming)
 ################################################
 
-Say we are simply interested in the daily speed of a vessel, in this case OLJAREN (9236315). We begin by selecting the appropriate category and subcategory.
+Say we are simply interested in the **daily** speed of a vessel, in this case :blue:`OLJAREN(9236315)`. We begin by selecting the appropriate category and subcategory.
 
-**Category**: ``Vessel statistics``
+**Category**: :green:`Vessel statistics`
 
-**Subcategory**: ``Vessel operational statistics``
+**Subcategory**: :green:`Vessel operational statistics`
 
 We are interested in the daily statistics catalogue.
 
-**Catalogue**: ``Vessel Global Daily``
+**Catalogue**: :green:`Vessel Global Daily`
 
-We only want the vessel speed in steaming condition (+6 kn). By searching for ‘speed steaming’ in the measure field we
-find three matching results. Speed steaming total, speed steaming loaded and speed steaming unloaded. Since we do not
-care about the vessel loaded or unloaded condition, we select total.
+We only want the vessel speed in *steaming condition* (+6 kn). By searching for ‘speed steaming’ in the measure field we
+find three matching results. **Speed steaming total**, **Speed steaming loaded** and **Speed steaming unloaded**. Since we do not
+care about the vessel loaded or unloaded condition, we select **Speed steaming total**.
 
 **Measure**: ``SPEEDSTTO - Speed steaming total``
 
-For data selection we specify that we are interested in the entity ``OLJAREN(9236315)`` by setting the state condition in SQL
+For data selection we specify that we are interested in the entity :blue:`OLJAREN(9236315)` by setting the state condition in SQL
 format as ``Entity1ID in (9236315)``, and leave the rest of the fields empty, as we are not interested in an aggregated result.
 Do not forget to specify the period by sliding the timeline.
+
+.. image:: _static/images/ex1.png
+  :width: 90%
+  :align: center
+
+
+The API URL is dynamically constructed and can be copied, executed directly in browser, or previewed at the bottom of the
+page
+
+
+.. image:: _static/images/ex1-data .png
+  :width: 90%
+  :align: center
+
 
 2.  Multi-measure selection (|CO2| Emission)
 ################################################
  
 
+Say we are interested in the **weekly** |CO2| emission of a vessel, in this case :blue:`SEAWAYS TANABE (9196632)` for both loaded
+and unloaded condition. Begin by selecting the appropriate category and subcategory for single vessel statistics.
+
+**Category**: :green:`Vessel statistics`
+
+**Subcategory:** :green:`Vessel operational statistics`
+
+We are interested in the weekly statistics catalogue.
+
+**Catalogue**: :green:`Vessel Global Weekly`
+
+We search for |CO2| in the measure field and find multiple matching result. A brief description is available under the field. We
+specify that we are interested in main engine (ME) |CO2| emission for both loaded & unloaded condition.
+
+**Measure**: :green:`COMEMVLO - CO2 emission main engine moving loaded` and :green:`COMEMVUL - CO2 emission main engine moving unloaded`. We also include the selected measure from example 1. 
+
+For data selection we need to specify that we are interested in the entity :blue:`SEAWAYS TANABE(9196632)` by setting the state
+condition in SQL Server format as ``Entity1ID in (9236315)``, and leave the rest of the fields empty, as we are not interested
+in an aggregated result.
+
+Do not forget to specify the period by sliding the timeline.
+
+.. image:: _static/images/ex2.png
+  :width: 90%
+  :align: center
+
+The API URL is dynamically constructed and can be copied, executed directly in browser, or previewed at the bottom of the
+page. Here the query is executed directly in browser to return a JSON string.
+
+.. literalinclude:: _static/json/ex2.json
+   :language: json
 
 
+3.  Type size (Fuel consumption)
+################################################
+
+Say we are interested in the monthly fuel consumption (main engine) of a vessel type size, in this case Tanker / VLCC -
+200'-329.9' dwt (210102). The type size ID can be found in .
+.. :: FIX THIS REFERENCE ABOVE 
+
+
+We begin by selecting the appropriate category and subcategory for vessel type size statistics.
+
+**Category**: :green:`Vessel statistics`
+
+**Subcategory**: :green:`Vessel type size operational statistics (segment)`
+
+We are interested in the monthly statistics catalogue.
+
+**Catalogue**: :green:`Vessel type size Global Monthly`
+
+We search for fuel in the measure field and find multiple matching result. A brief description is available under the field. We
+specify that we are interested in main engine (ME) fuel consumption in moving state (+1 kn), independent of vessel
+conditions (loaded/unloaded).
+
+**Measure**: :green:`MEFUMVTO - ME fuel moving total`
+
+For data selection we need to specify that we are interested in the type size entity :blue:`Tanker / VLCC - 200'-329.9' dwt` (210102) by 
+setting the state condition in SQL Server format as ``Entity1ID in (210102)``, and leave the rest of the fields
+empty, as we are not interested aggregating the result further.
+
+
+Do not forget to specify the period by sliding the timeline.
+
+
+This is a :green:`test`
+
+more thest :blue:`yes`
 
 .. |CO2| replace:: CO\ :sub:`2`\
