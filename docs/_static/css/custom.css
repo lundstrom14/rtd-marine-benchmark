@@ -46,6 +46,11 @@ code.file {
     height: 400px !important;
 }
 
+div.version {
+    color: #060A28 !important;
+}
+
 .wy-side-nav-search {
     background-color: #fcfcfc !important;
 }
+

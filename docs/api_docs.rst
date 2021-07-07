@@ -194,7 +194,7 @@ Example request: ::
 Example Response
 ------------------------
 
-.. code-block:: json
+.. code-block:: json   
 
     [
         [
