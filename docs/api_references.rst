@@ -76,7 +76,7 @@ catalogues and measures are marked in **Bold**.
 
 
 .. csv-table:: Vessel Particular World Fleet Measures 
-   :file: _static/tables/measures-vessel-particular.csv
+   :file: _static/measures-vessel-particular.csv
    :class: ref-table 
    :widths: 25 25 35 15
    :width: 100%
