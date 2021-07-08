@@ -56,7 +56,7 @@ Welcome to Marine Benchmark API Configurator Reference v1.4 for Marine Benchmark
 ================================================
 
 .. csv-table:: Type size name and ID
-   :file: _static/tables/typesize-id-commercial.csv
+   :file: ../_static/tables/typesize-id-commercial.csv
    :class: ref-table 
    :widths: 20 20 20 20 20
    :width: 100%
@@ -76,7 +76,7 @@ catalogues and measures are marked in **Bold**.
 
 
 .. csv-table:: Vessel Particular World Fleet Measures 
-   :file: _static/measures-vessel-particular.csv
+   :file: ../_static/measures-vessel-particular.csv
    :class: ref-table 
    :widths: 25 25 35 15
    :width: 100%
