@@ -1,0 +1,91 @@
+﻿Vessel commercial type size ID;Vessel type full name;(No column name);Vessel type name;Vessel size name
+210101;01 Tanker / A ULCC - 330' + dwt;Tanker;01 Tanker;A ULCC - 330' + dwt
+210102;01 Tanker / B VLCC - 200'-329.9' dwt;Tanker;01 Tanker;B VLCC - 200'-329.9' dwt
+210103;01 Tanker / C Suezmax - 130'-199.9' dwt;Tanker;01 Tanker;C Suezmax - 130'-199.9' dwt
+210104;01 Tanker / D Aframax / LR 2 - 95'-129.9' dwt;Tanker;01 Tanker;D Aframax / LR 2 - 95'-129.9' dwt
+210105;01 Tanker / E Post Panamax / LR1 - 75'-94.9' dwt;Tanker;01 Tanker;E Post Panamax / LR1 - 75'-94.9' dwt
+210106;01 Tanker / F Panamax / LR1 - 55'-74.5' dwt;Tanker;01 Tanker;F Panamax / LR1 - 55'-74.5' dwt
+210107;01 Tanker / G MR - 40'-54.9' dwt;Tanker;01 Tanker;G MR - 40'-54.9' dwt
+210108;01 Tanker / H Handy size - 27'-39.9' dwt;Tanker;01 Tanker;H Handy size - 27'-39.9' dwt
+210109;01 Tanker / I Intermediate - 10'-26.9' dwt;Tanker;01 Tanker;I Intermediate - 10'-26.9' dwt
+210110;01 Tanker / J 5'-9.9' dwt;Tanker;01 Tanker;J 5'-9.9' dwt
+210111;01 Tanker / K 0-4.9' dwt;Tanker;01 Tanker;K 0-4.9' dwt
+210201;02 LPG / A 70' + cbm;Tanker;02 LPG;A 70' + cbm
+210202;02 LPG / B 50'-69' cbm;Tanker;02 LPG;B 50'-69' cbm
+210203;02 LPG / C 20'-49' cbm;Tanker;02 LPG;C 20'-49' cbm
+210204;02 LPG / D 5'-19' cbm;Tanker;02 LPG;D 5'-19' cbm
+210205;02 LPG / E 0-4.9' cbm;Tanker;02 LPG;E 0-4.9' cbm
+210301;03 LNG / A 200' + cbm;Tanker;03 LNG;A 200' + cbm
+210302;03 LNG / B 150'-199' cbm;Tanker;03 LNG;B 150'-199' cbm
+210303;03 LNG / C 100'-149' cbm;Tanker;03 LNG;C 100'-149' cbm
+210304;03 LNG / D 30'-99' cbm;Tanker;03 LNG;D 30'-99' cbm
+210305;03 LNG / E 0-29' cbm;Tanker;03 LNG;E 0-29' cbm
+220101;04 Bulk / A VLOC - 350' + dwt;Bulker & General Cargo;04 Bulk;A VLOC - 350' + dwt
+220102;04 Bulk / B Capesize - 120'-349.9' dwt;Bulker & General Cargo;04 Bulk;B Capesize - 120'-349.9' dwt
+220103;04 Bulk / C Mini Capesize - 100'-119.9' dwt;Bulker & General Cargo;04 Bulk;C Mini Capesize - 100'-119.9' dwt
+220104;04 Bulk / D Post Panamax - 85'-99.9' dwt;Bulker & General Cargo;04 Bulk;D Post Panamax - 85'-99.9' dwt
+220105;04 Bulk / E Panamax - 60'-84.9' dwt;Bulker & General Cargo;04 Bulk;E Panamax - 60'-84.9' dwt
+220106;04 Bulk / F Large Handymax - 50'-59.9' dwt;Bulker & General Cargo;04 Bulk;F Large Handymax - 50'-59.9' dwt
+220107;04 Bulk / G Handymax - 40'-49.9' dwt;Bulker & General Cargo;04 Bulk;G Handymax - 40'-49.9' dwt
+220108;04 Bulk / H Large Handysize - 25'-39.9' dwt;Bulker & General Cargo;04 Bulk;H Large Handysize - 25'-39.9' dwt
+220109;04 Bulk / I Small Handysize - 10'-24.9' dwt;Bulker & General Cargo;04 Bulk;I Small Handysize - 10'-24.9' dwt
+220110;04 Bulk / J 5'-9.9' dwt;Bulker & General Cargo;04 Bulk;J 5'-9.9' dwt
+220111;04 Bulk / K 0-4.9' dwt;Bulker & General Cargo;04 Bulk;K 0-4.9' dwt
+230101;05 Container / A 13,500+ teu;Container & Roro;05 Container;A 13,500+ teu
+230102;05 Container / B 10 -13,499 teu;Container & Roro;05 Container;B 10 -13,499 teu
+230103;05 Container / C 8 -9,999 teu;Container & Roro;05 Container;C 8 -9,999 teu
+230104;05 Container / D 5 -7,999 teu;Container & Roro;05 Container;D 5 -7,999 teu
+230105;05 Container / E 3 -4,999 teu;Container & Roro;05 Container;E 3 -4,999 teu
+230106;05 Container / F 2 -2,999 teu;Container & Roro;05 Container;F 2 -2,999 teu
+230107;05 Container / G 1 -1,999 teu;Container & Roro;05 Container;G 1 -1,999 teu
+230108;05 Container / H 0-999 teu;Container & Roro;05 Container;H 0-999 teu
+230201;06 Vehicle / A 7,000+ ceu;Container & Roro;06 Vehicle;A 7,000+ ceu
+230202;06 Vehicle / B 5,500 - 6,999 ceu;Container & Roro;06 Vehicle;B 5,500 - 6,999 ceu
+230203;06 Vehicle / C 4,000 - 5,499 ceu;Container & Roro;06 Vehicle;C 4,000 - 5,499 ceu
+230204;06 Vehicle / D 2,000 - 3,999 ceu;Container & Roro;06 Vehicle;D 2,000 - 3,999 ceu
+230205;06 Vehicle / E 0-1,999 ceu;Container & Roro;06 Vehicle;E 0-1,999 ceu
+230301;07 Roro / A 4,000+ lm;Container & Roro;07 Roro;A 4,000+ lm
+230302;07 Roro / B 2,000 -3,999 lm;Container & Roro;07 Roro;B 2,000 -3,999 lm
+230303;07 Roro / C 1,000 -1,999 lm;Container & Roro;07 Roro;C 1,000 -1,999 lm
+230304;07 Roro / D 500 - 999 lm;Container & Roro;07 Roro;D 500 - 999 lm
+230305;07 Roro / E 0-499 lm;Container & Roro;07 Roro;E 0-499 lm
+240101;08 Ferry DayPax Only, 25kn+ / A 400+ Pax;Passenger;08 Ferry DayPax Only, 25kn+;A 400+ Pax
+240102;08 Ferry DayPax Only, 25kn+ / B 300 -399 Pax;Passenger;08 Ferry DayPax Only, 25kn+;B 300 -399 Pax
+240103;08 Ferry DayPax Only, 25kn+ / C 200 -299 Pax;Passenger;08 Ferry DayPax Only, 25kn+;C 200 -299 Pax
+240104;08 Ferry DayPax Only, 25kn+ / D 0-200 Pax;Passenger;08 Ferry DayPax Only, 25kn+;D 0-200 Pax
+240201;09 Ferry DayPax Only, <25kn / A 800+ Pax;Passenger;09 Ferry DayPax Only, <25kn;A 800+ Pax
+240202;09 Ferry DayPax Only, <25kn / B 400 -799 Pax;Passenger;09 Ferry DayPax Only, <25kn;B 400 -799 Pax
+240203;09 Ferry DayPax Only, <25kn / C 200 -399 Pax;Passenger;09 Ferry DayPax Only, <25kn;C 200 -399 Pax
+240204;09 Ferry DayPax Only, <25kn / D 0-200 Pax;Passenger;09 Ferry DayPax Only, <25kn;D 0-200 Pax
+240301;10 Ferry RoPax, 25kn+ / A 1000+ lm;Passenger;10 Ferry RoPax, 25kn+;A 1000+ lm
+240302;10 Ferry RoPax, 25kn+ / B 500 -999 lm;Passenger;10 Ferry RoPax, 25kn+;B 500 -999 lm
+240303;10 Ferry RoPax, 25kn+ / C 100 -499 lm;Passenger;10 Ferry RoPax, 25kn+;C 100 -499 lm
+240304;10 Ferry RoPax, 25kn+ / D 0-99 lm;Passenger;10 Ferry RoPax, 25kn+;D 0-99 lm
+240401;11 Ferry RoPax, <25kn / A 2000+ lm;Passenger;11 Ferry RoPax, <25kn;A 2000+ lm
+240402;11 Ferry RoPax, <25kn / B 1000 -1999 lm;Passenger;11 Ferry RoPax, <25kn;B 1000 -1999 lm
+240403;11 Ferry RoPax, <25kn / C 500 -999 lm;Passenger;11 Ferry RoPax, <25kn;C 500 -999 lm
+240404;11 Ferry RoPax, <25kn / D 0-499 lm;Passenger;11 Ferry RoPax, <25kn;D 0-499 lm
+240501;12 Ferry Overnight Pax Only / A 1,000+ low berths;Passenger;12 Ferry Overnight Pax Only;A 1,000+ low berths
+240502;12 Ferry Overnight Pax Only / B 0-999 low berths;Passenger;12 Ferry Overnight Pax Only;B 0-999 low berths
+240601;13 Cruise / A 4,000+ low berths;Passenger;13 Cruise;A 4,000+ low berths
+240602;13 Cruise / B 2,500 -3,999 low berths;Passenger;13 Cruise;B 2,500 -3,999 low berths
+240603;13 Cruise / C 1,000 -2,499 low berths;Passenger;13 Cruise;C 1,000 -2,499 low berths
+240604;13 Cruise / D 0-999 low berths;Passenger;13 Cruise;D 0-999 low berths
+240701;14 Yacht / A 7,000+ kW;Passenger;14 Yacht;A 7,000+ kW
+240702;14 Yacht / B 3,500 -6,999 kW;Passenger;14 Yacht;B 3,500 -6,999 kW
+240703;14 Yacht / C 2,000 -3,499 kW;Passenger;14 Yacht;C 2,000 -3,499 kW
+240704;14 Yacht / D 1,000 -1,999 kW;Passenger;14 Yacht;D 1,000 -1,999 kW
+240705;14 Yacht / E 0-999 kW;Passenger;14 Yacht;E 0-999 kW
+250101;15 Offshore / A 15,000+ kW;Misc.;15 Offshore;A 15,000+ kW
+250102;15 Offshore / B 5,000 -14,999 kW;Misc.;15 Offshore;B 5,000 -14,999 kW
+250103;15 Offshore / C 2,000 -4,999 kW;Misc.;15 Offshore;C 2,000 -4,999 kW
+250104;15 Offshore / D 0-1,999 kW;Misc.;15 Offshore;D 0-1,999 kW
+250201;16 Service / A 5,000+ kW;Misc.;16 Service;A 5,000+ kW
+250202;16 Service / B 2,000 -4,999 kW;Misc.;16 Service;B 2,000 -4,999 kW
+250203;16 Service / C 1,000 -1,999 kW;Misc.;16 Service;C 1,000 -1,999 kW
+250204;16 Service / D 0-999 kW;Misc.;16 Service;D 0-999 kW
+250301;17 Fishing / A Fishing;Misc.;17 Fishing;A Fishing
+250302;17 Fishing / B Trawlers;Misc.;17 Fishing;B Trawlers
+250303;17 Fishing / C Other;Misc.;17 Fishing;C Other
+250401;18 Miscellaneous / A Barge & Pontoon;Misc.;18 Miscellaneous;A Barge & Pontoon
+250402;18 Miscellaneous / B Other;Misc.;18 Miscellaneous;B Other

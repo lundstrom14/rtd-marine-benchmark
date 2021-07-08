@@ -51,7 +51,7 @@ Example: ``SPEEDSTLO``
 
 `Multi-measurements` are supported since **API V4** and are to be specified as a parameter. 
 
-.. Available catalogues and corresponding measures for vessel statistics can be found in `References`_
+Available catalogues and corresponding measures for vessel statistics can be found in :ref:`References` section.
 
 
 API Configurator
@@ -193,8 +193,8 @@ page. Here the query is executed directly in browser to return a JSON string.
 ################################################
 
 Say we are interested in the monthly fuel consumption (main engine) of a vessel type size, in this case :blue:`Tanker/VLCC -
-200'-329.9' dwt` (210102). The type size ID can be found in .
-.. :: FIX THIS REFERENCE ABOVE 
+200'-329.9' dwt` (210102). The type size ID can be found in :ref:`2. Type size name and ID`.
+
 
 
 We begin by selecting the appropriate category and subcategory for vessel type size statistics.
@@ -247,7 +247,7 @@ For example: ``Monthly Water temperature (WT5MON)`` for the VLCC tanker :blue:`P
 
 **Catalogue**: :green:`Monthly Water temperature`
 
-**Measure(s)**: :green:`TIMEDITO – Time distributed total, DISTDITO – Distance distributed total`
+**Measure(s)**: :green:`TIMEDITO – Time distributed total`, :green:`DISTDITO – Distance distributed total`
 
 State condition in SQL server format: ``Entity1ID in (9241114)``
 
@@ -266,7 +266,7 @@ The distribution dimension for water temperature is here discretized with 0.5 °
 ################################################
 
 Since distribution statistics also are available per type size (segments), here is another example for speed distribution for
-:blue:`01 Tanker / B VLCC - 200'-329.9' dwt`. The type size IDs can be found in (..).
+:blue:`01 Tanker / B VLCC - 200'-329.9' dwt`. The type size IDs can be found in :ref:`2. Type size name and ID`.
 
 
 We repeat the same process of choosing correct category, subcategory, and catalogue. For measures we again
@@ -278,7 +278,7 @@ Subcategory: :green:`Vessel type size distributions (segment)`
 
 Catalogue: :green:`Monthly Speed05`
 
-Measure(s): :green:`TIMEDITO – Time distributed total, DISTDITO – Distance distributed total`
+Measure(s): :green:`TIMEDITO – Time distributed total`, :green:`DISTDITO – Distance distributed total`
 
 State condition in SQL server format: ``Entity1ID in (210102)``
 
@@ -297,8 +297,8 @@ The distribution dimension for speed is discretized with 0.5 knot increments.
 6.  Area (..)
 ################################################
 
-.. note::
-  TBD..
+.. note:: 
+  TBD..  
 
 
 

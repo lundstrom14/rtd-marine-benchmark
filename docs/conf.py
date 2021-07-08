@@ -35,7 +35,8 @@ extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages']
+    'sphinx.ext.githubpages',
+    'sphinx.ext.autosectionlabel']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -104,6 +105,8 @@ html_logo = "_static/logo1.png"
 html_theme_options = {
     'logo_only': True,
     'display_version': True,
+    'navigation_depth': 4
+
 }
 
 # Custom sidebar templates, must be a dictionary that maps document names

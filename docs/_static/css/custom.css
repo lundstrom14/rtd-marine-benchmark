@@ -54,3 +54,9 @@ div.version {
     background-color: #fcfcfc !important;
 }
 
+.ref-table {
+    white-space: normal !important; 
+    font-size: 60% !important;
+    padding: 0px 8px !important;
+}
+
