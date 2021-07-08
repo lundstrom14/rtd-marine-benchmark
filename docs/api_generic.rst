@@ -54,13 +54,13 @@ Example: ``SPEEDSTLO``
 .. Available catalogues and corresponding measures for vessel statistics can be found in `References`_
 
 
-Web Based API Configurator
+API Configurator
 ================================================
 
 General
 ------------------------------------------------
 
-For developers convenience Marine Benchmark has developed a `web based configurator`_ where you can build URL calls and arguments.
+For developers convenience Marine Benchmark has developed a `web based API configurator`_ where you can build URL calls and arguments.
 This is a graphical user interface to construct and configure generic API calls. The configurator lets you choose category, subcategory, catalogue with multiple data parameters and conditions to construct powerful API calls.
 
 Configurator URL
@@ -71,7 +71,7 @@ https://graphicalobjectlibrary.marinebenchmark.com/apiconfigurator/
 
 
 
-.. _web based configurator: https://graphicalobjectlibrary.marinebenchmark.com/apiconfigurator/
+.. _web based API configurator: https://graphicalobjectlibrary.marinebenchmark.com/apiconfigurator/
 
 
 Authentication

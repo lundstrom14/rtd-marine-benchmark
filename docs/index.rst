@@ -4,17 +4,17 @@
    contain the root `toctree` directive.
 
 ================================================
-Marine Benchmark API Configurator
+Marine Benchmark Documentation Platform
 ================================================
 
-Welcome to Marine Benchmark API Configurator Reference v1.4 for Marine Benchmark API Standard 4.0!
+Welcome to Marine Benchmark documenation platform. 
 
 
 .. toctree::
    :maxdepth: 3
-   :caption: API Documentation
+   :caption: API DOCUMENTATION
 
-   api_docs
+   api_general
    api_generic
    api_bespoke
    api_references
