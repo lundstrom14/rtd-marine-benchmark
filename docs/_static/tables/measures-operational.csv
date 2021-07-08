@@ -1,0 +1,772 @@
+Subcategory name;Subcategory code;nvcrTimeSerieAreaName;Catalogue code;Measure name;Measure code
+Vessel operational statistics;VES;0.25 degree raster;R25(--);AE energy anchored loaded;AEENANLO
+Vessel operator type size operational statistics;VOP;Berth area;BER(--);AE energy anchored total;AEENANTO
+Vessel owner per type size operational statistics;VOW;ECA area;ECA(--);AE energy anchored unloaded;AEENANUL
+Vessel type size operational statistics (segment);VTS;Economic zone;EEZ(--);AE energy at yard loaded;AEENYALO
+;;Economic zone/Freshwater;EFR(--);AE energy at yard total;AEENYATO
+;;Freshwater;FWA(--);AE energy at yard unloaded;AEENYAUL
+;;Global;GLO(--);AE energy maneuvering loaded;AEENMALO
+;;Oil field;OFI(--);AE energy maneuvering total;AEENMATO
+;;Piracy area JWC;JWC(--);AE energy maneuvering unloaded;AEENMAUL
+;;Port area;PRT(--);AE energy moored loaded;AEENMOLO
+;;Sea area;SEA(--);AE energy moored total;AEENMOTO
+;;Terminal area;TER(--);AE energy moored unloaded;AEENMOUL
+;;Territorial water;TWA(--);AE energy moving loaded;AEENMVLO
+;;Trading area;TRA(--);AE energy moving total;AEENMVTO
+;;YAMIT area;YAM(--);AE energy moving unloaded;AEENMVUL
+;;;;AE energy out of traffic loaded;AEENOTLO
+;;;;AE energy out of traffic total;AEENOTTO
+;;;;AE energy out of traffic unloaded;AEENOTUL
+;;;;AE energy steaming loaded;AEENSTLO
+;;;;AE energy steaming total;AEENSTTO
+;;;;AE energy steaming unloaded;AEENSTUL
+;;;;AE energy still loaded;AEENSLLO
+;;;;AE energy still total;AEENSLTO
+;;;;AE energy still undefined loaded;AEENSULO
+;;;;AE energy still undefined total;AEENSUTO
+;;;;AE energy still undefined unloaded;AEENSUUL
+;;;;AE energy still unloaded;AEENSLUL
+;;;;AE energy total total;AEENTOTO
+;;;;AE fuel anchored loaded;AEFUANLO
+;;;;AE fuel anchored total;AEFUANTO
+;;;;AE fuel anchored unloaded;AEFUANUL
+;;;;AE fuel at yard loaded;AEFUYALO
+;;;;AE fuel at yard total;AEFUYATO
+;;;;AE fuel at yard unloaded;AEFUYAUL
+;;;;AE fuel maneuvering loaded;AEFUMALO
+;;;;AE fuel maneuvering total;AEFUMATO
+;;;;AE fuel maneuvering unloaded;AEFUMAUL
+;;;;AE fuel moored loaded;AEFUMOLO
+;;;;AE fuel moored total;AEFUMOTO
+;;;;AE fuel moored unloaded;AEFUMOUL
+;;;;AE fuel moving loaded;AEFUMVLO
+;;;;AE fuel moving total;AEFUMVTO
+;;;;AE fuel moving unloaded;AEFUMVUL
+;;;;AE fuel out of traffic loaded;AEFUOTLO
+;;;;AE fuel out of traffic total;AEFUOTTO
+;;;;AE fuel out of traffic unloaded;AEFUOTUL
+;;;;AE fuel per day anchored loaded;AEFDANLO
+;;;;AE fuel per day anchored total;AEFDANTO
+;;;;AE fuel per day anchored unloaded;AEFDANUL
+;;;;AE fuel per day at yard loaded;AEFDYALO
+;;;;AE fuel per day at yard total;AEFDYATO
+;;;;AE fuel per day at yard unloaded;AEFDYAUL
+;;;;AE fuel per day moored loaded;AEFDMOLO
+;;;;AE fuel per day moored total;AEFDMOTO
+;;;;AE fuel per day moored unloaded;AEFDMOUL
+;;;;AE fuel per day out of traffic loaded;AEFDOTLO
+;;;;AE fuel per day out of traffic total;AEFDOTTO
+;;;;AE fuel per day out of traffic unloaded;AEFDOTUL
+;;;;AE fuel per day still loaded;AEFDSLLO
+;;;;AE fuel per day still total;AEFDSLTO
+;;;;AE fuel per day still undefined loaded;AEFDSULO
+;;;;AE fuel per day still undefined total;AEFDSUTO
+;;;;AE fuel per day still undefined unloaded;AEFDSUUL
+;;;;AE fuel per day still unloaded;AEFDSLUL
+;;;;AE fuel per day total total;AEFDTOTO
+;;;;AE fuel steaming loaded;AEFUSTLO
+;;;;AE fuel steaming total;AEFUSTTO
+;;;;AE fuel steaming unloaded;AEFUSTUL
+;;;;AE fuel still loaded;AEFUSLLO
+;;;;AE fuel still total;AEFUSLTO
+;;;;AE fuel still undefined loaded;AEFUSULO
+;;;;AE fuel still undefined total;AEFUSUTO
+;;;;AE fuel still undefined unloaded;AEFUSUUL
+;;;;AE fuel still unloaded;AEFUSLUL
+;;;;AE fuel total total;AEFUTOTO
+;;;;AE MCR percent maneuvering loaded;AECRMALO
+;;;;AE MCR percent maneuvering total;AECRMATO
+;;;;AE MCR percent maneuvering unloaded;AECRMAUL
+;;;;AE MCR percent moving loaded;AECRMVLO
+;;;;AE MCR percent moving total;AECRMVTO
+;;;;AE MCR percent moving unloaded;AECRMVUL
+;;;;AE MCR percent steaming loaded;AECRSTLO
+;;;;AE MCR percent steaming total;AECRSTTO
+;;;;AE MCR percent steaming unloaded;AECRSTUL
+;;;;AE MCR percent still loaded;AECRSLLO
+;;;;AE MCR percent still total;AECRSLTO
+;;;;AE MCR percent still unloaded;AECRSLUL
+;;;;AE MCR percent total total;AECRTOTO
+;;;;AE power maneuvering loaded;AEPWMALO
+;;;;AE power maneuvering total;AEPWMATO
+;;;;AE power maneuvering unloaded;AEPWMAUL
+;;;;AE power moving loaded;AEPWMVLO
+;;;;AE power moving total;AEPWMVTO
+;;;;AE power moving unloaded;AEPWMVUL
+;;;;AE power steaming loaded;AEPWSTLO
+;;;;AE power steaming total;AEPWSTTO
+;;;;AE power steaming unloaded;AEPWSTUL
+;;;;AE power still loaded;AEPWSLLO
+;;;;AE power still total;AEPWSLTO
+;;;;AE power still unloaded;AEPWSLUL
+;;;;AE power total total;AEPWTOTO
+;;;;AER Total Total;AER_TOTO
+;;;;Average distance maneuvering loaded;AVDIMALO
+;;;;Average distance maneuvering total;AVDIMATO
+;;;;Average distance maneuvering unloaded;AVDIMAUL
+;;;;Average distance moving loaded;AVDIMVLO
+;;;;Average distance moving total;AVDIMVTO
+;;;;Average distance moving unloaded;AVDIMVUL
+;;;;Average distance steaming loaded;AVDISTLO
+;;;;Average distance steaming total;AVDISTTO
+;;;;Average distance steaming unloaded;AVDISTUL
+;;;;Average distance still total;AVDISLTO
+;;;;Average distance total total;AVDITOTO
+;;;;Boiler energy anchored loaded;BOENANLO
+;;;;Boiler energy anchored total;BOENANTO
+;;;;Boiler energy anchored unloaded;BOENANUL
+;;;;Boiler energy at yard loaded;BOENYALO
+;;;;Boiler energy at yard total;BOENYATO
+;;;;Boiler energy at yard unloaded;BOENYAUL
+;;;;Boiler energy maneuvering loaded;BOENMALO
+;;;;Boiler energy maneuvering total;BOENMATO
+;;;;Boiler energy maneuvering unloaded;BOENMAUL
+;;;;Boiler energy moored loaded;BOENMOLO
+;;;;Boiler energy moored total;BOENMOTO
+;;;;Boiler energy moored unloaded;BOENMOUL
+;;;;Boiler energy moving loaded;BOENMVLO
+;;;;Boiler energy moving total;BOENMVTO
+;;;;Boiler energy moving unloaded;BOENMVUL
+;;;;Boiler energy out of traffic loaded;BOENOTLO
+;;;;Boiler energy out of traffic total;BOENOTTO
+;;;;Boiler energy out of traffic unloaded;BOENOTUL
+;;;;Boiler energy steaming loaded;BOENSTLO
+;;;;Boiler energy steaming total;BOENSTTO
+;;;;Boiler energy steaming unloaded;BOENSTUL
+;;;;Boiler energy still loaded;BOENSLLO
+;;;;Boiler energy still total;BOENSLTO
+;;;;Boiler energy still undefined loaded;BOENSULO
+;;;;Boiler energy still undefined total;BOENSUTO
+;;;;Boiler energy still undefined unloaded;BOENSUUL
+;;;;Boiler energy still unloaded;BOENSLUL
+;;;;Boiler energy total total;BOENTOTO
+;;;;Boiler fuel anchored loaded;BOFUANLO
+;;;;Boiler fuel anchored total;BOFUANTO
+;;;;Boiler fuel anchored unloaded;BOFUANUL
+;;;;Boiler fuel at yard loaded;BOFUYALO
+;;;;Boiler fuel at yard total;BOFUYATO
+;;;;Boiler fuel at yard unloaded;BOFUYAUL
+;;;;Boiler fuel maneuvering loaded;BOFUMALO
+;;;;Boiler fuel maneuvering total;BOFUMATO
+;;;;Boiler fuel maneuvering unloaded;BOFUMAUL
+;;;;Boiler fuel moored loaded;BOFUMOLO
+;;;;Boiler fuel moored total;BOFUMOTO
+;;;;Boiler fuel moored unloaded;BOFUMOUL
+;;;;Boiler fuel moving loaded;BOFUMVLO
+;;;;Boiler fuel moving total;BOFUMVTO
+;;;;Boiler fuel moving unloaded;BOFUMVUL
+;;;;Boiler fuel out of traffic loaded;BOFUOTLO
+;;;;Boiler fuel out of traffic total;BOFUOTTO
+;;;;Boiler fuel out of traffic unloaded;BOFUOTUL
+;;;;Boiler fuel per day anchored loaded;BOPDANLO
+;;;;Boiler fuel per day anchored total;BOPDANTO
+;;;;Boiler fuel per day anchored unloaded;BOPDANUL
+;;;;Boiler fuel per day at yard loaded;BOPDYALO
+;;;;Boiler fuel per day at yard total;BOPDYATO
+;;;;Boiler fuel per day at yard unloaded;BOPDYAUL
+;;;;Boiler fuel per day maneuvering loaded;BOPDMALO
+;;;;Boiler fuel per day maneuvering total;BOPDMATO
+;;;;Boiler fuel per day maneuvering unloaded;BOPDMAUL
+;;;;Boiler fuel per day moored loaded;BOPDMOLO
+;;;;Boiler fuel per day moored total;BOPDMOTO
+;;;;Boiler fuel per day moored unloaded;BOPDMOUL
+;;;;Boiler fuel per day moving loaded;BOPDMVLO
+;;;;Boiler fuel per day moving total;BOPDMVTO
+;;;;Boiler fuel per day moving unloaded;BOPDMVUL
+;;;;Boiler fuel per day out of traffic loaded;BOPDOTLO
+;;;;Boiler fuel per day out of traffic total;BOPDOTTO
+;;;;Boiler fuel per day out of traffic unloaded;BOPDOTUL
+;;;;Boiler fuel per day steaming loaded;BOPDSTLO
+;;;;Boiler fuel per day steaming total;BOPDSTTO
+;;;;Boiler fuel per day steaming unloaded;BOPDSTUL
+;;;;Boiler fuel per day still loaded;BOPDSLLO
+;;;;Boiler fuel per day still total;BOPDSLTO
+;;;;Boiler fuel per day still undefined loaded;BOPDSULO
+;;;;Boiler fuel per day still undefined total;BOPDSUTO
+;;;;Boiler fuel per day still undefined unloaded;BOPDSUUL
+;;;;Boiler fuel per day still unloaded;BOPDSLUL
+;;;;Boiler fuel per day total total;BOPDTOTO
+;;;;Boiler fuel per nautical mile maneuvering loaded;BONMMALO
+;;;;Boiler fuel per nautical mile maneuvering total;BONMMATO
+;;;;Boiler fuel per nautical mile maneuvering unloaded;BONMMAUL
+;;;;Boiler fuel per nautical mile moving loaded;BONMMVLO
+;;;;Boiler fuel per nautical mile moving total;BONMMVTO
+;;;;Boiler fuel per nautical mile moving unloaded;BONMMVUL
+;;;;Boiler fuel per nautical mile steaming loaded;BONMSTLO
+;;;;Boiler fuel per nautical mile steaming total;BONMSTTO
+;;;;Boiler fuel per nautical mile steaming unloaded;BONMSTUL
+;;;;Boiler fuel steaming loaded;BOFUSTLO
+;;;;Boiler fuel steaming total;BOFUSTTO
+;;;;Boiler fuel steaming unloaded;BOFUSTUL
+;;;;Boiler fuel still loaded;BOFUSLLO
+;;;;Boiler fuel still total;BOFUSLTO
+;;;;Boiler fuel still undefined loaded;BOFUSULO
+;;;;Boiler fuel still undefined total;BOFUSUTO
+;;;;Boiler fuel still undefined unloaded;BOFUSUUL
+;;;;Boiler fuel still unloaded;BOFUSLUL
+;;;;Boiler fuel total total;BOFUTOTO
+;;;;Boiler power maneuvering loaded;BOPWMALO
+;;;;Boiler power maneuvering total;BOPWMATO
+;;;;Boiler power maneuvering unloaded;BOPWMAUL
+;;;;Boiler power moving loaded;BOPWMVLO
+;;;;Boiler power moving total;BOPWMVTO
+;;;;Boiler power moving unloaded;BOPWMVUL
+;;;;Boiler power steaming loaded;BOPWSTLO
+;;;;Boiler power steaming total;BOPWSTTO
+;;;;Boiler power steaming unloaded;BOPWSTUL
+;;;;Boiler power still loaded;BOPWSLLO
+;;;;Boiler power still total;BOPWSLTO
+;;;;Boiler power still unloaded;BOPWSLUL
+;;;;Boiler power total total;BOPWTOTO
+;;;;CO2 emission AE (as 24h average) still loaded;CA24SLLO
+;;;;CO2 emission AE (as 24h average) still total;CA24SLTO
+;;;;CO2 emission AE (as 24h average) still unloaded;CA24SLUL
+;;;;CO2 emission AE still loaded;COAESLLO
+;;;;CO2 emission AE still total;COAESLTO
+;;;;CO2 emission AE still unloaded;COAESLUL
+;;;;CO2 emission Boiler (as 24h average) total loaded;CB24TOLO
+;;;;CO2 emission Boiler (as 24h average) total total;CB24TOTO
+;;;;CO2 emission Boiler (as 24h average) total unloaded;CB24TOUL
+;;;;CO2 emission Boiler total loaded;COBOTOLO
+;;;;CO2 emission Boiler total total;COBOTOTO
+;;;;CO2 emission Boiler total unloaded;COBOTOUL
+;;;;**CO2 emission ME (as 24h average) moving loaded**;**CM24MVLO**
+;;;;**CO2 emission ME (as 24h average) moving total**;**CM24MVTO**
+;;;;**CO2 emission ME (as 24h average) moving unloaded**;**CM24MVUL**
+;;;;**CO2 emission ME moving loaded**;**COMEMVLO**
+;;;;**CO2 emission ME moving total**;**COMEMVTO**
+;;;;**CO2 emission ME moving unloaded**;**COMEMVUL**
+;;;;CO2 emission per nautical mile manuvering loaded;CONMMALO
+;;;;CO2 emission per nautical mile manuvering total;CONMMATO
+;;;;CO2 emission per nautical mile manuvering unloaded;CONMMAUL
+;;;;CO2 emission per nautical mile moving loaded;CONMMVLO
+;;;;CO2 emission per nautical mile moving total;CONMMVTO
+;;;;CO2 emission per nautical mile moving unloaded;CONMMVUL
+;;;;CO2 emission per nautical mile steaming loaded;CONMSTLO
+;;;;CO2 emission per nautical mile steaming total;CONMSTTO
+;;;;CO2 emission per nautical mile steaming unloaded;CONMSTUL
+;;;;CO2 emission Total (as 24h average) total loaded;CT24TOLO
+;;;;CO2 emission Total (as 24h average) total total;CT24TOTO
+;;;;CO2 emission Total (as 24h average) total unloaded;CT24TOUL
+;;;;CO2 emission total loaded;COTOTOLO
+;;;;CO2 emission total total;COTOTOTO
+;;;;CO2 emission total unloaded;COTOTOUL
+;;;;Count anchored loaded;COUNANLO
+;;;;Count anchored total;COUNANTO
+;;;;Count anchored unloaded;COUNANUL
+;;;;Count at yard loaded;COUNYALO
+;;;;Count at yard total;COUNYATO
+;;;;Count at yard unloaded;COUNYAUL
+;;;;Count maneuvering loaded;COUNMALO
+;;;;Count maneuvering total;COUNMATO
+;;;;Count maneuvering unloaded;COUNMAUL
+;;;;Count moored loaded;COUNMOLO
+;;;;Count moored total;COUNMOTO
+;;;;Count moored unloaded;COUNMOUL
+;;;;Count out of traffic loaded;COUNOTLO
+;;;;Count out of traffic total;COUNOTTO
+;;;;Count out of traffic unloaded;COUNOTUL
+;;;;Count steaming loaded;COUNSTLO
+;;;;Count steaming total;COUNSTTO
+;;;;Count steaming unloaded;COUNSTUL
+;;;;Count still undefined loaded;COUNSULO
+;;;;Count still undefined total;COUNSUTO
+;;;;Count still undefined unloaded;COUNSUUL
+;;;;Count total total;COUNTOTO
+;;;;Distance maneuvering loaded;DISTMALO
+;;;;Distance maneuvering total;DISTMATO
+;;;;Distance maneuvering unloaded;DISTMAUL
+;;;;Distance moving loaded;DISTMVLO
+;;;;Distance moving total;DISTMVTO
+;;;;Distance moving unloaded;DISTMVUL
+;;;;Distance steaming loaded;DISTSTLO
+;;;;Distance steaming total;DISTSTTO
+;;;;Distance steaming unloaded;DISTSTUL
+;;;;Distance still total;DISTSLTO
+;;;;Distance total total;DISTTOTO
+;;;;Draft average total;DRFTAVTO
+;;;;Draft distance total total;DRDITOTO
+;;;;Draft time anchored loaded;DRTIANLO
+;;;;Draft time anchored total;DRTIANTO
+;;;;Draft time anchored unloaded;DRTIANUL
+;;;;Draft time at yard loaded;DRTIYALO
+;;;;Draft time at yard total;DRTIYATO
+;;;;Draft time at yard unloaded;DRTIYAUL
+;;;;Draft time maneuvering loaded;DRTIMALO
+;;;;Draft time maneuvering total;DRTIMATO
+;;;;Draft time maneuvering unloaded;DRTIMAUL
+;;;;Draft time moored loaded;DRTIMOLO
+;;;;Draft time moored total;DRTIMOTO
+;;;;Draft time moored unloaded;DRTIMOUL
+;;;;Draft time out of traffic loaded;DRTIOTLO
+;;;;Draft time out of traffic total;DRTIOTTO
+;;;;Draft time out of traffic unloaded;DRTIOTUL
+;;;;Draft time steaming loaded;DRTISTLO
+;;;;Draft time steaming total;DRTISTTO
+;;;;Draft time steaming unloaded;DRTISTUL
+;;;;Draft time still undefined loaded;DRTISULO
+;;;;Draft time still undefined total;DRTISUTO
+;;;;Draft time still undefined unloaded;DRTISUUL
+;;;;Draft time total total;DRTITOTO
+;;;;Draft total max;DRFTTOMA
+;;;;Draft total min;DRFTTOMI
+;;;;EEOI capacity design total;EEOICDTO
+;;;;EEOI capacity used total;EEOICUTO
+;;;;EEOI deadweight design total;EEOIDDTO
+;;;;EEOI deadweight used total;EEOIDUTO
+;;;;EEOI Total Total;EEOITOTO
+;;;;EESH Total Total;EESHTOTO
+;;;;Intake average total;INTKAVTO
+;;;;Intake distance total total;INDITOTO
+;;;;Intake time anchored loaded;INTIANLO
+;;;;Intake time anchored total;INTIANTO
+;;;;Intake time anchored unloaded;INTIANUL
+;;;;Intake time at yard loaded;INTIYALO
+;;;;Intake time at yard total;INTIYATO
+;;;;Intake time at yard unloaded;INTIYAUL
+;;;;Intake time maneuvering loaded;INTIMALO
+;;;;Intake time maneuvering total;INTIMATO
+;;;;Intake time maneuvering unloaded;INTIMAUL
+;;;;Intake time moored loaded;INTIMOLO
+;;;;Intake time moored total;INTIMOTO
+;;;;Intake time moored unloaded;INTIMOUL
+;;;;Intake time out of traffic loaded;INTIOTLO
+;;;;Intake time out of traffic total;INTIOTTO
+;;;;Intake time out of traffic unloaded;INTIOTUL
+;;;;Intake time steaming loaded;INTISTLO
+;;;;Intake time steaming total;INTISTTO
+;;;;Intake time steaming unloaded;INTISTUL
+;;;;Intake time still undefined loaded;INTISULO
+;;;;Intake time still undefined total;INTISUTO
+;;;;Intake time still undefined unloaded;INTISUUL
+;;;;Intake time total total;INTITOTO
+;;;;Intake total max;INTKTOMA
+;;;;Intake total min;INTKTOMI
+;;;;ISPI Total Total;ISPITOTO
+;;;;Last Berth Area ID;LASTBEID
+;;;;Last COG;LASTCGDG
+;;;;Last Destination ETA;LASTDEET
+;;;;Last Destination Name;LASTDENA
+;;;;Last Draft;LASTDRPO
+;;;;Last Draft;LASTDRNE
+;;;;Last ECA Area ID;LASTECID
+;;;;Last Economic Zone ID;LASTEZID
+;;;;Last Economic Zone Latitude;LASTEZLA
+;;;;Last Economic Zone Longitude;LASTEZLO
+;;;;Last Economic Zone Name;LASTEZNA
+;;;;Last Freshwater Area ID;LASTFWID
+;;;;Last HDG;LASTHDDG
+;;;;Last Intake;LASTITMT
+;;;;Last Latitude;LASTLAPO
+;;;;Last Longitude;LASTLOPO
+;;;;Last Movement Type;LASTVMTY
+;;;;Last Navigational Status ID;LASTNSID
+;;;;Last Oil Field Area ID;LASTOFID
+;;;;Last Piracy Area JWC ID;LASTPYID
+;;;;Last Port Area ID;LASTPTID
+;;;;Last Port Area Latitude;LASTPOLA
+;;;;Last Port Area Longitude;LASTPOLO
+;;;;Last Port Area Name;LASTPONA
+;;;;Last Port Area Type ID;LASTPOTY
+;;;;Last Port Area UNLOCODE;LASTPOUN
+;;;;Last Position ID;LASTPOID
+;;;;Last Sea Area ID;LASTSEID
+;;;;Last Sea Area Latitude;LASTSALA
+;;;;Last Sea Area Longitude;LASTSALO
+;;;;Last Sea Area Name;LASTSANA
+;;;;Last SOG;LASTSGKN
+;;;;Last Speed From Previous;LASTSPCA
+;;;;Last Terminal Area ID;LASTTEID
+;;;;Last Territorial Water ID;LASTTWID
+;;;;Last Time Logged;LASTTILO
+;;;;Last Time Received;LASTTIRE
+;;;;Last Trading Area ID;LASTTRID
+;;;;Last Traffic Launch Area ID;LASTTLID
+;;;;Last Traffic Tube Area ID;LASTTTID
+;;;;Last Water Temperature;LASTWATP
+;;;;Last YAMIT Area ID;LASTYMID
+;;;;Last YAMIT Yard Area ID;LASTYAID
+;;;;ME energy maneuvering loaded;MEENMALO
+;;;;ME energy maneuvering total;MEENMATO
+;;;;ME energy maneuvering unloaded;MEENMAUL
+;;;;ME energy moving loaded;MEENMVLO
+;;;;ME energy moving total;MEENMVTO
+;;;;ME energy moving unloaded;MEENMVUL
+;;;;ME energy steaming loaded;MEENSTLO
+;;;;ME energy steaming total;MEENSTTO
+;;;;ME energy steaming unloaded;MEENSTUL
+;;;;ME energy still loaded;MEENSLLO
+;;;;ME energy still total;MEENSLTO
+;;;;ME energy still unloaded;MEENSLUL
+;;;;ME energy total total;MEENTOTO
+;;;;ME fuel maneuvering loaded;MEFUMALO
+;;;;ME fuel maneuvering total;MEFUMATO
+;;;;ME fuel maneuvering unloaded;MEFUMAUL
+;;;;ME fuel moving loaded;MEFUMVLO
+;;;;ME fuel moving total;MEFUMVTO
+;;;;ME fuel moving unloaded;MEFUMVUL
+;;;;ME fuel per day maneuvering loaded;MEPDMALO
+;;;;ME fuel per day maneuvering total;MEPDMATO
+;;;;ME fuel per day maneuvering unloaded;MEPDMAUL
+;;;;ME fuel per day moving loaded;MEPDMVLO
+;;;;ME fuel per day moving total;MEPDMVTO
+;;;;ME fuel per day moving unloaded;MEPDMVUL
+;;;;ME fuel per day steaming loaded;MEPDSTLO
+;;;;ME fuel per day steaming total;MEPDSTTO
+;;;;ME fuel per day steaming unloaded;MEPDSTUL
+;;;;ME fuel per day still loaded;MEPDSLLO
+;;;;ME fuel per day still total;MEPDSLTO
+;;;;ME fuel per day still unloaded;MEPDSLUL
+;;;;ME fuel per day total total;MEPDTOTO
+;;;;**ME fuel per nautical mile maneuvering loaded**;**MENMMALO**
+;;;;**ME fuel per nautical mile maneuvering total**;**MENMMATO**
+;;;;**ME fuel per nautical mile maneuvering unloaded**;**MENMMAUL**
+;;;;**ME fuel per nautical mile moving loaded**;**MENMMVLO**
+;;;;**ME fuel per nautical mile moving total**;**MENMMVTO**
+;;;;**ME fuel per nautical mile moving unloaded**;**MENMMVUL**
+;;;;**ME fuel per nautical mile steaming loaded**;**MENMSTLO**
+;;;;**ME fuel per nautical mile steaming total**;**MENMSTTO**
+;;;;**ME fuel per nautical mile steaming unloaded**;**MENMSTUL**
+;;;;ME fuel steaming loaded;MEFUSTLO
+;;;;ME fuel steaming total;MEFUSTTO
+;;;;ME fuel steaming unloaded;MEFUSTUL
+;;;;ME fuel still loaded;MEFUSLLO
+;;;;ME fuel still total;MEFUSLTO
+;;;;ME fuel still unloaded;MEFUSLUL
+;;;;ME fuel total total;MEFUTOTO
+;;;;ME MCR percent maneuvering loaded;MECRMALO
+;;;;ME MCR percent maneuvering total;MECRMATO
+;;;;ME MCR percent maneuvering unloaded;MECRMAUL
+;;;;ME MCR percent moving loaded;MECRMVLO
+;;;;ME MCR percent moving total;MECRMVTO
+;;;;ME MCR percent moving unloaded;MECRMVUL
+;;;;ME MCR percent steaming loaded;MECRSTLO
+;;;;ME MCR percent steaming total;MECRSTTO
+;;;;ME MCR percent steaming unloaded;MECRSTUL
+;;;;ME MCR percent still loaded;MECRSLLO
+;;;;ME MCR percent still total;MECRSLTO
+;;;;ME MCR percent still unloaded;MECRSLUL
+;;;;ME MCR percent total total;MECRTOTO
+;;;;ME power maneuvering loaded;MEPWMALO
+;;;;ME power maneuvering total;MEPWMATO
+;;;;ME power maneuvering unloaded;MEPWMAUL
+;;;;ME power moving loaded;MEPWMVLO
+;;;;ME power moving total;MEPWMVTO
+;;;;ME power moving unloaded;MEPWMVUL
+;;;;ME power steaming loaded;MEPWSTLO
+;;;;ME power steaming total;MEPWSTTO
+;;;;ME power steaming unloaded;MEPWSTUL
+;;;;ME power still loaded;MEPWSLLO
+;;;;ME power still total;MEPWSLTO
+;;;;ME power still unloaded;MEPWSLUL
+;;;;ME power total total;MEPWTOTO
+;;;;Observations number of total;OBSRNUTO
+;;;;Speed maneuvering loaded;SPEDMALO
+;;;;Speed maneuvering total;SPEDMATO
+;;;;Speed maneuvering unloaded;SPEDMAUL
+;;;;Speed moving loaded;SPEDMVLO
+;;;;Speed moving total;SPEDMVTO
+;;;;Speed moving unloaded;SPEDMVUL
+;;;;**Speed steaming loaded**;**SPEDSTLO**
+;;;;**Speed steaming total**;**SPEDSTTO**
+;;;;**Speed steaming unloaded**;**SPEDSTUL**
+;;;;Speed still total;SPEDSLTO
+;;;;Speed total total;SPEDTOTO
+;;;;Standard Ship Design Name;VESSSDNA
+;;;;Time anchored loaded;TIMEANLO
+;;;;Time anchored total;TIMEANTO
+;;;;Time anchored unloaded;TIMEANUL
+;;;;Time at yard loaded;TIMEYALO
+;;;;Time at yard total;TIMEYATO
+;;;;Time at yard unloaded;TIMEYAUL
+;;;;Time maneuvering loaded;TIMEMALO
+;;;;Time maneuvering total;TIMEMATO
+;;;;Time maneuvering unloaded;TIMEMAUL
+;;;;Time moored loaded;TIMEMOLO
+;;;;Time moored total;TIMEMOTO
+;;;;Time moored unloaded;TIMEMOUL
+;;;;Time moving loaded;TIMEMVLO
+;;;;Time moving total;TIMEMVTO
+;;;;Time moving unloaded;TIMEMVUL
+;;;;Time out of traffic loaded;TIMEOTLO
+;;;;Time out of traffic total;TIMEOTTO
+;;;;Time out of traffic unloaded;TIMEOTUL
+;;;;Time silent max;TIMESIMA
+;;;;Time silent steaming max;TIMESSMA
+;;;;Time steaming loaded;TIMESTLO
+;;;;Time steaming total;TIMESTTO
+;;;;Time steaming unloaded;TIMESTUL
+;;;;Time still loaded;TIMESLLO
+;;;;Time still total;TIMESLTO
+;;;;Time still undefined loaded;TIMESULO
+;;;;Time still undefined total;TIMESUTO
+;;;;Time still undefined unloaded;TIMESUUL
+;;;;Time still unloaded;TIMESLUL
+;;;;Time total total;TIMETOTO
+;;;;Time total total loaded;TIMETOLO
+;;;;Time total total unloaded;TIMETOUL
+;;;;Total fuel anchored loaded;TOFUANLO
+;;;;Total fuel anchored total;TOFUANTO
+;;;;Total fuel anchored unloaded;TOFUANUL
+;;;;Total fuel at yard loaded;TOFUYALO
+;;;;Total fuel at yard total;TOFUYATO
+;;;;Total fuel at yard unloaded;TOFUYAUL
+;;;;Total fuel maneuvering loaded;TOFUMALO
+;;;;Total fuel maneuvering total;TOFUMATO
+;;;;Total fuel maneuvering unloaded;TOFUMAUL
+;;;;Total fuel moored loaded;TOFUMOLO
+;;;;Total fuel moored total;TOFUMOTO
+;;;;Total fuel moored unloaded;TOFUMOUL
+;;;;Total fuel moving loaded;TOFUMVLO
+;;;;Total fuel moving total;TOFUMVTO
+;;;;Total fuel moving unloaded;TOFUMVUL
+;;;;Total fuel out of traffic loaded;TOFUOTLO
+;;;;Total fuel out of traffic total;TOFUOTTO
+;;;;Total fuel out of traffic unloaded;TOFUOTUL
+;;;;Total fuel per day anchored loaded;TOPDANLO
+;;;;Total fuel per day anchored total;TOPDANTO
+;;;;Total fuel per day anchored unloaded;TOPDANUL
+;;;;Total fuel per day at yard loaded;TOPDYALO
+;;;;Total fuel per day at yard total;TOPDYATO
+;;;;Total fuel per day at yard unloaded;TOPDYAUL
+;;;;Total fuel per day maneuvering loaded;TOPDMALO
+;;;;Total fuel per day maneuvering total;TOPDMATO
+;;;;Total fuel per day maneuvering unloaded;TOPDMAUL
+;;;;Total fuel per day moored loaded;TOPDMOLO
+;;;;Total fuel per day moored total;TOPDMOTO
+;;;;Total fuel per day moored unloaded;TOPDMOUL
+;;;;Total fuel per day moving loaded;TOPDMVLO
+;;;;Total fuel per day moving total;TOPDMVTO
+;;;;Total fuel per day moving unloaded;TOPDMVUL
+;;;;Total fuel per day out of traffic loaded;TOPDOTLO
+;;;;Total fuel per day out of traffic total;TOPDOTTO
+;;;;Total fuel per day out of traffic unloaded;TOPDOTUL
+;;;;Total fuel per day steaming loaded;TOPDSTLO
+;;;;Total fuel per day steaming total;TOPDSTTO
+;;;;Total fuel per day steaming unloaded;TOPDSTUL
+;;;;Total fuel per day still loaded;TOPDSLLO
+;;;;Total fuel per day still total;TOPDSLTO
+;;;;Total fuel per day still undefined loaded;TOPDSULO
+;;;;Total fuel per day still undefined total;TOPDSUTO
+;;;;Total fuel per day still undefined unloaded;TOPDSUUL
+;;;;Total fuel per day still unloaded;TOPDSLUL
+;;;;Total fuel per day total loaded;TOPDTOLO
+;;;;Total fuel per day total total;TOPDTOTO
+;;;;Total fuel per day total unloaded;TOPDTOUL
+;;;;Total fuel per nautical mile maneuvering loaded;TONMMALO
+;;;;Total fuel per nautical mile maneuvering total;TONMMATO
+;;;;Total fuel per nautical mile maneuvering unloaded;TONMMAUL
+;;;;Total fuel per nautical mile moving loaded;TONMMVLO
+;;;;Total fuel per nautical mile moving total;TONMMVTO
+;;;;Total fuel per nautical mile moving unloaded;TONMMVUL
+;;;;Total fuel per nautical mile steaming loaded;TONMSTLO
+;;;;Total fuel per nautical mile steaming total;TONMSTTO
+;;;;Total fuel per nautical mile steaming unloaded;TONMSTUL
+;;;;Total fuel steaming loaded;TOFUSTLO
+;;;;Total fuel steaming total;TOFUSTTO
+;;;;Total fuel steaming unloaded;TOFUSTUL
+;;;;Total fuel still loaded;TOFUSLLO
+;;;;Total fuel still total;TOFUSLTO
+;;;;Total fuel still undefined loaded;TOFUSULO
+;;;;Total fuel still undefined total;TOFUSUTO
+;;;;Total fuel still undefined unloaded;TOFUSUUL
+;;;;Total fuel still unloaded;TOFUSLUL
+;;;;Total fuel total loaded;TOFUTOLO
+;;;;Total fuel total total;TOFUTOTO
+;;;;Total fuel total unloaded;TOFUTOUL
+;;;;Transport work weight design;TRWOWEDE
+;;;;Transport work weight used;TRWOWEUS
+;;;;Utilisation filling factor anchored loaded;UTFIANLO
+;;;;Utilisation filling factor anchored total;UTFIANTO
+;;;;Utilisation filling factor anchored unloaded;UTFIANUL
+;;;;Utilisation filling factor at yard loaded;UTFIYALO
+;;;;Utilisation filling factor at yard total;UTFIYATO
+;;;;Utilisation filling factor at yard unloaded;UTFIYAUL
+;;;;Utilisation filling factor maneuvering loaded;UTFIMALO
+;;;;Utilisation filling factor maneuvering total;UTFIMATO
+;;;;Utilisation filling factor maneuvering unloaded;UTFIMAUL
+;;;;Utilisation filling factor moored loaded;UTFIMOLO
+;;;;Utilisation filling factor moored total;UTFIMOTO
+;;;;Utilisation filling factor moored unloaded;UTFIMOUL
+;;;;Utilisation filling factor out of traffic loaded;UTFIOTLO
+;;;;Utilisation filling factor out of traffic total;UTFIOTTO
+;;;;Utilisation filling factor out of traffic unloaded;UTFIOTUL
+;;;;**Utilisation filling factor steaming loaded**;**UTFISTLO**
+;;;;**Utilisation filling factor steaming total**;**UTFISTTO**
+;;;;**Utilisation filling factor steaming unloaded**;**UTFISTUL**
+;;;;Utilisation filling factor still undefined loaded;UTFISULO
+;;;;Utilisation filling factor still undefined total;UTFISUTO
+;;;;Utilisation filling factor still undefined unloaded;UTFISUUL
+;;;;Utilisation filling factor total total;UTFITOTO
+;;;;Utilisation speed maneuvering loaded;UTSPMALO
+;;;;Utilisation speed maneuvering total;UTSPMATO
+;;;;Utilisation speed maneuvering unloaded;UTSPMAUL
+;;;;Utilisation speed moving loaded;UTSPMVLO
+;;;;Utilisation speed moving total;UTSPMVTO
+;;;;Utilisation speed moving unloaded;UTSPMVUL
+;;;;**Utilisation speed steaming loaded**;**UTSPSTLO**
+;;;;**Utilisation speed steaming total**;**UTSPSTTO**
+;;;;**Utilisation speed steaming unloaded**;**UTSPSTUL**
+;;;;Utilisation speed still total;UTSPSLTO
+;;;;Utilisation speed total total;UTSPTOTO
+;;;;Utilisation time anchored loaded;UTTIANLO
+;;;;Utilisation time anchored total;UTTIANTO
+;;;;Utilisation time anchored unloaded;UTTIANUL
+;;;;Utilisation time at yard loaded;UTTIYALO
+;;;;Utilisation time at yard total;UTTIYATO
+;;;;Utilisation time at yard unloaded;UTTIYAUL
+;;;;Utilisation time maneuvering loaded;UTTIMALO
+;;;;Utilisation time maneuvering total;UTTIMATO
+;;;;Utilisation time maneuvering unloaded;UTTIMAUL
+;;;;Utilisation time moored loaded;UTTIMOLO
+;;;;Utilisation time moored total;UTTIMOTO
+;;;;Utilisation time moored unloaded;UTTIMOUL
+;;;;Utilisation time moving loaded;UTTIMVLO
+;;;;Utilisation time moving total;UTTIMVTO
+;;;;Utilisation time moving unloaded;UTTIMVUL
+;;;;Utilisation time out of traffic loaded;UTTIOTLO
+;;;;Utilisation time out of traffic total;UTTIOTTO
+;;;;Utilisation time out of traffic unloaded;UTTIOTUL
+;;;;**Utilisation time steaming loaded**;**UTTISTLO**
+;;;;**Utilisation time steaming total**;**UTTISTTO**
+;;;;**Utilisation time steaming unloaded**;**UTTISTUL**
+;;;;Utilisation time still  out of port loaded;UTTISPLO
+;;;;Utilisation time still  out of port unloaded;UTTISPUL
+;;;;Utilisation time still loaded;UTTISLLO
+;;;;Utilisation time still out of port total;UTTISPTO
+;;;;Utilisation time still total;UTTISLTO
+;;;;Utilisation time still undefined loaded;UTTISULO
+;;;;Utilisation time still undefined total;UTTISUTO
+;;;;Utilisation time still undefined unloaded;UTTISUUL
+;;;;Utilisation time still unloaded;UTTISLUL
+;;;;Vessel  ID;VESSIYID
+;;;;Vessel age;VESSAGYR
+;;;;Vessel Age alive;VESSAGAL
+;;;;Vessel age group Index;VESSAGGI
+;;;;Vessel age group name;VESSAGGN
+;;;;Vessel benificial owner city;VESSBOCI
+;;;;Vessel benificial owner country;VESSBOCN
+;;;;Vessel benificial owner country ISO 2 code;VESSBOC2
+;;;;Vessel benificial owner country ISO 3 code;VESSBOC3
+;;;;Vessel benificial owner ID;VESSBOID
+;;;;Vessel benificial owner name;VESSBONM
+;;;;Vessel benificial owner sea web link;VESSBOWL
+;;;;Vessel birth date;VESSBIDT
+;;;;Vessel birth month;VESSBIMO
+;;;;Vessel breadth;VESSBRME
+;;;;Vessel breadth group Index;VESSBRGI
+;;;;Vessel breadth group name;VESSBRGN
+;;;;Vessel call sign;VESSIYCS
+;;;;Vessel capacity;VESSCAAM
+;;;;Vessel capacityUnit;VESSCAUN
+;;;;Vessel Cargo Capacity Max Draft;VESSCCHD
+;;;;Vessel Cargo Capacity Max Ton;VESSCCHT
+;;;;Vessel Cargo Capacity Min Draft;VESSCCLD
+;;;;Vessel Cargo Capacity Min Ton;VESSCCLT
+;;;;Vessel Coated tanks;VESSCOTA
+;;;;Vessel commercial 1 size name;VESSC1SN
+;;;;Vessel commercial 1 super type name;VESSC1ST
+;;;;Vessel commercial 1 type name;VESSC1TN
+;;;;Vessel commercial 1 type size ID;VESSC1ID
+;;;;Vessel commercial 1 type size name;VESSC1TS
+;;;;Vessel commercial 2 size name;VESSC2SN
+;;;;Vessel commercial 2 super type name;VESSC2ST
+;;;;Vessel commercial 2 type name;VESSC2TN
+;;;;Vessel commercial 2 type size ID;VESSC2ID
+;;;;Vessel commercial 2 type size name;VESSC2TS
+;;;;Vessel commercial size name;VESSTCSN
+;;;;Vessel commercial super type name;VESSTCST
+;;;;Vessel commercial type name;VESSTCTN
+;;;;Vessel commercial type size ID;VESSTCID
+;;;;Vessel commercial type size name;VESSTCTS
+;;;;Vessel current name;VESSIYCN
+;;;;Vessel deadweight;VESSDWMT
+;;;;Vessel death date;VESSDEDT
+;;;;Vessel death month;VESSDEMO
+;;;;Vessel Depth;VESSDEPT
+;;;;Vessel design draft;VESSDIDR
+;;;;Vessel design service speed;VESSDISP
+;;;;Vessel detailed IHS type ID;VESSIHID
+;;;;Vessel detailed IHS type name;VESSIHNM
+;;;;Vessel Dual Fuel Engine And Tank Type;VESSDFTT
+;;;;Vessel engine size group Index;VESSESGI
+;;;;Vessel engine size group name;VESSESGN
+;;;;Vessel engine size power;VESSESPW
+;;;;Vessel flag;VESSIYFL
+;;;;Vessel gross ton;VESSGTAM
+;;;;Vessel Group Benificial Owner Country Code IHS;VESSBOIH
+;;;;Vessel Group Benificial Owner Vessel ID List;VESSBOIL
+;;;;Vessel IMO number;VESSIYIM
+;;;;Vessel Installed Auxiliary Engine Power;VESSAUPO
+;;;;Vessel Installed Generator Power;VESSGEPO
+;;;;Vessel Installed Main Engine Power;VESSMEPO
+;;;;Vessel intermediate survey;VESSISMO
+;;;;Vessel intermediate survey occation;VESSISTY
+;;;;Vessel Is active;VESSIAYN
+;;;;Vessel Is Dual Fuel;VESSDUFU
+;;;;Vessel Is Scrubber Fitted;VESSSCFT
+;;;;Vessel last seen month;VESSLSMO
+;;;;Vessel last statistics month;VESSLTMO
+;;;;Vessel length;VESSLEME
+;;;;Vessel Length (LPB);VESSLEPB
+;;;;Vessel length group Index;VESSLEGI
+;;;;Vessel length group name;VESSLEGN
+;;;;Vessel Light Displacement;VESSLIDI
+;;;;Vessel Main Engine Model;VESSMEMO
+;;;;Vessel Main Engine Producer;VESSMEPR
+;;;;Vessel Main Propulsion Type;VESSMEPT
+;;;;Vessel MMSI number;VESSIYMM
+;;;;Vessel next survey;VESSNSMO
+;;;;Vessel next survey type;VESSNSTY
+;;;;Vessel Number of Engines;VESSNREN
+;;;;Vessel Number of Gas Turbines;VESSNRGT
+;;;;Vessel number of observed;VESSNUOB
+;;;;Vessel Number of Steam RCP;VESSNRSR
+;;;;Vessel Number of Steam Turbines;VESSNRST
+;;;;Vessel number of total;VESSNUTO
+;;;;Vessel operator city;VESSOPCI
+;;;;Vessel operator country;VESSOPCN
+;;;;Vessel Operator Country Code IHS;VESSOPIH
+;;;;Vessel operator country ISO 2 code;VESSOPC2
+;;;;Vessel operator country ISO 3 code;VESSOPC3
+;;;;Vessel operator ID;VESSOPID
+;;;;Vessel operator name;VESSOPNM
+;;;;Vessel operator sea web link;VESSOPWL
+;;;;Vessel Operator Vessel ID List;VESSOPIL
+;;;;Vessel Propulsion Code;VESSPRCO
+;;;;Vessel sea web link;VESSIYWL
+;;;;Vessel Ship Serie Lead IMO;VESSSSLI
+;;;;Vessel shipbuilder city;VESSSBCI
+;;;;Vessel shipbuilder country;VESSSBCN
+;;;;Vessel Shipbuilder Country Code IHS;VESSSBIH
+;;;;Vessel shipbuilder country ISO 2 code;VESSSBC2
+;;;;Vessel shipbuilder country ISO 3 code;VESSSBC3
+;;;;Vessel shipbuilder ID;VESSSBID
+;;;;Vessel shipbuilder name;VESSSBNM
+;;;;Vessel shipbuilder newbuildnumber;VESSSBNN
+;;;;Vessel shipbuilder sea web link;VESSSBWL
+;;;;Vessel Shipbuilder Vessel ID List;VESSSBIL
+;;;;Vessel special survey;VESSSSMO
+;;;;Vessel special survey order;VESSSSTY
+;;;;Vessel Stainless Tank;VESSSTTA
+;;;;Vessel status;VESSSTNM
+;;;;Vessel Stroke Cycle;VESSSTRC
+;;;;Vessel Stroke Type;VESSSTRT
+;;;;Vessel sum cap observed;VESSCAOB
+;;;;Vessel sum cap total;VESSCATO
+;;;;Vessel sum dwt observed;VESSDWOB
+;;;;Vessel sum dwt total;VESSDWTO
+;;;;Vessel technical manager city;VESSTMCI
+;;;;Vessel technical manager country;VESSTMCN
+;;;;Vessel Technical Manager Country Code IHS;VESSTMIH
+;;;;Vessel technical manager country ISO 2 code;VESSTMC2
+;;;;Vessel technical manager country ISO 3 code;VESSTMC3
+;;;;Vessel technical manager ID;VESSTMID
+;;;;Vessel technical manager name;VESSTMNM
+;;;;Vessel technical manager sea web link;VESSTMWL
+;;;;Vessel Technical Manager Vessel ID List;VESSTMIL
+;;;;Vessel technical manager country ISO 3 code;VESSTMC3
+;;;;Vessel technical manager ID;VESSTMID
+;;;;Vessel technical manager name;VESSTMNM
+;;;;Vessel technical manager sea web link;VESSTMWL
+;;;;Vessel Technical Manager Vessel ID List;VESSTMIL

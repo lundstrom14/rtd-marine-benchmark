@@ -53,12 +53,21 @@ Welcome to Marine Benchmark API Configurator Reference v1.4 for Marine Benchmark
 2. Type size name and ID
 ================================================
 
+The following shows the name and ID to avaialbe type sizes. These are essential when constructing API calls regarding type sizes, for example as ``Entity1ID in(210103)``.
+
 .. csv-table:: Type size name and ID
    :file: _static/tables/typesize-id-commercial.csv
    :class: ref-table 
    :widths: 20 20 20 20 20
    :delim: ;
    :header-rows: 1
+
+
+.. note::
+    
+    Some statistics may be unavailable for certain type sizes. 
+
+
 
 3. Vessel Particular World Fleet Measures 
 ================================================
@@ -69,18 +78,18 @@ catalogues and measures are marked in **Bold**.
 
 .. note::
     
-    Some catalogues and measure combinations might be temporary unavailable.
+    Some catalogue and measure combinations might be temporary unavailable.
 
 
-.. csv-table:: Vessel Particular World Fleet Measures 
-   :file: _static/measures-vessel-particular.csv
+.. csv-table:: Particular World Fleet Measures 
+   :file: _static/tables/measures-vessel-particular.csv
    :class: ref-table 
    :widths: 25 25 35 15
    :delim: ;
    :header-rows: 1
 
 
-4. Vessel Distributions Measures
+4. Distributions Measures
 ================================================
 
 The following combinations of subcategories, catalogues and measures are available for :green:`vessel distributions`. Popular subcategories,
@@ -88,10 +97,16 @@ catalogues and measures are marked in **Bold**.
 
 .. note::
     
-    Some catalogues and measure combinations might be temporary unavailable.
+    Some catalogue and measure combinations might be temporary unavailable.
 
 
-5. Vessel Operational Statistics Measures
+.. csv-table:: Distributions Measures
+   :file: _static/tables/measures-distributions.csv
+   :class: ref-table 
+   :delim: ;
+   :header-rows: 1
+
+5. Operational Statistics Measures
 ================================================
 
 The following combinations of subcategories, catalogues and measures are available for :green:`vessel operational statistics`. Popular subcategories,
@@ -102,5 +117,10 @@ Periodicity is below marked with (---).
 
 .. note::
     
-    Some catalogues and measure combinations might be temporary unavailable.
+    Some catalogue and measure combinations might be temporary unavailable.
 
+.. csv-table:: Operational Statistics Measures
+   :file: _static/tables/measures-operational.csv
+   :class: ref-table 
+   :delim: ;
+   :header-rows: 1
