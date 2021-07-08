@@ -33,7 +33,6 @@ Example: ``SPEEDSTLO``
 
 
 .. list-table:: 
-    :width: 70%
     :header-rows: 1
 
     * - Code 
