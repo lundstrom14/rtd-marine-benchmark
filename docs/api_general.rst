@@ -111,7 +111,6 @@ URL Parameters
 
 .. list-table:: URL parameters
     :widths: 15 15 40 15 15
-    :width: 100%
     :header-rows: 1
     :class: tight-table, url-table
 
