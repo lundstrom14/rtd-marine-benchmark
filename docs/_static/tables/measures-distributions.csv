@@ -6,19 +6,19 @@ Vessel type size distributions ;VDT;Monthly Draught % of Design draught;DT5MON;T
 ;;Monthly Speed % of Design speed;ST5MON;Distance distributed loaded;DISTDILO
 ;;Monthly EEOI By Time;EO5MON;Distance distributed unloaded;DISTDIUL
 ;;Monthly Water temperature 1;WT1MON;ME energy distributed total;MEENDITO
-;;Monthly Draught;DR5MON;ME energy distributed loaded;MEENDILO
-;;Monthly Draught % of Design draught;DT5MON;ME energy distributed unloaded;MEENDIUL
-;;Monthly Filling factor %;FT5MON;AE energy distributed total;AEENDITO
-;;Monthly Speed05;SP5MON;AE energy distributed loaded;AEENDILO
-;;Monthly Speed % of Design speed;ST5MON;AE energy distributed unloaded;AEENDIUL
-;;Monthly EEOI;EO5MON;Boiler energy distributed total;BOENDITO
-;;Monthly Water temperature 1;WT1MON;Boiler energy distributed loaded;BOENDILO
-;;Vessel Global Monthly Draught/Distance nm moving;GLOMON;Boiler energy distributed unloaded;BOENDIUL
-;;Vessel Global Monthly EEOI By Distance;GLOMON;Total energy distributed total;TOENDITO
-;;Monthly Speed05/Water temperature;SW5MON;Total energy distributed loaded;TOENDILO
-;;Vessel Raster Monthly 3D Time per rounded Lat Long;RASMON;Total energy distributed unloaded;TOENDIUL
-;;Vessel Raster Monthly 3D Time per rounded Lat01 Long01;RASMON;ME fuel distributed total;MEFUDITO
-;;Monthly Speed05/Water temperature;SW5MON;ME fuel distributed loaded;MEFUDILO
+;;;DR5MON;ME energy distributed loaded;MEENDILO
+;;;DT5MON;ME energy distributed unloaded;MEENDIUL
+;;;FT5MON;AE energy distributed total;AEENDITO
+;;;SP5MON;AE energy distributed loaded;AEENDILO
+;;;ST5MON;AE energy distributed unloaded;AEENDIUL
+;;;EO5MON;Boiler energy distributed total;BOENDITO
+;;;WT1MON;Boiler energy distributed loaded;BOENDILO
+;;;GLOMON;Boiler energy distributed unloaded;BOENDIUL
+;;;GLOMON;Total energy distributed total;TOENDITO
+;;;SW5MON;Total energy distributed loaded;TOENDILO
+;;;RASMON;Total energy distributed unloaded;TOENDIUL
+;;;RASMON;ME fuel distributed total;MEFUDITO
+;;;SW5MON;ME fuel distributed loaded;MEFUDILO
 ;;;;ME fuel distributed unloaded;MEFUDIUL
 ;;;;AE fuel distributed total;AEFUDITO
 ;;;;AE fuel distributed loaded;AEFUDILO
