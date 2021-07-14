@@ -2,9 +2,12 @@
 References
 ================================================
 
-Welcome to Marine Benchmark API Configurator Reference v1.4 for Marine Benchmark API Standard 4.0!
 
-1. Vessel State and Condition
+General
+################################################
+
+
+Vessel State and Conditions
 ================================================
 
 
@@ -50,10 +53,10 @@ Welcome to Marine Benchmark API Configurator Reference v1.4 for Marine Benchmark
       - Vessel speed below 1 knot
 
 
-2. Type size name and ID
+Type size name and ID
 ================================================
 
-The following shows the name and ID to avaialbe type sizes. These are essential when constructing API calls regarding type sizes, for example as ``Entity1ID in(210103)``.
+The following shows the *name* and *ID* to available type sizes. These are essential when constructing API calls regarding type sizes, for example as ``Entity1ID in(210103)``.
 
 .. csv-table:: Type size name and ID
    :file: _static/tables/typesize-id-commercial.csv
@@ -68,8 +71,7 @@ The following shows the name and ID to avaialbe type sizes. These are essential 
     Some statistics may be unavailable for certain type sizes. 
 
 
-
-3. Vessel Particular World Fleet Measures 
+Vessel Particular World Fleet Measures 
 ================================================
 
 The following combinations of catalogues and measures are available for :green:`vessel particular world fleet subcategory`. Popular subcategories,
@@ -89,7 +91,7 @@ catalogues and measures are marked in **Bold**.
    :header-rows: 1
 
 
-4. Distributions Measures
+Distributions Measures
 ================================================
 
 The following combinations of subcategories, catalogues and measures are available for :green:`vessel distributions`. Popular subcategories,
@@ -106,14 +108,14 @@ catalogues and measures are marked in **Bold**.
    :delim: ;
    :header-rows: 1
 
-5. Operational Statistics Measures
+Operational Statistics Measures
 ================================================
 
 The following combinations of subcategories, catalogues and measures are available for :green:`vessel operational statistics`. Popular subcategories,
 catalogues and measures are marked in **Bold**. Catalogues and measures that are under implementation may be marked in *Italic*. 
 A catalogue is a nine character code where the last three defines the periodicity, please refer to :ref:`Language and Time Encoding`. 
 
-Periodicity is below marked with (---). 
+Periodicity is below marked with (---).  
 
 .. note::
     
