@@ -192,7 +192,7 @@ page. Here the query is executed directly in browser to return a JSON string.
 ################################################
 
 Say we are interested in the monthly fuel consumption (main engine) of a vessel type size, in this case :blue:`Tanker/VLCC -
-200'-329.9' dwt` (210102). The type size ID can be found in :ref:`2. Type size name and ID`.
+200'-329.9' dwt` (210102). The type size ID can be found in :ref:`Type size name and ID`.
 
 
 
@@ -265,19 +265,19 @@ The distribution dimension for water temperature is here discretized with 0.5 °
 ################################################
 
 Since distribution statistics also are available per type size (segments), here is another example for speed distribution for
-:blue:`01 Tanker / B VLCC - 200'-329.9' dwt`. The type size IDs can be found in :ref:`2. Type size name and ID`.
+:blue:`01 Tanker / B VLCC - 200'-329.9' dwt`. The type size IDs can be found in :ref:`Type size name and ID`.
 
 
 We repeat the same process of choosing correct category, subcategory, and catalogue. For measures we again
 want both time spent and distance traveled.
 
-Category: :green:`Vessel statistics`
+**Category**: :green:`Vessel statistics`
 
-Subcategory: :green:`Vessel type size distributions (segment)`
+**Subcategory**: :green:`Vessel type size distributions (segment)`
 
-Catalogue: :green:`Monthly Speed05`
+**Catalogue**: :green:`Monthly Speed05`
 
-Measure(s): :green:`TIMEDITO – Time distributed total`, :green:`DISTDITO – Distance distributed total`
+**Measure(s)**: :green:`TIMEDITO – Time distributed total`, :green:`DISTDITO – Distance distributed total`
 
 State condition in SQL server format: ``Entity1ID in (210102)``
 

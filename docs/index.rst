@@ -23,10 +23,7 @@ Welcome to Marine Benchmark documenation platform.
 .. toctree::
    :maxdepth: 3
    :caption: WEB PLATFORM
-   
-   web_platform_man/summary/summary.rst
-   web_platform_man/tradeflow/tradeflow.rst
-   web_platform_man/vessel_info/vessel_info.rst
+
 
 
 
