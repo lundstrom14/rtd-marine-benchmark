@@ -1,0 +1,62 @@
+.wy-nav-content {
+    max-width: 1000px !important;
+}
+
+.tight-table td{
+    white-space: normal !important; 
+}
+
+.url-table td:nth-child(3) {
+    font-size: 80% !important;
+}
+
+.mb-green {
+    color: green !important;
+    background-color: #fbfbfb !important;
+    font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace !important; 
+    white-space: nowrap;
+    max-width: 100%;
+    background: #fff;
+    font-size: 75%;
+    border: 1px solid #e1e4e5 !important;
+    padding: 2px 5px !important;
+    overflow-x: auto !important;
+    background: #fff !important;
+}
+
+.mb-blue {
+    color: #060A28 !important;
+    background-color: #fbfbfb !important;
+    font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace !important; 
+    white-space: nowrap;
+    max-width: 100%;
+    background: #fff;
+    font-size: 75%;
+    border: 1px solid #e1e4e5 !important;
+    padding: 2px 5px !important;
+    overflow-x: auto !important;
+    background: #fff !important;
+}
+
+code.file {
+ color:lightsalmon !important;
+}
+
+.highlight-json {
+    height: 400px !important;
+}
+
+div.version {
+    color: #060A28 !important;
+}
+
+.wy-side-nav-search {
+    background-color: #fcfcfc !important;
+}
+
+.ref-table {
+    white-space: normal !important; 
+    font-size: 60% !important;
+    padding: 0px 8px !important;
+}
+

@@ -1,0 +1,7165 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>References &mdash; Marine Benchmark Documentation (dev) 1.4.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Bespoke API" href="api_bespoke.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo1.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.4.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API DOCUMENTATION</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="api_general.html">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_generic.html">Generic API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_bespoke.html">Bespoke API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">References</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general">General</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vessel-state-and-conditions">Vessel State and Conditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#type-size-name-and-id">Type size name and ID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vessel-particular-world-fleet-measures">Vessel Particular World Fleet Measures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#distributions-measures">Distributions Measures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#operational-statistics-measures">Operational Statistics Measures</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Marine Benchmark Documentation (dev)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>References</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api_references.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="general">
+<h2>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="vessel-state-and-conditions">
+<h3>Vessel State and Conditions<a class="headerlink" href="#vessel-state-and-conditions" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given tight-table url-table docutils" id="id1">
+<caption><span class="caption-text">Vessel State</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Condition</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Total</strong></td>
+<td>Independent of loaded or unloaded condition</td>
+</tr>
+<tr class="row-odd"><td><strong>Loaded</strong></td>
+<td>Vessel in loaded conditionllo</td>
+</tr>
+<tr class="row-even"><td><strong>Unloaded</strong></td>
+<td>Vessel in Unloaded conditionllo</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given tight-table url-table docutils" id="id2">
+<caption><span class="caption-text">Vessel Condition</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">State</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Total</strong></td>
+<td>Total. Independent of speed and area</td>
+</tr>
+<tr class="row-odd"><td><strong>Steaming</strong></td>
+<td>Vessel speed above 6 knots</td>
+</tr>
+<tr class="row-even"><td><strong>Maneuvering</strong></td>
+<td>Vessel speed between 1 and 6 knots</td>
+</tr>
+<tr class="row-odd"><td><strong>Moving</strong></td>
+<td>Vessel speed above 1 knot</td>
+</tr>
+<tr class="row-even"><td><strong>Anchored</strong></td>
+<td>Vessel speed below 1 knot in a defined anchor area</td>
+</tr>
+<tr class="row-odd"><td><strong>Moored</strong></td>
+<td>Vessel speed below 1 knot in a defined and valid port area</td>
+</tr>
+<tr class="row-even"><td><strong>Out of Traffic</strong></td>
+<td>Vessel speed below 1 knot and classified as out of traffic</td>
+</tr>
+<tr class="row-odd"><td><strong>Still undefined</strong></td>
+<td>Vessel speed below 1 knot and not in a defined area</td>
+</tr>
+<tr class="row-even"><td><strong>Still</strong></td>
+<td>Vessel speed below 1 knot</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="type-size-name-and-id">
+<h3>Type size name and ID<a class="headerlink" href="#type-size-name-and-id" title="Permalink to this headline">¶</a></h3>
+<p>The following shows the <em>name</em> and <em>ID</em> to available type sizes. These are essential when constructing API calls regarding type sizes, for example as <code class="docutils literal notranslate"><span class="pre">Entity1ID</span> <span class="pre">in(210103)</span></code>.</p>
+<table border="1" class="colwidths-given ref-table docutils" id="id3">
+<caption><span class="caption-text">Type size name and ID</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Vessel commercial type size ID</th>
+<th class="head">Vessel type size name</th>
+<th class="head">Vessel Super type</th>
+<th class="head">Vessel type</th>
+<th class="head">Vessel size</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>210101</td>
+<td>01 Tanker / A ULCC - 330’ + dwt</td>
+<td>Tanker</td>
+<td>01 Tanker</td>
+<td>A ULCC - 330’ + dwt</td>
+</tr>
+<tr class="row-odd"><td>210102</td>
+<td>01 Tanker / B VLCC - 200’-329.9’ dwt</td>
+<td>Tanker</td>
+<td>01 Tanker</td>
+<td>B VLCC - 200’-329.9’ dwt</td>
+</tr>
+<tr class="row-even"><td>210103</td>
+<td>01 Tanker / C Suezmax - 130’-199.9’ dwt</td>
+<td>Tanker</td>
+<td>01 Tanker</td>
+<td>C Suezmax - 130’-199.9’ dwt</td>
+</tr>
+<tr class="row-odd"><td>210104</td>
+<td>01 Tanker / D Aframax / LR 2 - 95’-129.9’ dwt</td>
+<td>Tanker</td>
+<td>01 Tanker</td>
+<td>D Aframax / LR 2 - 95’-129.9’ dwt</td>
+</tr>
+<tr class="row-even"><td>210105</td>
+<td>01 Tanker / E Post Panamax / LR1 - 75’-94.9’ dwt</td>
+<td>Tanker</td>
+<td>01 Tanker</td>
+<td>E Post Panamax / LR1 - 75’-94.9’ dwt</td>
+</tr>
+<tr class="row-odd"><td>210106</td>
+<td>01 Tanker / F Panamax / LR1 - 55’-74.5’ dwt</td>
+<td>Tanker</td>
+<td>01 Tanker</td>
+<td>F Panamax / LR1 - 55’-74.5’ dwt</td>
+</tr>
+<tr class="row-even"><td>210107</td>
+<td>01 Tanker / G MR - 40’-54.9’ dwt</td>
+<td>Tanker</td>
+<td>01 Tanker</td>
+<td>G MR - 40’-54.9’ dwt</td>
+</tr>
+<tr class="row-odd"><td>210108</td>
+<td>01 Tanker / H Handy size - 27’-39.9’ dwt</td>
+<td>Tanker</td>
+<td>01 Tanker</td>
+<td>H Handy size - 27’-39.9’ dwt</td>
+</tr>
+<tr class="row-even"><td>210109</td>
+<td>01 Tanker / I Intermediate - 10’-26.9’ dwt</td>
+<td>Tanker</td>
+<td>01 Tanker</td>
+<td>I Intermediate - 10’-26.9’ dwt</td>
+</tr>
+<tr class="row-odd"><td>210110</td>
+<td>01 Tanker / J 5’-9.9’ dwt</td>
+<td>Tanker</td>
+<td>01 Tanker</td>
+<td>J 5’-9.9’ dwt</td>
+</tr>
+<tr class="row-even"><td>210111</td>
+<td>01 Tanker / K 0-4.9’ dwt</td>
+<td>Tanker</td>
+<td>01 Tanker</td>
+<td>K 0-4.9’ dwt</td>
+</tr>
+<tr class="row-odd"><td>210201</td>
+<td>02 LPG / A 70’ + cbm</td>
+<td>Tanker</td>
+<td>02 LPG</td>
+<td>A 70’ + cbm</td>
+</tr>
+<tr class="row-even"><td>210202</td>
+<td>02 LPG / B 50’-69’ cbm</td>
+<td>Tanker</td>
+<td>02 LPG</td>
+<td>B 50’-69’ cbm</td>
+</tr>
+<tr class="row-odd"><td>210203</td>
+<td>02 LPG / C 20’-49’ cbm</td>
+<td>Tanker</td>
+<td>02 LPG</td>
+<td>C 20’-49’ cbm</td>
+</tr>
+<tr class="row-even"><td>210204</td>
+<td>02 LPG / D 5’-19’ cbm</td>
+<td>Tanker</td>
+<td>02 LPG</td>
+<td>D 5’-19’ cbm</td>
+</tr>
+<tr class="row-odd"><td>210205</td>
+<td>02 LPG / E 0-4.9’ cbm</td>
+<td>Tanker</td>
+<td>02 LPG</td>
+<td>E 0-4.9’ cbm</td>
+</tr>
+<tr class="row-even"><td>210301</td>
+<td>03 LNG / A 200’ + cbm</td>
+<td>Tanker</td>
+<td>03 LNG</td>
+<td>A 200’ + cbm</td>
+</tr>
+<tr class="row-odd"><td>210302</td>
+<td>03 LNG / B 150’-199’ cbm</td>
+<td>Tanker</td>
+<td>03 LNG</td>
+<td>B 150’-199’ cbm</td>
+</tr>
+<tr class="row-even"><td>210303</td>
+<td>03 LNG / C 100’-149’ cbm</td>
+<td>Tanker</td>
+<td>03 LNG</td>
+<td>C 100’-149’ cbm</td>
+</tr>
+<tr class="row-odd"><td>210304</td>
+<td>03 LNG / D 30’-99’ cbm</td>
+<td>Tanker</td>
+<td>03 LNG</td>
+<td>D 30’-99’ cbm</td>
+</tr>
+<tr class="row-even"><td>210305</td>
+<td>03 LNG / E 0-29’ cbm</td>
+<td>Tanker</td>
+<td>03 LNG</td>
+<td>E 0-29’ cbm</td>
+</tr>
+<tr class="row-odd"><td>220101</td>
+<td>04 Bulk / A VLOC - 350’ + dwt</td>
+<td>Bulker &amp; General Cargo</td>
+<td>04 Bulk</td>
+<td>A VLOC - 350’ + dwt</td>
+</tr>
+<tr class="row-even"><td>220102</td>
+<td>04 Bulk / B Capesize - 120’-349.9’ dwt</td>
+<td>Bulker &amp; General Cargo</td>
+<td>04 Bulk</td>
+<td>B Capesize - 120’-349.9’ dwt</td>
+</tr>
+<tr class="row-odd"><td>220103</td>
+<td>04 Bulk / C Mini Capesize - 100’-119.9’ dwt</td>
+<td>Bulker &amp; General Cargo</td>
+<td>04 Bulk</td>
+<td>C Mini Capesize - 100’-119.9’ dwt</td>
+</tr>
+<tr class="row-even"><td>220104</td>
+<td>04 Bulk / D Post Panamax - 85’-99.9’ dwt</td>
+<td>Bulker &amp; General Cargo</td>
+<td>04 Bulk</td>
+<td>D Post Panamax - 85’-99.9’ dwt</td>
+</tr>
+<tr class="row-odd"><td>220105</td>
+<td>04 Bulk / E Panamax - 60’-84.9’ dwt</td>
+<td>Bulker &amp; General Cargo</td>
+<td>04 Bulk</td>
+<td>E Panamax - 60’-84.9’ dwt</td>
+</tr>
+<tr class="row-even"><td>220106</td>
+<td>04 Bulk / F Large Handymax - 50’-59.9’ dwt</td>
+<td>Bulker &amp; General Cargo</td>
+<td>04 Bulk</td>
+<td>F Large Handymax - 50’-59.9’ dwt</td>
+</tr>
+<tr class="row-odd"><td>220107</td>
+<td>04 Bulk / G Handymax - 40’-49.9’ dwt</td>
+<td>Bulker &amp; General Cargo</td>
+<td>04 Bulk</td>
+<td>G Handymax - 40’-49.9’ dwt</td>
+</tr>
+<tr class="row-even"><td>220108</td>
+<td>04 Bulk / H Large Handysize - 25’-39.9’ dwt</td>
+<td>Bulker &amp; General Cargo</td>
+<td>04 Bulk</td>
+<td>H Large Handysize - 25’-39.9’ dwt</td>
+</tr>
+<tr class="row-odd"><td>220109</td>
+<td>04 Bulk / I Small Handysize - 10’-24.9’ dwt</td>
+<td>Bulker &amp; General Cargo</td>
+<td>04 Bulk</td>
+<td>I Small Handysize - 10’-24.9’ dwt</td>
+</tr>
+<tr class="row-even"><td>220110</td>
+<td>04 Bulk / J 5’-9.9’ dwt</td>
+<td>Bulker &amp; General Cargo</td>
+<td>04 Bulk</td>
+<td>J 5’-9.9’ dwt</td>
+</tr>
+<tr class="row-odd"><td>220111</td>
+<td>04 Bulk / K 0-4.9’ dwt</td>
+<td>Bulker &amp; General Cargo</td>
+<td>04 Bulk</td>
+<td>K 0-4.9’ dwt</td>
+</tr>
+<tr class="row-even"><td>230101</td>
+<td>05 Container / A 13,500+ teu</td>
+<td>Container &amp; Roro</td>
+<td>05 Container</td>
+<td>A 13,500+ teu</td>
+</tr>
+<tr class="row-odd"><td>230102</td>
+<td>05 Container / B 10 -13,499 teu</td>
+<td>Container &amp; Roro</td>
+<td>05 Container</td>
+<td>B 10 -13,499 teu</td>
+</tr>
+<tr class="row-even"><td>230103</td>
+<td>05 Container / C 8 -9,999 teu</td>
+<td>Container &amp; Roro</td>
+<td>05 Container</td>
+<td>C 8 -9,999 teu</td>
+</tr>
+<tr class="row-odd"><td>230104</td>
+<td>05 Container / D 5 -7,999 teu</td>
+<td>Container &amp; Roro</td>
+<td>05 Container</td>
+<td>D 5 -7,999 teu</td>
+</tr>
+<tr class="row-even"><td>230105</td>
+<td>05 Container / E 3 -4,999 teu</td>
+<td>Container &amp; Roro</td>
+<td>05 Container</td>
+<td>E 3 -4,999 teu</td>
+</tr>
+<tr class="row-odd"><td>230106</td>
+<td>05 Container / F 2 -2,999 teu</td>
+<td>Container &amp; Roro</td>
+<td>05 Container</td>
+<td>F 2 -2,999 teu</td>
+</tr>
+<tr class="row-even"><td>230107</td>
+<td>05 Container / G 1 -1,999 teu</td>
+<td>Container &amp; Roro</td>
+<td>05 Container</td>
+<td>G 1 -1,999 teu</td>
+</tr>
+<tr class="row-odd"><td>230108</td>
+<td>05 Container / H 0-999 teu</td>
+<td>Container &amp; Roro</td>
+<td>05 Container</td>
+<td>H 0-999 teu</td>
+</tr>
+<tr class="row-even"><td>230201</td>
+<td>06 Vehicle / A 7,000+ ceu</td>
+<td>Container &amp; Roro</td>
+<td>06 Vehicle</td>
+<td>A 7,000+ ceu</td>
+</tr>
+<tr class="row-odd"><td>230202</td>
+<td>06 Vehicle / B 5,500 - 6,999 ceu</td>
+<td>Container &amp; Roro</td>
+<td>06 Vehicle</td>
+<td>B 5,500 - 6,999 ceu</td>
+</tr>
+<tr class="row-even"><td>230203</td>
+<td>06 Vehicle / C 4,000 - 5,499 ceu</td>
+<td>Container &amp; Roro</td>
+<td>06 Vehicle</td>
+<td>C 4,000 - 5,499 ceu</td>
+</tr>
+<tr class="row-odd"><td>230204</td>
+<td>06 Vehicle / D 2,000 - 3,999 ceu</td>
+<td>Container &amp; Roro</td>
+<td>06 Vehicle</td>
+<td>D 2,000 - 3,999 ceu</td>
+</tr>
+<tr class="row-even"><td>230205</td>
+<td>06 Vehicle / E 0-1,999 ceu</td>
+<td>Container &amp; Roro</td>
+<td>06 Vehicle</td>
+<td>E 0-1,999 ceu</td>
+</tr>
+<tr class="row-odd"><td>230301</td>
+<td>07 Roro / A 4,000+ lm</td>
+<td>Container &amp; Roro</td>
+<td>07 Roro</td>
+<td>A 4,000+ lm</td>
+</tr>
+<tr class="row-even"><td>230302</td>
+<td>07 Roro / B 2,000 -3,999 lm</td>
+<td>Container &amp; Roro</td>
+<td>07 Roro</td>
+<td>B 2,000 -3,999 lm</td>
+</tr>
+<tr class="row-odd"><td>230303</td>
+<td>07 Roro / C 1,000 -1,999 lm</td>
+<td>Container &amp; Roro</td>
+<td>07 Roro</td>
+<td>C 1,000 -1,999 lm</td>
+</tr>
+<tr class="row-even"><td>230304</td>
+<td>07 Roro / D 500 - 999 lm</td>
+<td>Container &amp; Roro</td>
+<td>07 Roro</td>
+<td>D 500 - 999 lm</td>
+</tr>
+<tr class="row-odd"><td>230305</td>
+<td>07 Roro / E 0-499 lm</td>
+<td>Container &amp; Roro</td>
+<td>07 Roro</td>
+<td>E 0-499 lm</td>
+</tr>
+<tr class="row-even"><td>240101</td>
+<td>08 Ferry DayPax Only, 25kn+ / A 400+ Pax</td>
+<td>Passenger</td>
+<td>08 Ferry DayPax Only, 25kn+</td>
+<td>A 400+ Pax</td>
+</tr>
+<tr class="row-odd"><td>240102</td>
+<td>08 Ferry DayPax Only, 25kn+ / B 300 -399 Pax</td>
+<td>Passenger</td>
+<td>08 Ferry DayPax Only, 25kn+</td>
+<td>B 300 -399 Pax</td>
+</tr>
+<tr class="row-even"><td>240103</td>
+<td>08 Ferry DayPax Only, 25kn+ / C 200 -299 Pax</td>
+<td>Passenger</td>
+<td>08 Ferry DayPax Only, 25kn+</td>
+<td>C 200 -299 Pax</td>
+</tr>
+<tr class="row-odd"><td>240104</td>
+<td>08 Ferry DayPax Only, 25kn+ / D 0-200 Pax</td>
+<td>Passenger</td>
+<td>08 Ferry DayPax Only, 25kn+</td>
+<td>D 0-200 Pax</td>
+</tr>
+<tr class="row-even"><td>240201</td>
+<td>09 Ferry DayPax Only, &lt;25kn / A 800+ Pax</td>
+<td>Passenger</td>
+<td>09 Ferry DayPax Only, &lt;25kn</td>
+<td>A 800+ Pax</td>
+</tr>
+<tr class="row-odd"><td>240202</td>
+<td>09 Ferry DayPax Only, &lt;25kn / B 400 -799 Pax</td>
+<td>Passenger</td>
+<td>09 Ferry DayPax Only, &lt;25kn</td>
+<td>B 400 -799 Pax</td>
+</tr>
+<tr class="row-even"><td>240203</td>
+<td>09 Ferry DayPax Only, &lt;25kn / C 200 -399 Pax</td>
+<td>Passenger</td>
+<td>09 Ferry DayPax Only, &lt;25kn</td>
+<td>C 200 -399 Pax</td>
+</tr>
+<tr class="row-odd"><td>240204</td>
+<td>09 Ferry DayPax Only, &lt;25kn / D 0-200 Pax</td>
+<td>Passenger</td>
+<td>09 Ferry DayPax Only, &lt;25kn</td>
+<td>D 0-200 Pax</td>
+</tr>
+<tr class="row-even"><td>240301</td>
+<td>10 Ferry RoPax, 25kn+ / A 1000+ lm</td>
+<td>Passenger</td>
+<td>10 Ferry RoPax, 25kn+</td>
+<td>A 1000+ lm</td>
+</tr>
+<tr class="row-odd"><td>240302</td>
+<td>10 Ferry RoPax, 25kn+ / B 500 -999 lm</td>
+<td>Passenger</td>
+<td>10 Ferry RoPax, 25kn+</td>
+<td>B 500 -999 lm</td>
+</tr>
+<tr class="row-even"><td>240303</td>
+<td>10 Ferry RoPax, 25kn+ / C 100 -499 lm</td>
+<td>Passenger</td>
+<td>10 Ferry RoPax, 25kn+</td>
+<td>C 100 -499 lm</td>
+</tr>
+<tr class="row-odd"><td>240304</td>
+<td>10 Ferry RoPax, 25kn+ / D 0-99 lm</td>
+<td>Passenger</td>
+<td>10 Ferry RoPax, 25kn+</td>
+<td>D 0-99 lm</td>
+</tr>
+<tr class="row-even"><td>240401</td>
+<td>11 Ferry RoPax, &lt;25kn / A 2000+ lm</td>
+<td>Passenger</td>
+<td>11 Ferry RoPax, &lt;25kn</td>
+<td>A 2000+ lm</td>
+</tr>
+<tr class="row-odd"><td>240402</td>
+<td>11 Ferry RoPax, &lt;25kn / B 1000 -1999 lm</td>
+<td>Passenger</td>
+<td>11 Ferry RoPax, &lt;25kn</td>
+<td>B 1000 -1999 lm</td>
+</tr>
+<tr class="row-even"><td>240403</td>
+<td>11 Ferry RoPax, &lt;25kn / C 500 -999 lm</td>
+<td>Passenger</td>
+<td>11 Ferry RoPax, &lt;25kn</td>
+<td>C 500 -999 lm</td>
+</tr>
+<tr class="row-odd"><td>240404</td>
+<td>11 Ferry RoPax, &lt;25kn / D 0-499 lm</td>
+<td>Passenger</td>
+<td>11 Ferry RoPax, &lt;25kn</td>
+<td>D 0-499 lm</td>
+</tr>
+<tr class="row-even"><td>240501</td>
+<td>12 Ferry Overnight Pax Only / A 1,000+ low berths</td>
+<td>Passenger</td>
+<td>12 Ferry Overnight Pax Only</td>
+<td>A 1,000+ low berths</td>
+</tr>
+<tr class="row-odd"><td>240502</td>
+<td>12 Ferry Overnight Pax Only / B 0-999 low berths</td>
+<td>Passenger</td>
+<td>12 Ferry Overnight Pax Only</td>
+<td>B 0-999 low berths</td>
+</tr>
+<tr class="row-even"><td>240601</td>
+<td>13 Cruise / A 4,000+ low berths</td>
+<td>Passenger</td>
+<td>13 Cruise</td>
+<td>A 4,000+ low berths</td>
+</tr>
+<tr class="row-odd"><td>240602</td>
+<td>13 Cruise / B 2,500 -3,999 low berths</td>
+<td>Passenger</td>
+<td>13 Cruise</td>
+<td>B 2,500 -3,999 low berths</td>
+</tr>
+<tr class="row-even"><td>240603</td>
+<td>13 Cruise / C 1,000 -2,499 low berths</td>
+<td>Passenger</td>
+<td>13 Cruise</td>
+<td>C 1,000 -2,499 low berths</td>
+</tr>
+<tr class="row-odd"><td>240604</td>
+<td>13 Cruise / D 0-999 low berths</td>
+<td>Passenger</td>
+<td>13 Cruise</td>
+<td>D 0-999 low berths</td>
+</tr>
+<tr class="row-even"><td>240701</td>
+<td>14 Yacht / A 7,000+ kW</td>
+<td>Passenger</td>
+<td>14 Yacht</td>
+<td>A 7,000+ kW</td>
+</tr>
+<tr class="row-odd"><td>240702</td>
+<td>14 Yacht / B 3,500 -6,999 kW</td>
+<td>Passenger</td>
+<td>14 Yacht</td>
+<td>B 3,500 -6,999 kW</td>
+</tr>
+<tr class="row-even"><td>240703</td>
+<td>14 Yacht / C 2,000 -3,499 kW</td>
+<td>Passenger</td>
+<td>14 Yacht</td>
+<td>C 2,000 -3,499 kW</td>
+</tr>
+<tr class="row-odd"><td>240704</td>
+<td>14 Yacht / D 1,000 -1,999 kW</td>
+<td>Passenger</td>
+<td>14 Yacht</td>
+<td>D 1,000 -1,999 kW</td>
+</tr>
+<tr class="row-even"><td>240705</td>
+<td>14 Yacht / E 0-999 kW</td>
+<td>Passenger</td>
+<td>14 Yacht</td>
+<td>E 0-999 kW</td>
+</tr>
+<tr class="row-odd"><td>250101</td>
+<td>15 Offshore / A 15,000+ kW</td>
+<td>Misc.</td>
+<td>15 Offshore</td>
+<td>A 15,000+ kW</td>
+</tr>
+<tr class="row-even"><td>250102</td>
+<td>15 Offshore / B 5,000 -14,999 kW</td>
+<td>Misc.</td>
+<td>15 Offshore</td>
+<td>B 5,000 -14,999 kW</td>
+</tr>
+<tr class="row-odd"><td>250103</td>
+<td>15 Offshore / C 2,000 -4,999 kW</td>
+<td>Misc.</td>
+<td>15 Offshore</td>
+<td>C 2,000 -4,999 kW</td>
+</tr>
+<tr class="row-even"><td>250104</td>
+<td>15 Offshore / D 0-1,999 kW</td>
+<td>Misc.</td>
+<td>15 Offshore</td>
+<td>D 0-1,999 kW</td>
+</tr>
+<tr class="row-odd"><td>250201</td>
+<td>16 Service / A 5,000+ kW</td>
+<td>Misc.</td>
+<td>16 Service</td>
+<td>A 5,000+ kW</td>
+</tr>
+<tr class="row-even"><td>250202</td>
+<td>16 Service / B 2,000 -4,999 kW</td>
+<td>Misc.</td>
+<td>16 Service</td>
+<td>B 2,000 -4,999 kW</td>
+</tr>
+<tr class="row-odd"><td>250203</td>
+<td>16 Service / C 1,000 -1,999 kW</td>
+<td>Misc.</td>
+<td>16 Service</td>
+<td>C 1,000 -1,999 kW</td>
+</tr>
+<tr class="row-even"><td>250204</td>
+<td>16 Service / D 0-999 kW</td>
+<td>Misc.</td>
+<td>16 Service</td>
+<td>D 0-999 kW</td>
+</tr>
+<tr class="row-odd"><td>250301</td>
+<td>17 Fishing / A Fishing</td>
+<td>Misc.</td>
+<td>17 Fishing</td>
+<td>A Fishing</td>
+</tr>
+<tr class="row-even"><td>250302</td>
+<td>17 Fishing / B Trawlers</td>
+<td>Misc.</td>
+<td>17 Fishing</td>
+<td>B Trawlers</td>
+</tr>
+<tr class="row-odd"><td>250303</td>
+<td>17 Fishing / C Other</td>
+<td>Misc.</td>
+<td>17 Fishing</td>
+<td>C Other</td>
+</tr>
+<tr class="row-even"><td>250401</td>
+<td>18 Miscellaneous / A Barge &amp; Pontoon</td>
+<td>Misc.</td>
+<td>18 Miscellaneous</td>
+<td>A Barge &amp; Pontoon</td>
+</tr>
+<tr class="row-odd"><td>250402</td>
+<td>18 Miscellaneous / B Other</td>
+<td>Misc.</td>
+<td>18 Miscellaneous</td>
+<td>B Other</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Some statistics may be unavailable for certain type sizes.</p>
+</div>
+</div>
+<div class="section" id="vessel-particular-world-fleet-measures">
+<h3>Vessel Particular World Fleet Measures<a class="headerlink" href="#vessel-particular-world-fleet-measures" title="Permalink to this headline">¶</a></h3>
+<p>The following combinations of catalogues and measures are available for <span class="mb-green">vessel particular world fleet subcategory</span>. Popular subcategories,
+catalogues and measures are marked in <strong>Bold</strong>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Some catalogue and measure combinations might be temporary unavailable.</p>
+</div>
+<table border="1" class="colwidths-given ref-table docutils" id="id4">
+<caption><span class="caption-text">Particular World Fleet Measures</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="35%" />
+<col width="15%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Subcategory</th>
+<th class="head">Catalogue</th>
+<th class="head">Measure name</th>
+<th class="head">Measure code</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Vessel particulars world fleet and statistics</strong></td>
+<td><strong>Vessel current vessel information</strong></td>
+<td>Vessel Age alive</td>
+<td>VESSAGAL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel age group Index</td>
+<td>VESSAGGI</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel age group name</td>
+<td>VESSAGGN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Vessel age</strong></td>
+<td><strong>VESSAGYR</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Installed Auxiliary Engine Power</td>
+<td>VESSAUPO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel birth date</td>
+<td>VESSBIDT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel birth month</td>
+<td>VESSBIMO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner country ISO 2 code</td>
+<td>VESSBOC2</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner country ISO 3 code</td>
+<td>VESSBOC3</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner city</td>
+<td>VESSBOCI</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner country</td>
+<td>VESSBOCN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner ID</td>
+<td>VESSBOID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Group Benificial Owner Country Code IHS</td>
+<td>VESSBOIH</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Group Benificial Owner Vessel ID List</td>
+<td>VESSBOIL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Vessel benificial owner name</strong></td>
+<td><strong>VESSBONM</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner sea web link</td>
+<td>VESSBOWL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel breadth group Index</td>
+<td>VESSBRGI</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel breadth group name</td>
+<td>VESSBRGN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel breadth</td>
+<td>VESSBRME</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 1 type size ID</td>
+<td>VESSC1ID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 1 size name</td>
+<td>VESSC1SN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 1 super type name</td>
+<td>VESSC1ST</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 1 type name</td>
+<td>VESSC1TN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 1 type size name</td>
+<td>VESSC1TS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 2 type size ID</td>
+<td>VESSC2ID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 2 size name</td>
+<td>VESSC2SN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 2 super type name</td>
+<td>VESSC2ST</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 2 type name</td>
+<td>VESSC2TN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 2 type size name</td>
+<td>VESSC2TS</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Vessel capacity</strong></td>
+<td><strong>VESSCAAM</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel capacityUnit</td>
+<td>VESSCAUN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Cargo Capacity Max Draft</td>
+<td>VESSCCHD</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Cargo Capacity Max Ton</td>
+<td>VESSCCHT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Cargo Capacity Min Draft</td>
+<td>VESSCCLD</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Cargo Capacity Min Ton</td>
+<td>VESSCCLT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Coated tanks</td>
+<td>VESSCOTA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel death date</td>
+<td>VESSDEDT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel death month</td>
+<td>VESSDEMO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Depth</td>
+<td>VESSDEPT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Dual Fuel Engine And Tank Type</td>
+<td>VESSDFTT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Vessel design draft</strong></td>
+<td><strong>VESSDIDR</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Vessel design service speed</strong></td>
+<td><strong>VESSDISP</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Is Dual Fuel</td>
+<td>VESSDUFU</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Vessel deadweight</strong></td>
+<td><strong>VESSDWMT</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel engine size group Index</td>
+<td>VESSESGI</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel engine size group name</td>
+<td>VESSESGN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel engine size power</td>
+<td>VESSESPW</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Installed Generator Power</td>
+<td>VESSGEPO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Vessel gross ton</strong></td>
+<td><strong>VESSGTAM</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Is active</td>
+<td>VESSIAYN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel detailed IHS type ID</td>
+<td>VESSIHID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel detailed IHS type name</td>
+<td>VESSIHNM</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel intermediate survey</td>
+<td>VESSISMO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel intermediate survey occation</td>
+<td>VESSISTY</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel current name</td>
+<td>VESSIYCN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel call sign</td>
+<td>VESSIYCS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel flag</td>
+<td>VESSIYFL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel  ID</td>
+<td>VESSIYID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel IMO number</td>
+<td>VESSIYIM</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel MMSI number</td>
+<td>VESSIYMM</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel sea web link</td>
+<td>VESSIYWL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel length group Index</td>
+<td>VESSLEGI</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel length group name</td>
+<td>VESSLEGN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel length (LOA)</td>
+<td>VESSLEME</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Length (LPB)</td>
+<td>VESSLEPB</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Light Displacement</td>
+<td>VESSLIDI</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel last seen month</td>
+<td>VESSLSMO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel last statistics month</td>
+<td>VESSLTMO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Main Engine Model</td>
+<td>VESSMEMO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Vessel Installed Main Engine Power</strong></td>
+<td><strong>VESSMEPO</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Main Engine Producer</td>
+<td>VESSMEPR</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Main Propulsion Type</td>
+<td>VESSMEPT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Number of Engines</td>
+<td>VESSNREN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Number of Gas Turbines</td>
+<td>VESSNRGT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Number of Steam RCP</td>
+<td>VESSNRSR</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Number of Steam Turbines</td>
+<td>VESSNRST</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel next survey</td>
+<td>VESSNSMO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel next survey type</td>
+<td>VESSNSTY</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator country ISO 2 code</td>
+<td>VESSOPC2</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator country ISO 3 code</td>
+<td>VESSOPC3</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator city</td>
+<td>VESSOPCI</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator country</td>
+<td>VESSOPCN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator ID</td>
+<td>VESSOPID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Operator Country Code IHS</td>
+<td>VESSOPIH</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Operator Vessel ID List</td>
+<td>VESSOPIL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Vessel operator name</strong></td>
+<td><strong>VESSOPNM</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator sea web link</td>
+<td>VESSOPWL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Propulsion Code</td>
+<td>VESSPRCO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder country ISO 2 code</td>
+<td>VESSSBC2</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder country ISO 3 code</td>
+<td>VESSSBC3</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder city</td>
+<td>VESSSBCI</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder country</td>
+<td>VESSSBCN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder ID</td>
+<td>VESSSBID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Shipbuilder Country Code IHS</td>
+<td>VESSSBIH</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Shipbuilder Vessel ID List</td>
+<td>VESSSBIL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder name</td>
+<td>VESSSBNM</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder newbuildnumber</td>
+<td>VESSSBNN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder sea web link</td>
+<td>VESSSBWL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Is Scrubber Fitted</td>
+<td>VESSSCFT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Standard Ship Design Name</td>
+<td>VESSSDNA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Ship Serie Lead IMO</td>
+<td>VESSSSLI</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel special survey</td>
+<td>VESSSSMO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel special survey order</td>
+<td>VESSSSTY</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel status</td>
+<td>VESSSTNM</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Stroke Cycle</td>
+<td>VESSSTRC</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Stroke Type</td>
+<td>VESSSTRT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Stainless Tank</td>
+<td>VESSSTTA</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial type size ID</td>
+<td>VESSTCID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial size name</td>
+<td>VESSTCSN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial super type name</td>
+<td>VESSTCST</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial type name</td>
+<td>VESSTCTN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial type size name</td>
+<td>VESSTCTS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager country ISO 2 code</td>
+<td>VESSTMC2</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager country ISO 3 code</td>
+<td>VESSTMC3</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager city</td>
+<td>VESSTMCI</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager country</td>
+<td>VESSTMCN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager ID</td>
+<td>VESSTMID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Technical Manager Country Code IHS</td>
+<td>VESSTMIH</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Technical Manager Vessel ID List</td>
+<td>VESSTMIL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager name</td>
+<td>VESSTMNM</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager sea web link</td>
+<td>VESSTMWL</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="distributions-measures">
+<h3>Distributions Measures<a class="headerlink" href="#distributions-measures" title="Permalink to this headline">¶</a></h3>
+<p>The following combinations of subcategories, catalogues and measures are available for <span class="mb-green">vessel distributions</span>. Popular subcategories,
+catalogues and measures are marked in <strong>Bold</strong>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Some catalogue and measure combinations might be temporary unavailable.</p>
+</div>
+<table border="1" class="ref-table docutils" id="id5">
+<caption><span class="caption-text">Distributions Measures</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Subcategory name</th>
+<th class="head">Subcategory code</th>
+<th class="head">Catalogue name</th>
+<th class="head">Catalogue code</th>
+<th class="head">Measure name</th>
+<th class="head">Measure code</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Vessel distributions</td>
+<td>VED</td>
+<td>Monthly Draught</td>
+<td>DR5MON</td>
+<td>Time distributed total</td>
+<td>TIMEDITO</td>
+</tr>
+<tr class="row-odd"><td>Vessel type size distributions</td>
+<td>VDT</td>
+<td>Monthly Draught % of Design draught</td>
+<td>DT5MON</td>
+<td>Time distributed loaded</td>
+<td>TIMEDILO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Monthly Filling factor %</td>
+<td>FT5MON</td>
+<td>Time distributed unloaded</td>
+<td>TIMEDIUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Monthly Speed05</td>
+<td>SP5MON</td>
+<td>Distance distributed total</td>
+<td>DISTDITO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Monthly Speed % of Design speed</td>
+<td>ST5MON</td>
+<td>Distance distributed loaded</td>
+<td>DISTDILO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Monthly EEOI By Time</td>
+<td>EO5MON</td>
+<td>Distance distributed unloaded</td>
+<td>DISTDIUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Monthly Water temperature 1</td>
+<td>WT1MON</td>
+<td>ME energy distributed total</td>
+<td>MEENDITO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>DR5MON</td>
+<td>ME energy distributed loaded</td>
+<td>MEENDILO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>DT5MON</td>
+<td>ME energy distributed unloaded</td>
+<td>MEENDIUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>FT5MON</td>
+<td>AE energy distributed total</td>
+<td>AEENDITO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>SP5MON</td>
+<td>AE energy distributed loaded</td>
+<td>AEENDILO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ST5MON</td>
+<td>AE energy distributed unloaded</td>
+<td>AEENDIUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>EO5MON</td>
+<td>Boiler energy distributed total</td>
+<td>BOENDITO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>WT1MON</td>
+<td>Boiler energy distributed loaded</td>
+<td>BOENDILO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>GLOMON</td>
+<td>Boiler energy distributed unloaded</td>
+<td>BOENDIUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>GLOMON</td>
+<td>Total energy distributed total</td>
+<td>TOENDITO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>SW5MON</td>
+<td>Total energy distributed loaded</td>
+<td>TOENDILO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>RASMON</td>
+<td>Total energy distributed unloaded</td>
+<td>TOENDIUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>RASMON</td>
+<td>ME fuel distributed total</td>
+<td>MEFUDITO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>SW5MON</td>
+<td>ME fuel distributed loaded</td>
+<td>MEFUDILO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel distributed unloaded</td>
+<td>MEFUDIUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel distributed total</td>
+<td>AEFUDITO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel distributed loaded</td>
+<td>AEFUDILO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel distributed unloaded</td>
+<td>AEFUDIUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel distributed total</td>
+<td>BOFUDITO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel distributed loaded</td>
+<td>BOFUDILO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel distributed unloaded</td>
+<td>BOFUDIUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel distributed total</td>
+<td>TOFUDITO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel distributed loaded</td>
+<td>TOFUDILO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel distributed unloaded</td>
+<td>TOFUDIUL</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="operational-statistics-measures">
+<h3>Operational Statistics Measures<a class="headerlink" href="#operational-statistics-measures" title="Permalink to this headline">¶</a></h3>
+<p>The following combinations of subcategories, catalogues and measures are available for <span class="mb-green">vessel operational statistics</span>. Popular subcategories,
+catalogues and measures are marked in <strong>Bold</strong>. Catalogues and measures that are under implementation may be marked in <em>Italic</em>.
+A catalogue is a nine character code where the last three defines the periodicity, please refer to <a class="reference internal" href="api_general.html#language-and-time-encoding"><span class="std std-ref">Language and Time Encoding</span></a>.</p>
+<p>Periodicity is below marked with (—).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Some catalogue and measure combinations might be temporary unavailable.</p>
+</div>
+<table border="1" class="ref-table docutils" id="id6">
+<caption><span class="caption-text">Operational Statistics Measures</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Subcategory name</th>
+<th class="head">Subcategory code</th>
+<th class="head">nvcrTimeSerieAreaName</th>
+<th class="head">Catalogue code</th>
+<th class="head">Measure name</th>
+<th class="head">Measure code</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Vessel operational statistics</td>
+<td>VES</td>
+<td>0.25 degree raster</td>
+<td>R25(–)</td>
+<td>AE energy anchored loaded</td>
+<td>AEENANLO</td>
+</tr>
+<tr class="row-odd"><td>Vessel operator type size operational statistics</td>
+<td>VOP</td>
+<td>Berth area</td>
+<td>BER(–)</td>
+<td>AE energy anchored total</td>
+<td>AEENANTO</td>
+</tr>
+<tr class="row-even"><td>Vessel owner per type size operational statistics</td>
+<td>VOW</td>
+<td>ECA area</td>
+<td>ECA(–)</td>
+<td>AE energy anchored unloaded</td>
+<td>AEENANUL</td>
+</tr>
+<tr class="row-odd"><td>Vessel type size operational statistics (segment)</td>
+<td>VTS</td>
+<td>Economic zone</td>
+<td>EEZ(–)</td>
+<td>AE energy at yard loaded</td>
+<td>AEENYALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Economic zone/Freshwater</td>
+<td>EFR(–)</td>
+<td>AE energy at yard total</td>
+<td>AEENYATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Freshwater</td>
+<td>FWA(–)</td>
+<td>AE energy at yard unloaded</td>
+<td>AEENYAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Global</td>
+<td>GLO(–)</td>
+<td>AE energy maneuvering loaded</td>
+<td>AEENMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Oil field</td>
+<td>OFI(–)</td>
+<td>AE energy maneuvering total</td>
+<td>AEENMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Piracy area JWC</td>
+<td>JWC(–)</td>
+<td>AE energy maneuvering unloaded</td>
+<td>AEENMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Port area</td>
+<td>PRT(–)</td>
+<td>AE energy moored loaded</td>
+<td>AEENMOLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Sea area</td>
+<td>SEA(–)</td>
+<td>AE energy moored total</td>
+<td>AEENMOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Terminal area</td>
+<td>TER(–)</td>
+<td>AE energy moored unloaded</td>
+<td>AEENMOUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>Territorial water</td>
+<td>TWA(–)</td>
+<td>AE energy moving loaded</td>
+<td>AEENMVLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>Trading area</td>
+<td>TRA(–)</td>
+<td>AE energy moving total</td>
+<td>AEENMVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>YAMIT area</td>
+<td>YAM(–)</td>
+<td>AE energy moving unloaded</td>
+<td>AEENMVUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy out of traffic loaded</td>
+<td>AEENOTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy out of traffic total</td>
+<td>AEENOTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy out of traffic unloaded</td>
+<td>AEENOTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy steaming loaded</td>
+<td>AEENSTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy steaming total</td>
+<td>AEENSTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy steaming unloaded</td>
+<td>AEENSTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy still loaded</td>
+<td>AEENSLLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy still total</td>
+<td>AEENSLTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy still undefined loaded</td>
+<td>AEENSULO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy still undefined total</td>
+<td>AEENSUTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy still undefined unloaded</td>
+<td>AEENSUUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy still unloaded</td>
+<td>AEENSLUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE energy total total</td>
+<td>AEENTOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel anchored loaded</td>
+<td>AEFUANLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel anchored total</td>
+<td>AEFUANTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel anchored unloaded</td>
+<td>AEFUANUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel at yard loaded</td>
+<td>AEFUYALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel at yard total</td>
+<td>AEFUYATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel at yard unloaded</td>
+<td>AEFUYAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel maneuvering loaded</td>
+<td>AEFUMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel maneuvering total</td>
+<td>AEFUMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel maneuvering unloaded</td>
+<td>AEFUMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel moored loaded</td>
+<td>AEFUMOLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel moored total</td>
+<td>AEFUMOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel moored unloaded</td>
+<td>AEFUMOUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel moving loaded</td>
+<td>AEFUMVLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel moving total</td>
+<td>AEFUMVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel moving unloaded</td>
+<td>AEFUMVUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel out of traffic loaded</td>
+<td>AEFUOTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel out of traffic total</td>
+<td>AEFUOTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel out of traffic unloaded</td>
+<td>AEFUOTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day anchored loaded</td>
+<td>AEFDANLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day anchored total</td>
+<td>AEFDANTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day anchored unloaded</td>
+<td>AEFDANUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day at yard loaded</td>
+<td>AEFDYALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day at yard total</td>
+<td>AEFDYATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day at yard unloaded</td>
+<td>AEFDYAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day moored loaded</td>
+<td>AEFDMOLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day moored total</td>
+<td>AEFDMOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day moored unloaded</td>
+<td>AEFDMOUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day out of traffic loaded</td>
+<td>AEFDOTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day out of traffic total</td>
+<td>AEFDOTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day out of traffic unloaded</td>
+<td>AEFDOTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day still loaded</td>
+<td>AEFDSLLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day still total</td>
+<td>AEFDSLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day still undefined loaded</td>
+<td>AEFDSULO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day still undefined total</td>
+<td>AEFDSUTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day still undefined unloaded</td>
+<td>AEFDSUUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day still unloaded</td>
+<td>AEFDSLUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel per day total total</td>
+<td>AEFDTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel steaming loaded</td>
+<td>AEFUSTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel steaming total</td>
+<td>AEFUSTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel steaming unloaded</td>
+<td>AEFUSTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel still loaded</td>
+<td>AEFUSLLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel still total</td>
+<td>AEFUSLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel still undefined loaded</td>
+<td>AEFUSULO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel still undefined total</td>
+<td>AEFUSUTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel still undefined unloaded</td>
+<td>AEFUSUUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel still unloaded</td>
+<td>AEFUSLUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE fuel total total</td>
+<td>AEFUTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent maneuvering loaded</td>
+<td>AECRMALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent maneuvering total</td>
+<td>AECRMATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent maneuvering unloaded</td>
+<td>AECRMAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent moving loaded</td>
+<td>AECRMVLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent moving total</td>
+<td>AECRMVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent moving unloaded</td>
+<td>AECRMVUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent steaming loaded</td>
+<td>AECRSTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent steaming total</td>
+<td>AECRSTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent steaming unloaded</td>
+<td>AECRSTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent still loaded</td>
+<td>AECRSLLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent still total</td>
+<td>AECRSLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent still unloaded</td>
+<td>AECRSLUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE MCR percent total total</td>
+<td>AECRTOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power maneuvering loaded</td>
+<td>AEPWMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power maneuvering total</td>
+<td>AEPWMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power maneuvering unloaded</td>
+<td>AEPWMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power moving loaded</td>
+<td>AEPWMVLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power moving total</td>
+<td>AEPWMVTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power moving unloaded</td>
+<td>AEPWMVUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power steaming loaded</td>
+<td>AEPWSTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power steaming total</td>
+<td>AEPWSTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power steaming unloaded</td>
+<td>AEPWSTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power still loaded</td>
+<td>AEPWSLLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power still total</td>
+<td>AEPWSLTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power still unloaded</td>
+<td>AEPWSLUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AE power total total</td>
+<td>AEPWTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AER Total Total</td>
+<td>AER_TOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Average distance maneuvering loaded</td>
+<td>AVDIMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Average distance maneuvering total</td>
+<td>AVDIMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Average distance maneuvering unloaded</td>
+<td>AVDIMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Average distance moving loaded</td>
+<td>AVDIMVLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Average distance moving total</td>
+<td>AVDIMVTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Average distance moving unloaded</td>
+<td>AVDIMVUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Average distance steaming loaded</td>
+<td>AVDISTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Average distance steaming total</td>
+<td>AVDISTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Average distance steaming unloaded</td>
+<td>AVDISTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Average distance still total</td>
+<td>AVDISLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Average distance total total</td>
+<td>AVDITOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy anchored loaded</td>
+<td>BOENANLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy anchored total</td>
+<td>BOENANTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy anchored unloaded</td>
+<td>BOENANUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy at yard loaded</td>
+<td>BOENYALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy at yard total</td>
+<td>BOENYATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy at yard unloaded</td>
+<td>BOENYAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy maneuvering loaded</td>
+<td>BOENMALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy maneuvering total</td>
+<td>BOENMATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy maneuvering unloaded</td>
+<td>BOENMAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy moored loaded</td>
+<td>BOENMOLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy moored total</td>
+<td>BOENMOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy moored unloaded</td>
+<td>BOENMOUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy moving loaded</td>
+<td>BOENMVLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy moving total</td>
+<td>BOENMVTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy moving unloaded</td>
+<td>BOENMVUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy out of traffic loaded</td>
+<td>BOENOTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy out of traffic total</td>
+<td>BOENOTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy out of traffic unloaded</td>
+<td>BOENOTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy steaming loaded</td>
+<td>BOENSTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy steaming total</td>
+<td>BOENSTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy steaming unloaded</td>
+<td>BOENSTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy still loaded</td>
+<td>BOENSLLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy still total</td>
+<td>BOENSLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy still undefined loaded</td>
+<td>BOENSULO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy still undefined total</td>
+<td>BOENSUTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy still undefined unloaded</td>
+<td>BOENSUUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy still unloaded</td>
+<td>BOENSLUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler energy total total</td>
+<td>BOENTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel anchored loaded</td>
+<td>BOFUANLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel anchored total</td>
+<td>BOFUANTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel anchored unloaded</td>
+<td>BOFUANUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel at yard loaded</td>
+<td>BOFUYALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel at yard total</td>
+<td>BOFUYATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel at yard unloaded</td>
+<td>BOFUYAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel maneuvering loaded</td>
+<td>BOFUMALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel maneuvering total</td>
+<td>BOFUMATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel maneuvering unloaded</td>
+<td>BOFUMAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel moored loaded</td>
+<td>BOFUMOLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel moored total</td>
+<td>BOFUMOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel moored unloaded</td>
+<td>BOFUMOUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel moving loaded</td>
+<td>BOFUMVLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel moving total</td>
+<td>BOFUMVTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel moving unloaded</td>
+<td>BOFUMVUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel out of traffic loaded</td>
+<td>BOFUOTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel out of traffic total</td>
+<td>BOFUOTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel out of traffic unloaded</td>
+<td>BOFUOTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day anchored loaded</td>
+<td>BOPDANLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day anchored total</td>
+<td>BOPDANTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day anchored unloaded</td>
+<td>BOPDANUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day at yard loaded</td>
+<td>BOPDYALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day at yard total</td>
+<td>BOPDYATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day at yard unloaded</td>
+<td>BOPDYAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day maneuvering loaded</td>
+<td>BOPDMALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day maneuvering total</td>
+<td>BOPDMATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day maneuvering unloaded</td>
+<td>BOPDMAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day moored loaded</td>
+<td>BOPDMOLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day moored total</td>
+<td>BOPDMOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day moored unloaded</td>
+<td>BOPDMOUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day moving loaded</td>
+<td>BOPDMVLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day moving total</td>
+<td>BOPDMVTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day moving unloaded</td>
+<td>BOPDMVUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day out of traffic loaded</td>
+<td>BOPDOTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day out of traffic total</td>
+<td>BOPDOTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day out of traffic unloaded</td>
+<td>BOPDOTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day steaming loaded</td>
+<td>BOPDSTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day steaming total</td>
+<td>BOPDSTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day steaming unloaded</td>
+<td>BOPDSTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day still loaded</td>
+<td>BOPDSLLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day still total</td>
+<td>BOPDSLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day still undefined loaded</td>
+<td>BOPDSULO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day still undefined total</td>
+<td>BOPDSUTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day still undefined unloaded</td>
+<td>BOPDSUUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day still unloaded</td>
+<td>BOPDSLUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per day total total</td>
+<td>BOPDTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per nautical mile maneuvering loaded</td>
+<td>BONMMALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per nautical mile maneuvering total</td>
+<td>BONMMATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per nautical mile maneuvering unloaded</td>
+<td>BONMMAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per nautical mile moving loaded</td>
+<td>BONMMVLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per nautical mile moving total</td>
+<td>BONMMVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per nautical mile moving unloaded</td>
+<td>BONMMVUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per nautical mile steaming loaded</td>
+<td>BONMSTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per nautical mile steaming total</td>
+<td>BONMSTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel per nautical mile steaming unloaded</td>
+<td>BONMSTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel steaming loaded</td>
+<td>BOFUSTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel steaming total</td>
+<td>BOFUSTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel steaming unloaded</td>
+<td>BOFUSTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel still loaded</td>
+<td>BOFUSLLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel still total</td>
+<td>BOFUSLTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel still undefined loaded</td>
+<td>BOFUSULO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel still undefined total</td>
+<td>BOFUSUTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel still undefined unloaded</td>
+<td>BOFUSUUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel still unloaded</td>
+<td>BOFUSLUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler fuel total total</td>
+<td>BOFUTOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power maneuvering loaded</td>
+<td>BOPWMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power maneuvering total</td>
+<td>BOPWMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power maneuvering unloaded</td>
+<td>BOPWMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power moving loaded</td>
+<td>BOPWMVLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power moving total</td>
+<td>BOPWMVTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power moving unloaded</td>
+<td>BOPWMVUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power steaming loaded</td>
+<td>BOPWSTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power steaming total</td>
+<td>BOPWSTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power steaming unloaded</td>
+<td>BOPWSTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power still loaded</td>
+<td>BOPWSLLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power still total</td>
+<td>BOPWSLTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power still unloaded</td>
+<td>BOPWSLUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Boiler power total total</td>
+<td>BOPWTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission AE (as 24h average) still loaded</td>
+<td>CA24SLLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission AE (as 24h average) still total</td>
+<td>CA24SLTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission AE (as 24h average) still unloaded</td>
+<td>CA24SLUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission AE still loaded</td>
+<td>COAESLLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission AE still total</td>
+<td>COAESLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission AE still unloaded</td>
+<td>COAESLUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission Boiler (as 24h average) total loaded</td>
+<td>CB24TOLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission Boiler (as 24h average) total total</td>
+<td>CB24TOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission Boiler (as 24h average) total unloaded</td>
+<td>CB24TOUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission Boiler total loaded</td>
+<td>COBOTOLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission Boiler total total</td>
+<td>COBOTOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission Boiler total unloaded</td>
+<td>COBOTOUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>CO2 emission ME (as 24h average) moving loaded</strong></td>
+<td><strong>CM24MVLO</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>CO2 emission ME (as 24h average) moving total</strong></td>
+<td><strong>CM24MVTO</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>CO2 emission ME (as 24h average) moving unloaded</strong></td>
+<td><strong>CM24MVUL</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>CO2 emission ME moving loaded</strong></td>
+<td><strong>COMEMVLO</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>CO2 emission ME moving total</strong></td>
+<td><strong>COMEMVTO</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>CO2 emission ME moving unloaded</strong></td>
+<td><strong>COMEMVUL</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission per nautical mile manuvering loaded</td>
+<td>CONMMALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission per nautical mile manuvering total</td>
+<td>CONMMATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission per nautical mile manuvering unloaded</td>
+<td>CONMMAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission per nautical mile moving loaded</td>
+<td>CONMMVLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission per nautical mile moving total</td>
+<td>CONMMVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission per nautical mile moving unloaded</td>
+<td>CONMMVUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission per nautical mile steaming loaded</td>
+<td>CONMSTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission per nautical mile steaming total</td>
+<td>CONMSTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission per nautical mile steaming unloaded</td>
+<td>CONMSTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission Total (as 24h average) total loaded</td>
+<td>CT24TOLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission Total (as 24h average) total total</td>
+<td>CT24TOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission Total (as 24h average) total unloaded</td>
+<td>CT24TOUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission total loaded</td>
+<td>COTOTOLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission total total</td>
+<td>COTOTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CO2 emission total unloaded</td>
+<td>COTOTOUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count anchored loaded</td>
+<td>COUNANLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count anchored total</td>
+<td>COUNANTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count anchored unloaded</td>
+<td>COUNANUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count at yard loaded</td>
+<td>COUNYALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count at yard total</td>
+<td>COUNYATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count at yard unloaded</td>
+<td>COUNYAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count maneuvering loaded</td>
+<td>COUNMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count maneuvering total</td>
+<td>COUNMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count maneuvering unloaded</td>
+<td>COUNMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count moored loaded</td>
+<td>COUNMOLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count moored total</td>
+<td>COUNMOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count moored unloaded</td>
+<td>COUNMOUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count out of traffic loaded</td>
+<td>COUNOTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count out of traffic total</td>
+<td>COUNOTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count out of traffic unloaded</td>
+<td>COUNOTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count steaming loaded</td>
+<td>COUNSTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count steaming total</td>
+<td>COUNSTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count steaming unloaded</td>
+<td>COUNSTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count still undefined loaded</td>
+<td>COUNSULO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count still undefined total</td>
+<td>COUNSUTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count still undefined unloaded</td>
+<td>COUNSUUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Count total total</td>
+<td>COUNTOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Distance maneuvering loaded</td>
+<td>DISTMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Distance maneuvering total</td>
+<td>DISTMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Distance maneuvering unloaded</td>
+<td>DISTMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Distance moving loaded</td>
+<td>DISTMVLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Distance moving total</td>
+<td>DISTMVTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Distance moving unloaded</td>
+<td>DISTMVUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Distance steaming loaded</td>
+<td>DISTSTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Distance steaming total</td>
+<td>DISTSTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Distance steaming unloaded</td>
+<td>DISTSTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Distance still total</td>
+<td>DISTSLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Distance total total</td>
+<td>DISTTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft average total</td>
+<td>DRFTAVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft distance total total</td>
+<td>DRDITOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time anchored loaded</td>
+<td>DRTIANLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time anchored total</td>
+<td>DRTIANTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time anchored unloaded</td>
+<td>DRTIANUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time at yard loaded</td>
+<td>DRTIYALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time at yard total</td>
+<td>DRTIYATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time at yard unloaded</td>
+<td>DRTIYAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time maneuvering loaded</td>
+<td>DRTIMALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time maneuvering total</td>
+<td>DRTIMATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time maneuvering unloaded</td>
+<td>DRTIMAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time moored loaded</td>
+<td>DRTIMOLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time moored total</td>
+<td>DRTIMOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time moored unloaded</td>
+<td>DRTIMOUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time out of traffic loaded</td>
+<td>DRTIOTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time out of traffic total</td>
+<td>DRTIOTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time out of traffic unloaded</td>
+<td>DRTIOTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time steaming loaded</td>
+<td>DRTISTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time steaming total</td>
+<td>DRTISTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time steaming unloaded</td>
+<td>DRTISTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time still undefined loaded</td>
+<td>DRTISULO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time still undefined total</td>
+<td>DRTISUTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time still undefined unloaded</td>
+<td>DRTISUUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft time total total</td>
+<td>DRTITOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft total max</td>
+<td>DRFTTOMA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Draft total min</td>
+<td>DRFTTOMI</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>EEOI capacity design total</td>
+<td>EEOICDTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>EEOI capacity used total</td>
+<td>EEOICUTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>EEOI deadweight design total</td>
+<td>EEOIDDTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>EEOI deadweight used total</td>
+<td>EEOIDUTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>EEOI Total Total</td>
+<td>EEOITOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>EESH Total Total</td>
+<td>EESHTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake average total</td>
+<td>INTKAVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake distance total total</td>
+<td>INDITOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time anchored loaded</td>
+<td>INTIANLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time anchored total</td>
+<td>INTIANTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time anchored unloaded</td>
+<td>INTIANUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time at yard loaded</td>
+<td>INTIYALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time at yard total</td>
+<td>INTIYATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time at yard unloaded</td>
+<td>INTIYAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time maneuvering loaded</td>
+<td>INTIMALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time maneuvering total</td>
+<td>INTIMATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time maneuvering unloaded</td>
+<td>INTIMAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time moored loaded</td>
+<td>INTIMOLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time moored total</td>
+<td>INTIMOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time moored unloaded</td>
+<td>INTIMOUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time out of traffic loaded</td>
+<td>INTIOTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time out of traffic total</td>
+<td>INTIOTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time out of traffic unloaded</td>
+<td>INTIOTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time steaming loaded</td>
+<td>INTISTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time steaming total</td>
+<td>INTISTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time steaming unloaded</td>
+<td>INTISTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time still undefined loaded</td>
+<td>INTISULO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time still undefined total</td>
+<td>INTISUTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time still undefined unloaded</td>
+<td>INTISUUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake time total total</td>
+<td>INTITOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake total max</td>
+<td>INTKTOMA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Intake total min</td>
+<td>INTKTOMI</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ISPI Total Total</td>
+<td>ISPITOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Berth Area ID</td>
+<td>LASTBEID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last COG</td>
+<td>LASTCGDG</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Destination ETA</td>
+<td>LASTDEET</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Destination Name</td>
+<td>LASTDENA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Draft</td>
+<td>LASTDRPO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Draft</td>
+<td>LASTDRNE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last ECA Area ID</td>
+<td>LASTECID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Economic Zone ID</td>
+<td>LASTEZID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Economic Zone Latitude</td>
+<td>LASTEZLA</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Economic Zone Longitude</td>
+<td>LASTEZLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Economic Zone Name</td>
+<td>LASTEZNA</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Freshwater Area ID</td>
+<td>LASTFWID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last HDG</td>
+<td>LASTHDDG</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Intake</td>
+<td>LASTITMT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Latitude</td>
+<td>LASTLAPO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Longitude</td>
+<td>LASTLOPO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Movement Type</td>
+<td>LASTVMTY</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Navigational Status ID</td>
+<td>LASTNSID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Oil Field Area ID</td>
+<td>LASTOFID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Piracy Area JWC ID</td>
+<td>LASTPYID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Port Area ID</td>
+<td>LASTPTID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Port Area Latitude</td>
+<td>LASTPOLA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Port Area Longitude</td>
+<td>LASTPOLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Port Area Name</td>
+<td>LASTPONA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Port Area Type ID</td>
+<td>LASTPOTY</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Port Area UNLOCODE</td>
+<td>LASTPOUN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Position ID</td>
+<td>LASTPOID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Sea Area ID</td>
+<td>LASTSEID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Sea Area Latitude</td>
+<td>LASTSALA</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Sea Area Longitude</td>
+<td>LASTSALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Sea Area Name</td>
+<td>LASTSANA</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last SOG</td>
+<td>LASTSGKN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Speed From Previous</td>
+<td>LASTSPCA</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Terminal Area ID</td>
+<td>LASTTEID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Territorial Water ID</td>
+<td>LASTTWID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Time Logged</td>
+<td>LASTTILO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Time Received</td>
+<td>LASTTIRE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Trading Area ID</td>
+<td>LASTTRID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Traffic Launch Area ID</td>
+<td>LASTTLID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Traffic Tube Area ID</td>
+<td>LASTTTID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last Water Temperature</td>
+<td>LASTWATP</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last YAMIT Area ID</td>
+<td>LASTYMID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Last YAMIT Yard Area ID</td>
+<td>LASTYAID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy maneuvering loaded</td>
+<td>MEENMALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy maneuvering total</td>
+<td>MEENMATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy maneuvering unloaded</td>
+<td>MEENMAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy moving loaded</td>
+<td>MEENMVLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy moving total</td>
+<td>MEENMVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy moving unloaded</td>
+<td>MEENMVUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy steaming loaded</td>
+<td>MEENSTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy steaming total</td>
+<td>MEENSTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy steaming unloaded</td>
+<td>MEENSTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy still loaded</td>
+<td>MEENSLLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy still total</td>
+<td>MEENSLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy still unloaded</td>
+<td>MEENSLUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME energy total total</td>
+<td>MEENTOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel maneuvering loaded</td>
+<td>MEFUMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel maneuvering total</td>
+<td>MEFUMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel maneuvering unloaded</td>
+<td>MEFUMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel moving loaded</td>
+<td>MEFUMVLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel moving total</td>
+<td>MEFUMVTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel moving unloaded</td>
+<td>MEFUMVUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day maneuvering loaded</td>
+<td>MEPDMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day maneuvering total</td>
+<td>MEPDMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day maneuvering unloaded</td>
+<td>MEPDMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day moving loaded</td>
+<td>MEPDMVLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day moving total</td>
+<td>MEPDMVTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day moving unloaded</td>
+<td>MEPDMVUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day steaming loaded</td>
+<td>MEPDSTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day steaming total</td>
+<td>MEPDSTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day steaming unloaded</td>
+<td>MEPDSTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day still loaded</td>
+<td>MEPDSLLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day still total</td>
+<td>MEPDSLTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day still unloaded</td>
+<td>MEPDSLUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel per day total total</td>
+<td>MEPDTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>ME fuel per nautical mile maneuvering loaded</strong></td>
+<td><strong>MENMMALO</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>ME fuel per nautical mile maneuvering total</strong></td>
+<td><strong>MENMMATO</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>ME fuel per nautical mile maneuvering unloaded</strong></td>
+<td><strong>MENMMAUL</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>ME fuel per nautical mile moving loaded</strong></td>
+<td><strong>MENMMVLO</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>ME fuel per nautical mile moving total</strong></td>
+<td><strong>MENMMVTO</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>ME fuel per nautical mile moving unloaded</strong></td>
+<td><strong>MENMMVUL</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>ME fuel per nautical mile steaming loaded</strong></td>
+<td><strong>MENMSTLO</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>ME fuel per nautical mile steaming total</strong></td>
+<td><strong>MENMSTTO</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>ME fuel per nautical mile steaming unloaded</strong></td>
+<td><strong>MENMSTUL</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel steaming loaded</td>
+<td>MEFUSTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel steaming total</td>
+<td>MEFUSTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel steaming unloaded</td>
+<td>MEFUSTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel still loaded</td>
+<td>MEFUSLLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel still total</td>
+<td>MEFUSLTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel still unloaded</td>
+<td>MEFUSLUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME fuel total total</td>
+<td>MEFUTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent maneuvering loaded</td>
+<td>MECRMALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent maneuvering total</td>
+<td>MECRMATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent maneuvering unloaded</td>
+<td>MECRMAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent moving loaded</td>
+<td>MECRMVLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent moving total</td>
+<td>MECRMVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent moving unloaded</td>
+<td>MECRMVUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent steaming loaded</td>
+<td>MECRSTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent steaming total</td>
+<td>MECRSTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent steaming unloaded</td>
+<td>MECRSTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent still loaded</td>
+<td>MECRSLLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent still total</td>
+<td>MECRSLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent still unloaded</td>
+<td>MECRSLUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME MCR percent total total</td>
+<td>MECRTOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power maneuvering loaded</td>
+<td>MEPWMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power maneuvering total</td>
+<td>MEPWMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power maneuvering unloaded</td>
+<td>MEPWMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power moving loaded</td>
+<td>MEPWMVLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power moving total</td>
+<td>MEPWMVTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power moving unloaded</td>
+<td>MEPWMVUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power steaming loaded</td>
+<td>MEPWSTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power steaming total</td>
+<td>MEPWSTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power steaming unloaded</td>
+<td>MEPWSTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power still loaded</td>
+<td>MEPWSLLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power still total</td>
+<td>MEPWSLTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power still unloaded</td>
+<td>MEPWSLUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ME power total total</td>
+<td>MEPWTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Observations number of total</td>
+<td>OBSRNUTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Speed maneuvering loaded</td>
+<td>SPEDMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Speed maneuvering total</td>
+<td>SPEDMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Speed maneuvering unloaded</td>
+<td>SPEDMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Speed moving loaded</td>
+<td>SPEDMVLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Speed moving total</td>
+<td>SPEDMVTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Speed moving unloaded</td>
+<td>SPEDMVUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Speed steaming loaded</strong></td>
+<td><strong>SPEDSTLO</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Speed steaming total</strong></td>
+<td><strong>SPEDSTTO</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Speed steaming unloaded</strong></td>
+<td><strong>SPEDSTUL</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Speed still total</td>
+<td>SPEDSLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Speed total total</td>
+<td>SPEDTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Standard Ship Design Name</td>
+<td>VESSSDNA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time anchored loaded</td>
+<td>TIMEANLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time anchored total</td>
+<td>TIMEANTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time anchored unloaded</td>
+<td>TIMEANUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time at yard loaded</td>
+<td>TIMEYALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time at yard total</td>
+<td>TIMEYATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time at yard unloaded</td>
+<td>TIMEYAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time maneuvering loaded</td>
+<td>TIMEMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time maneuvering total</td>
+<td>TIMEMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time maneuvering unloaded</td>
+<td>TIMEMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time moored loaded</td>
+<td>TIMEMOLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time moored total</td>
+<td>TIMEMOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time moored unloaded</td>
+<td>TIMEMOUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time moving loaded</td>
+<td>TIMEMVLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time moving total</td>
+<td>TIMEMVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time moving unloaded</td>
+<td>TIMEMVUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time out of traffic loaded</td>
+<td>TIMEOTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time out of traffic total</td>
+<td>TIMEOTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time out of traffic unloaded</td>
+<td>TIMEOTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time silent max</td>
+<td>TIMESIMA</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time silent steaming max</td>
+<td>TIMESSMA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time steaming loaded</td>
+<td>TIMESTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time steaming total</td>
+<td>TIMESTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time steaming unloaded</td>
+<td>TIMESTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time still loaded</td>
+<td>TIMESLLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time still total</td>
+<td>TIMESLTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time still undefined loaded</td>
+<td>TIMESULO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time still undefined total</td>
+<td>TIMESUTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time still undefined unloaded</td>
+<td>TIMESUUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time still unloaded</td>
+<td>TIMESLUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time total total</td>
+<td>TIMETOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time total total loaded</td>
+<td>TIMETOLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Time total total unloaded</td>
+<td>TIMETOUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel anchored loaded</td>
+<td>TOFUANLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel anchored total</td>
+<td>TOFUANTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel anchored unloaded</td>
+<td>TOFUANUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel at yard loaded</td>
+<td>TOFUYALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel at yard total</td>
+<td>TOFUYATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel at yard unloaded</td>
+<td>TOFUYAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel maneuvering loaded</td>
+<td>TOFUMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel maneuvering total</td>
+<td>TOFUMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel maneuvering unloaded</td>
+<td>TOFUMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel moored loaded</td>
+<td>TOFUMOLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel moored total</td>
+<td>TOFUMOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel moored unloaded</td>
+<td>TOFUMOUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel moving loaded</td>
+<td>TOFUMVLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel moving total</td>
+<td>TOFUMVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel moving unloaded</td>
+<td>TOFUMVUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel out of traffic loaded</td>
+<td>TOFUOTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel out of traffic total</td>
+<td>TOFUOTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel out of traffic unloaded</td>
+<td>TOFUOTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day anchored loaded</td>
+<td>TOPDANLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day anchored total</td>
+<td>TOPDANTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day anchored unloaded</td>
+<td>TOPDANUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day at yard loaded</td>
+<td>TOPDYALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day at yard total</td>
+<td>TOPDYATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day at yard unloaded</td>
+<td>TOPDYAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day maneuvering loaded</td>
+<td>TOPDMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day maneuvering total</td>
+<td>TOPDMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day maneuvering unloaded</td>
+<td>TOPDMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day moored loaded</td>
+<td>TOPDMOLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day moored total</td>
+<td>TOPDMOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day moored unloaded</td>
+<td>TOPDMOUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day moving loaded</td>
+<td>TOPDMVLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day moving total</td>
+<td>TOPDMVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day moving unloaded</td>
+<td>TOPDMVUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day out of traffic loaded</td>
+<td>TOPDOTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day out of traffic total</td>
+<td>TOPDOTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day out of traffic unloaded</td>
+<td>TOPDOTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day steaming loaded</td>
+<td>TOPDSTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day steaming total</td>
+<td>TOPDSTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day steaming unloaded</td>
+<td>TOPDSTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day still loaded</td>
+<td>TOPDSLLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day still total</td>
+<td>TOPDSLTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day still undefined loaded</td>
+<td>TOPDSULO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day still undefined total</td>
+<td>TOPDSUTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day still undefined unloaded</td>
+<td>TOPDSUUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day still unloaded</td>
+<td>TOPDSLUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day total loaded</td>
+<td>TOPDTOLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day total total</td>
+<td>TOPDTOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per day total unloaded</td>
+<td>TOPDTOUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per nautical mile maneuvering loaded</td>
+<td>TONMMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per nautical mile maneuvering total</td>
+<td>TONMMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per nautical mile maneuvering unloaded</td>
+<td>TONMMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per nautical mile moving loaded</td>
+<td>TONMMVLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per nautical mile moving total</td>
+<td>TONMMVTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per nautical mile moving unloaded</td>
+<td>TONMMVUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per nautical mile steaming loaded</td>
+<td>TONMSTLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per nautical mile steaming total</td>
+<td>TONMSTTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel per nautical mile steaming unloaded</td>
+<td>TONMSTUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel steaming loaded</td>
+<td>TOFUSTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel steaming total</td>
+<td>TOFUSTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel steaming unloaded</td>
+<td>TOFUSTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel still loaded</td>
+<td>TOFUSLLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel still total</td>
+<td>TOFUSLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel still undefined loaded</td>
+<td>TOFUSULO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel still undefined total</td>
+<td>TOFUSUTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel still undefined unloaded</td>
+<td>TOFUSUUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel still unloaded</td>
+<td>TOFUSLUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel total loaded</td>
+<td>TOFUTOLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel total total</td>
+<td>TOFUTOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Total fuel total unloaded</td>
+<td>TOFUTOUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Transport work weight design</td>
+<td>TRWOWEDE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Transport work weight used</td>
+<td>TRWOWEUS</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor anchored loaded</td>
+<td>UTFIANLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor anchored total</td>
+<td>UTFIANTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor anchored unloaded</td>
+<td>UTFIANUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor at yard loaded</td>
+<td>UTFIYALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor at yard total</td>
+<td>UTFIYATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor at yard unloaded</td>
+<td>UTFIYAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor maneuvering loaded</td>
+<td>UTFIMALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor maneuvering total</td>
+<td>UTFIMATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor maneuvering unloaded</td>
+<td>UTFIMAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor moored loaded</td>
+<td>UTFIMOLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor moored total</td>
+<td>UTFIMOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor moored unloaded</td>
+<td>UTFIMOUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor out of traffic loaded</td>
+<td>UTFIOTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor out of traffic total</td>
+<td>UTFIOTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor out of traffic unloaded</td>
+<td>UTFIOTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Utilisation filling factor steaming loaded</strong></td>
+<td><strong>UTFISTLO</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Utilisation filling factor steaming total</strong></td>
+<td><strong>UTFISTTO</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Utilisation filling factor steaming unloaded</strong></td>
+<td><strong>UTFISTUL</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor still undefined loaded</td>
+<td>UTFISULO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor still undefined total</td>
+<td>UTFISUTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor still undefined unloaded</td>
+<td>UTFISUUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation filling factor total total</td>
+<td>UTFITOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation speed maneuvering loaded</td>
+<td>UTSPMALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation speed maneuvering total</td>
+<td>UTSPMATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation speed maneuvering unloaded</td>
+<td>UTSPMAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation speed moving loaded</td>
+<td>UTSPMVLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation speed moving total</td>
+<td>UTSPMVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation speed moving unloaded</td>
+<td>UTSPMVUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Utilisation speed steaming loaded</strong></td>
+<td><strong>UTSPSTLO</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Utilisation speed steaming total</strong></td>
+<td><strong>UTSPSTTO</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Utilisation speed steaming unloaded</strong></td>
+<td><strong>UTSPSTUL</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation speed still total</td>
+<td>UTSPSLTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation speed total total</td>
+<td>UTSPTOTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time anchored loaded</td>
+<td>UTTIANLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time anchored total</td>
+<td>UTTIANTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time anchored unloaded</td>
+<td>UTTIANUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time at yard loaded</td>
+<td>UTTIYALO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time at yard total</td>
+<td>UTTIYATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time at yard unloaded</td>
+<td>UTTIYAUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time maneuvering loaded</td>
+<td>UTTIMALO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time maneuvering total</td>
+<td>UTTIMATO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time maneuvering unloaded</td>
+<td>UTTIMAUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time moored loaded</td>
+<td>UTTIMOLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time moored total</td>
+<td>UTTIMOTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time moored unloaded</td>
+<td>UTTIMOUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time moving loaded</td>
+<td>UTTIMVLO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time moving total</td>
+<td>UTTIMVTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time moving unloaded</td>
+<td>UTTIMVUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time out of traffic loaded</td>
+<td>UTTIOTLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time out of traffic total</td>
+<td>UTTIOTTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time out of traffic unloaded</td>
+<td>UTTIOTUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Utilisation time steaming loaded</strong></td>
+<td><strong>UTTISTLO</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Utilisation time steaming total</strong></td>
+<td><strong>UTTISTTO</strong></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><strong>Utilisation time steaming unloaded</strong></td>
+<td><strong>UTTISTUL</strong></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time still  out of port loaded</td>
+<td>UTTISPLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time still  out of port unloaded</td>
+<td>UTTISPUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time still loaded</td>
+<td>UTTISLLO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time still out of port total</td>
+<td>UTTISPTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time still total</td>
+<td>UTTISLTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time still undefined loaded</td>
+<td>UTTISULO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time still undefined total</td>
+<td>UTTISUTO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time still undefined unloaded</td>
+<td>UTTISUUL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Utilisation time still unloaded</td>
+<td>UTTISLUL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel  ID</td>
+<td>VESSIYID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel age</td>
+<td>VESSAGYR</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Age alive</td>
+<td>VESSAGAL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel age group Index</td>
+<td>VESSAGGI</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel age group name</td>
+<td>VESSAGGN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner city</td>
+<td>VESSBOCI</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner country</td>
+<td>VESSBOCN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner country ISO 2 code</td>
+<td>VESSBOC2</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner country ISO 3 code</td>
+<td>VESSBOC3</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner ID</td>
+<td>VESSBOID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner name</td>
+<td>VESSBONM</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel benificial owner sea web link</td>
+<td>VESSBOWL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel birth date</td>
+<td>VESSBIDT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel birth month</td>
+<td>VESSBIMO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel breadth</td>
+<td>VESSBRME</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel breadth group Index</td>
+<td>VESSBRGI</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel breadth group name</td>
+<td>VESSBRGN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel call sign</td>
+<td>VESSIYCS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel capacity</td>
+<td>VESSCAAM</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel capacityUnit</td>
+<td>VESSCAUN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Cargo Capacity Max Draft</td>
+<td>VESSCCHD</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Cargo Capacity Max Ton</td>
+<td>VESSCCHT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Cargo Capacity Min Draft</td>
+<td>VESSCCLD</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Cargo Capacity Min Ton</td>
+<td>VESSCCLT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Coated tanks</td>
+<td>VESSCOTA</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 1 size name</td>
+<td>VESSC1SN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 1 super type name</td>
+<td>VESSC1ST</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 1 type name</td>
+<td>VESSC1TN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 1 type size ID</td>
+<td>VESSC1ID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 1 type size name</td>
+<td>VESSC1TS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 2 size name</td>
+<td>VESSC2SN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 2 super type name</td>
+<td>VESSC2ST</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 2 type name</td>
+<td>VESSC2TN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 2 type size ID</td>
+<td>VESSC2ID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial 2 type size name</td>
+<td>VESSC2TS</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial size name</td>
+<td>VESSTCSN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial super type name</td>
+<td>VESSTCST</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial type name</td>
+<td>VESSTCTN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial type size ID</td>
+<td>VESSTCID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel commercial type size name</td>
+<td>VESSTCTS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel current name</td>
+<td>VESSIYCN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel deadweight</td>
+<td>VESSDWMT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel death date</td>
+<td>VESSDEDT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel death month</td>
+<td>VESSDEMO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Depth</td>
+<td>VESSDEPT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel design draft</td>
+<td>VESSDIDR</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel design service speed</td>
+<td>VESSDISP</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel detailed IHS type ID</td>
+<td>VESSIHID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel detailed IHS type name</td>
+<td>VESSIHNM</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Dual Fuel Engine And Tank Type</td>
+<td>VESSDFTT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel engine size group Index</td>
+<td>VESSESGI</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel engine size group name</td>
+<td>VESSESGN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel engine size power</td>
+<td>VESSESPW</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel flag</td>
+<td>VESSIYFL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel gross ton</td>
+<td>VESSGTAM</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Group Benificial Owner Country Code IHS</td>
+<td>VESSBOIH</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Group Benificial Owner Vessel ID List</td>
+<td>VESSBOIL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel IMO number</td>
+<td>VESSIYIM</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Installed Auxiliary Engine Power</td>
+<td>VESSAUPO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Installed Generator Power</td>
+<td>VESSGEPO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Installed Main Engine Power</td>
+<td>VESSMEPO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel intermediate survey</td>
+<td>VESSISMO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel intermediate survey occation</td>
+<td>VESSISTY</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Is active</td>
+<td>VESSIAYN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Is Dual Fuel</td>
+<td>VESSDUFU</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Is Scrubber Fitted</td>
+<td>VESSSCFT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel last seen month</td>
+<td>VESSLSMO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel last statistics month</td>
+<td>VESSLTMO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel length</td>
+<td>VESSLEME</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Length (LPB)</td>
+<td>VESSLEPB</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel length group Index</td>
+<td>VESSLEGI</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel length group name</td>
+<td>VESSLEGN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Light Displacement</td>
+<td>VESSLIDI</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Main Engine Model</td>
+<td>VESSMEMO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Main Engine Producer</td>
+<td>VESSMEPR</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Main Propulsion Type</td>
+<td>VESSMEPT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel MMSI number</td>
+<td>VESSIYMM</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel next survey</td>
+<td>VESSNSMO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel next survey type</td>
+<td>VESSNSTY</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Number of Engines</td>
+<td>VESSNREN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Number of Gas Turbines</td>
+<td>VESSNRGT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel number of observed</td>
+<td>VESSNUOB</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Number of Steam RCP</td>
+<td>VESSNRSR</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Number of Steam Turbines</td>
+<td>VESSNRST</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel number of total</td>
+<td>VESSNUTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator city</td>
+<td>VESSOPCI</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator country</td>
+<td>VESSOPCN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Operator Country Code IHS</td>
+<td>VESSOPIH</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator country ISO 2 code</td>
+<td>VESSOPC2</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator country ISO 3 code</td>
+<td>VESSOPC3</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator ID</td>
+<td>VESSOPID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator name</td>
+<td>VESSOPNM</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel operator sea web link</td>
+<td>VESSOPWL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Operator Vessel ID List</td>
+<td>VESSOPIL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Propulsion Code</td>
+<td>VESSPRCO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel sea web link</td>
+<td>VESSIYWL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Ship Serie Lead IMO</td>
+<td>VESSSSLI</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder city</td>
+<td>VESSSBCI</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder country</td>
+<td>VESSSBCN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Shipbuilder Country Code IHS</td>
+<td>VESSSBIH</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder country ISO 2 code</td>
+<td>VESSSBC2</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder country ISO 3 code</td>
+<td>VESSSBC3</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder ID</td>
+<td>VESSSBID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder name</td>
+<td>VESSSBNM</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder newbuildnumber</td>
+<td>VESSSBNN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel shipbuilder sea web link</td>
+<td>VESSSBWL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Shipbuilder Vessel ID List</td>
+<td>VESSSBIL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel special survey</td>
+<td>VESSSSMO</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel special survey order</td>
+<td>VESSSSTY</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Stainless Tank</td>
+<td>VESSSTTA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel status</td>
+<td>VESSSTNM</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Stroke Cycle</td>
+<td>VESSSTRC</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Stroke Type</td>
+<td>VESSSTRT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel sum cap observed</td>
+<td>VESSCAOB</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel sum cap total</td>
+<td>VESSCATO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel sum dwt observed</td>
+<td>VESSDWOB</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel sum dwt total</td>
+<td>VESSDWTO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager city</td>
+<td>VESSTMCI</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager country</td>
+<td>VESSTMCN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Technical Manager Country Code IHS</td>
+<td>VESSTMIH</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager country ISO 2 code</td>
+<td>VESSTMC2</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager country ISO 3 code</td>
+<td>VESSTMC3</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager ID</td>
+<td>VESSTMID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager name</td>
+<td>VESSTMNM</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager sea web link</td>
+<td>VESSTMWL</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Technical Manager Vessel ID List</td>
+<td>VESSTMIL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager country ISO 3 code</td>
+<td>VESSTMC3</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager ID</td>
+<td>VESSTMID</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager name</td>
+<td>VESSTMNM</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel technical manager sea web link</td>
+<td>VESSTMWL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Vessel Technical Manager Vessel ID List</td>
+<td>VESSTMIL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="api_bespoke.html" class="btn btn-neutral float-left" title="Bespoke API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, Marine Benchmark
+      <span class="lastupdated">
+        Last updated on 2021/08/13.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

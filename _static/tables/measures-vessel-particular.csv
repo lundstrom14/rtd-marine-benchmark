@@ -1,0 +1,122 @@
+﻿Subcategory;Catalogue;Measure name;Measure code
+**Vessel particulars world fleet and statistics**;**Vessel current vessel information**;Vessel Age alive;VESSAGAL
+;;Vessel age group Index;VESSAGGI
+;;Vessel age group name;VESSAGGN
+;;**Vessel age**;**VESSAGYR**
+;;Vessel Installed Auxiliary Engine Power;VESSAUPO
+;;Vessel birth date;VESSBIDT
+;;Vessel birth month;VESSBIMO
+;;Vessel benificial owner country ISO 2 code;VESSBOC2
+;;Vessel benificial owner country ISO 3 code;VESSBOC3
+;;Vessel benificial owner city;VESSBOCI
+;;Vessel benificial owner country;VESSBOCN
+;;Vessel benificial owner ID;VESSBOID
+;;Vessel Group Benificial Owner Country Code IHS;VESSBOIH
+;;Vessel Group Benificial Owner Vessel ID List;VESSBOIL
+;;**Vessel benificial owner name**;**VESSBONM**
+;;Vessel benificial owner sea web link;VESSBOWL
+;;Vessel breadth group Index;VESSBRGI
+;;Vessel breadth group name;VESSBRGN
+;;Vessel breadth;VESSBRME
+;;Vessel commercial 1 type size ID;VESSC1ID
+;;Vessel commercial 1 size name;VESSC1SN
+;;Vessel commercial 1 super type name;VESSC1ST
+;;Vessel commercial 1 type name;VESSC1TN
+;;Vessel commercial 1 type size name;VESSC1TS
+;;Vessel commercial 2 type size ID;VESSC2ID
+;;Vessel commercial 2 size name;VESSC2SN
+;;Vessel commercial 2 super type name;VESSC2ST
+;;Vessel commercial 2 type name;VESSC2TN
+;;Vessel commercial 2 type size name;VESSC2TS
+;;**Vessel capacity**;**VESSCAAM**
+;;Vessel capacityUnit;VESSCAUN
+;;Vessel Cargo Capacity Max Draft;VESSCCHD
+;;Vessel Cargo Capacity Max Ton;VESSCCHT
+;;Vessel Cargo Capacity Min Draft;VESSCCLD
+;;Vessel Cargo Capacity Min Ton;VESSCCLT
+;;Vessel Coated tanks;VESSCOTA
+;;Vessel death date;VESSDEDT
+;;Vessel death month;VESSDEMO
+;;Vessel Depth;VESSDEPT
+;;Vessel Dual Fuel Engine And Tank Type;VESSDFTT
+;;**Vessel design draft**;**VESSDIDR**
+;;**Vessel design service speed**;**VESSDISP**
+;;Vessel Is Dual Fuel;VESSDUFU
+;;**Vessel deadweight**;**VESSDWMT**
+;;Vessel engine size group Index;VESSESGI
+;;Vessel engine size group name;VESSESGN
+;;Vessel engine size power;VESSESPW
+;;Vessel Installed Generator Power;VESSGEPO
+;;**Vessel gross ton**;**VESSGTAM**
+;;Vessel Is active;VESSIAYN
+;;Vessel detailed IHS type ID;VESSIHID
+;;Vessel detailed IHS type name;VESSIHNM
+;;Vessel intermediate survey;VESSISMO
+;;Vessel intermediate survey occation;VESSISTY
+;;Vessel current name;VESSIYCN
+;;Vessel call sign;VESSIYCS
+;;Vessel flag;VESSIYFL
+;;Vessel  ID;VESSIYID
+;;Vessel IMO number;VESSIYIM
+;;Vessel MMSI number;VESSIYMM
+;;Vessel sea web link;VESSIYWL
+;;Vessel length group Index;VESSLEGI
+;;Vessel length group name;VESSLEGN
+;;Vessel length (LOA);VESSLEME
+;;Vessel Length (LPB);VESSLEPB
+;;Vessel Light Displacement;VESSLIDI
+;;Vessel last seen month;VESSLSMO
+;;Vessel last statistics month;VESSLTMO
+;;Vessel Main Engine Model;VESSMEMO
+;;**Vessel Installed Main Engine Power**;**VESSMEPO**
+;;Vessel Main Engine Producer;VESSMEPR
+;;Vessel Main Propulsion Type;VESSMEPT
+;;Vessel Number of Engines;VESSNREN
+;;Vessel Number of Gas Turbines;VESSNRGT
+;;Vessel Number of Steam RCP;VESSNRSR
+;;Vessel Number of Steam Turbines;VESSNRST
+;;Vessel next survey;VESSNSMO
+;;Vessel next survey type;VESSNSTY
+;;Vessel operator country ISO 2 code;VESSOPC2
+;;Vessel operator country ISO 3 code;VESSOPC3
+;;Vessel operator city;VESSOPCI
+;;Vessel operator country;VESSOPCN
+;;Vessel operator ID;VESSOPID
+;;Vessel Operator Country Code IHS;VESSOPIH
+;;Vessel Operator Vessel ID List;VESSOPIL
+;;**Vessel operator name**;**VESSOPNM**
+;;Vessel operator sea web link;VESSOPWL
+;;Vessel Propulsion Code;VESSPRCO
+;;Vessel shipbuilder country ISO 2 code;VESSSBC2
+;;Vessel shipbuilder country ISO 3 code;VESSSBC3
+;;Vessel shipbuilder city;VESSSBCI
+;;Vessel shipbuilder country;VESSSBCN
+;;Vessel shipbuilder ID;VESSSBID
+;;Vessel Shipbuilder Country Code IHS;VESSSBIH
+;;Vessel Shipbuilder Vessel ID List;VESSSBIL
+;;Vessel shipbuilder name;VESSSBNM
+;;Vessel shipbuilder newbuildnumber;VESSSBNN
+;;Vessel shipbuilder sea web link;VESSSBWL
+;;Vessel Is Scrubber Fitted;VESSSCFT
+;;Vessel Standard Ship Design Name;VESSSDNA
+;;Vessel Ship Serie Lead IMO;VESSSSLI
+;;Vessel special survey;VESSSSMO
+;;Vessel special survey order;VESSSSTY
+;;Vessel status;VESSSTNM
+;;Vessel Stroke Cycle;VESSSTRC
+;;Vessel Stroke Type;VESSSTRT
+;;Vessel Stainless Tank;VESSSTTA
+;;Vessel commercial type size ID;VESSTCID
+;;Vessel commercial size name;VESSTCSN
+;;Vessel commercial super type name;VESSTCST
+;;Vessel commercial type name;VESSTCTN
+;;Vessel commercial type size name;VESSTCTS
+;;Vessel technical manager country ISO 2 code;VESSTMC2
+;;Vessel technical manager country ISO 3 code;VESSTMC3
+;;Vessel technical manager city;VESSTMCI
+;;Vessel technical manager country;VESSTMCN
+;;Vessel technical manager ID;VESSTMID
+;;Vessel Technical Manager Country Code IHS;VESSTMIH
+;;Vessel Technical Manager Vessel ID List;VESSTMIL
+;;Vessel technical manager name;VESSTMNM
+;;Vessel technical manager sea web link;VESSTMWL

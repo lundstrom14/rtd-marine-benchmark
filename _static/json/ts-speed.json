@@ -1,0 +1,372 @@
+[
+    [
+      {
+        "TimeSerieCatalogueCode": "MBVDTSP5MON",
+        "TimeSerieName": "Monthly Speed05 - Time distributed total",
+        "MeasurementDescription": "Time distributed total. Distributed time is time per catalogue dimension. Total is time independent of loaded or unloaded.",
+        "TimeSerieUnit": "hour",
+        "TimeSerieMeasureCode": "TIMEDITO"
+      },
+      {
+        "TimeSerieCatalogueCode": "MBVDTSP5MON",
+        "TimeSerieName": "Monthly Speed05 - Distance distributed total",
+        "MeasurementDescription": "Distance distributed total. Distributed distance is distance per catalogue dimension. Total is time independent of loaded or unloaded.",
+        "TimeSerieUnit": "nm",
+        "TimeSerieMeasureCode": "DISTDITO"
+      }
+    ],
+    [
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 0,
+        "Dimension2": 0,
+        "TIMEDITO": 194872.576111117,
+        "DISTDITO": 8055.797902625
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 0.5,
+        "Dimension2": 0,
+        "TIMEDITO": 21265.881388899,
+        "DISTDITO": 9719.153659359
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 1,
+        "Dimension2": 0,
+        "TIMEDITO": 9197.287499997,
+        "DISTDITO": 8828.355573422
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 1.5,
+        "Dimension2": 0,
+        "TIMEDITO": 5741.911111108,
+        "DISTDITO": 8569.649890786
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 2,
+        "Dimension2": 0,
+        "TIMEDITO": 3832.668611096,
+        "DISTDITO": 7585.47741671
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 2.5,
+        "Dimension2": 0,
+        "TIMEDITO": 2880.331388894,
+        "DISTDITO": 7142.167442422
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 3,
+        "Dimension2": 0,
+        "TIMEDITO": 2254.983333342,
+        "DISTDITO": 6771.847320204
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 3.5,
+        "Dimension2": 0,
+        "TIMEDITO": 2753.772777772,
+        "DISTDITO": 9599.393389672
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 4,
+        "Dimension2": 0,
+        "TIMEDITO": 2374.67111111,
+        "DISTDITO": 9377.666315417
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 4.5,
+        "Dimension2": 0,
+        "TIMEDITO": 1868.422222233,
+        "DISTDITO": 8412.997497892
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 5,
+        "Dimension2": 0,
+        "TIMEDITO": 1424.644722218,
+        "DISTDITO": 7163.307616438
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 5.5,
+        "Dimension2": 0,
+        "TIMEDITO": 1915.615833329,
+        "DISTDITO": 10515.805025793
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 6,
+        "Dimension2": 0,
+        "TIMEDITO": 1345.053055547,
+        "DISTDITO": 8077.420233957
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 6.5,
+        "Dimension2": 0,
+        "TIMEDITO": 1554.712222227,
+        "DISTDITO": 10134.994808919
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 7,
+        "Dimension2": 0,
+        "TIMEDITO": 2149.985555554,
+        "DISTDITO": 15187.187969921
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 7.5,
+        "Dimension2": 0,
+        "TIMEDITO": 3865.004166669,
+        "DISTDITO": 29089.092179951
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 8,
+        "Dimension2": 0,
+        "TIMEDITO": 3844.181666669,
+        "DISTDITO": 30824.882329003
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 8.5,
+        "Dimension2": 0,
+        "TIMEDITO": 4844.676944441,
+        "DISTDITO": 41191.70001198
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 9,
+        "Dimension2": 0,
+        "TIMEDITO": 6093.884444442,
+        "DISTDITO": 54902.201198909
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 9.5,
+        "Dimension2": 0,
+        "TIMEDITO": 9309.878888897,
+        "DISTDITO": 88506.0053603
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 10,
+        "Dimension2": 0,
+        "TIMEDITO": 10865.711111109,
+        "DISTDITO": 108796.258803321
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 10.5,
+        "Dimension2": 0,
+        "TIMEDITO": 13299.196111119,
+        "DISTDITO": 139671.141432985
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 11,
+        "Dimension2": 0,
+        "TIMEDITO": 18882.70555555,
+        "DISTDITO": 208145.312390321
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 11.5,
+        "Dimension2": 0,
+        "TIMEDITO": 28784.085833338,
+        "DISTDITO": 331500.298184571
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 12,
+        "Dimension2": 0,
+        "TIMEDITO": 36882.786111103,
+        "DISTDITO": 442911.888594152
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 12.5,
+        "Dimension2": 0,
+        "TIMEDITO": 43977.570555567,
+        "DISTDITO": 550135.924112397
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 13,
+        "Dimension2": 0,
+        "TIMEDITO": 43653.054999994,
+        "DISTDITO": 567127.514307294
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 13.5,
+        "Dimension2": 0,
+        "TIMEDITO": 28465.037777767,
+        "DISTDITO": 383748.348872757
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 14,
+        "Dimension2": 0,
+        "TIMEDITO": 20449.20444444,
+        "DISTDITO": 285975.86790419
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 14.5,
+        "Dimension2": 0,
+        "TIMEDITO": 13981.650000004,
+        "DISTDITO": 202521.643513031
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 15,
+        "Dimension2": 0,
+        "TIMEDITO": 10508.627222228,
+        "DISTDITO": 157469.947019423
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 15.5,
+        "Dimension2": 0,
+        "TIMEDITO": 7136.857499995,
+        "DISTDITO": 110643.229966504
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 16,
+        "Dimension2": 0,
+        "TIMEDITO": 4825.193888882,
+        "DISTDITO": 77132.217907411
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 16.5,
+        "Dimension2": 0,
+        "TIMEDITO": 2309.687777784,
+        "DISTDITO": 38046.946498414
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 17,
+        "Dimension2": 0,
+        "TIMEDITO": 1176.964166667,
+        "DISTDITO": 19956.409956307
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 17.5,
+        "Dimension2": 0,
+        "TIMEDITO": 454.449166676,
+        "DISTDITO": 7924.812541538
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 18,
+        "Dimension2": 0,
+        "TIMEDITO": 190.628611117,
+        "DISTDITO": 3441.227312951
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 18.5,
+        "Dimension2": 0,
+        "TIMEDITO": 49.243333342,
+        "DISTDITO": 908.404307869
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 19,
+        "Dimension2": 0,
+        "TIMEDITO": 41.144722231,
+        "DISTDITO": 779.672549996
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 19.5,
+        "Dimension2": 0,
+        "TIMEDITO": 22.913333358,
+        "DISTDITO": 446.903356999
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 20,
+        "Dimension2": 0,
+        "TIMEDITO": 11.992777792,
+        "DISTDITO": 239.644150907
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 20.5,
+        "Dimension2": 0,
+        "TIMEDITO": 2.168888893,
+        "DISTDITO": 44.056161883
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 21,
+        "Dimension2": 0,
+        "TIMEDITO": 0.001666668,
+        "DISTDITO": 0.034875071
+      },
+      {
+        "Entity1ID": 210102,
+        "Period": 202006,
+        "Dimension1": 21.5,
+        "Dimension2": 0,
+        "TIMEDITO": 0.001944445,
+        "DISTDITO": 0.041996349
+      }
+    ]
+  ]

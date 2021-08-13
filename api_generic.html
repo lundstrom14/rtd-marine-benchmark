@@ -1,0 +1,1290 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Generic API &mdash; Marine Benchmark Documentation (dev) 1.4.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Bespoke API" href="api_bespoke.html" />
+    <link rel="prev" title="General" href="api_general.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo1.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.4.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API DOCUMENTATION</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="api_general.html">General</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Generic API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#structure">Structure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#api-catalogue-structure">API Catalogue Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#api-measurement-structure">API Measurement Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#api-configurator">API Configurator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general">General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configurator-url">Configurator URL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#authentication">Authentication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#constructing-api-call">Constructing API Call</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-queries">Example Queries</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#single-measure-selection-speed-steaming">1.  Single-measure selection (Speed steaming)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#multi-measure-selection-co2-emission">2.  Multi-measure selection (CO<sub>2</sub> Emission)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#type-size-fuel-consumption">3.  Type size (Fuel consumption)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#distributions-water-temperature">4. Distributions (Water temperature)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#distributions-per-type-size-speed">5. Distributions per type size (Speed)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#area">6.  Area (..)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_bespoke.html">Bespoke API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Marine Benchmark Documentation (dev)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Generic API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api_generic.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="generic-api">
+<h1>Generic API<a class="headerlink" href="#generic-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="structure">
+<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="api-catalogue-structure">
+<h3>API Catalogue Structure<a class="headerlink" href="#api-catalogue-structure" title="Permalink to this headline">¶</a></h3>
+<p>Datasets are reached by a (typically) 11-characters <strong>catalogue code</strong> with the following structure. Example: <code class="docutils literal notranslate"><span class="pre">MBVESGLOWEK</span></code></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="44%" />
+<col width="37%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Code</th>
+<th class="head">Full name</th>
+<th class="head">Specification</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">MB</span></code></td>
+<td>Marine Benchmark</td>
+<td>Provider</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">VES</span></code></td>
+<td>Vessel operational statistics</td>
+<td>Category and subcategory</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GLO</span></code></td>
+<td>Global</td>
+<td rowspan="2">Catalogue</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">WEK</span></code></td>
+<td>Weekly</td>
+</tr>
+</tbody>
+</table>
+<p>The two first letters are always <code class="docutils literal notranslate"><span class="pre">MB</span></code> in the generic API, the next 3 charactersspecifies the combination of category and subcategory (<code class="docutils literal notranslate"><span class="pre">VES</span></code>), and the next 6 charactersspecifies catalogue (<code class="docutils literal notranslate"><span class="pre">GLOWEK</span> <span class="pre">–</span> <span class="pre">Global</span> <span class="pre">weekly</span></code>)</p>
+</div>
+<div class="section" id="api-measurement-structure">
+<h3>API Measurement Structure<a class="headerlink" href="#api-measurement-structure" title="Permalink to this headline">¶</a></h3>
+<p>Measurements are specified by a (typically) 8-character <strong>measurement code</strong>. The structure may vary but measurement concerning vessel statistics typically have the following structure.
+Example: <code class="docutils literal notranslate"><span class="pre">SPEEDSTLO</span></code></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Code</th>
+<th class="head">Full name</th>
+<th class="head">Specification</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">SPED</span></code></td>
+<td>Speed</td>
+<td>Measurement</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">ST</span></code></td>
+<td>Steaming</td>
+<td>Vessel State</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">LO</span></code></td>
+<td>Loaded</td>
+<td>Vessel Condition</td>
+</tr>
+</tbody>
+</table>
+<p><cite>Multi-measurements</cite> are supported since <strong>API V4</strong> and are to be specified as a parameter.</p>
+<p>Available catalogues and corresponding measures for vessel statistics can be found in <a class="reference internal" href="api_references.html#references"><span class="std std-ref">References</span></a> section.</p>
+</div>
+</div>
+<div class="section" id="api-configurator">
+<h2>API Configurator<a class="headerlink" href="#api-configurator" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general">
+<h3>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h3>
+<p>For developers convenience Marine Benchmark has developed a <a class="reference external" href="https://graphicalobjectlibrary.marinebenchmark.com/apiconfigurator/">web based API configurator</a> where you can build URL calls and arguments.
+This is a graphical user interface to construct and configure generic API calls. The configurator lets you choose category, subcategory, catalogue with multiple data parameters and conditions to construct powerful API calls.</p>
+</div>
+<div class="section" id="configurator-url">
+<h3>Configurator URL<a class="headerlink" href="#configurator-url" title="Permalink to this headline">¶</a></h3>
+<p>The API configurator can be accessed from the following URL. It is used to browse available data and dynamically construct API URLs.
+<a class="reference external" href="https://graphicalobjectlibrary.marinebenchmark.com/apiconfigurator/">https://graphicalobjectlibrary.marinebenchmark.com/apiconfigurator/</a></p>
+</div>
+<div class="section" id="authentication">
+<h3>Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline">¶</a></h3>
+<p>First time visiting the API configurator page you will be asked to enter your credentials in form of an <strong>API key</strong>.</p>
+<a class="reference internal image-reference" href="_images/key.png"><img alt="configurator-page" src="_images/key.png" style="width: 100%;" /></a>
+<p>These options can be changed anytime by selecting the <strong>Settings</strong> button in the topright corner.</p>
+</div>
+<div class="section" id="constructing-api-call">
+<h3>Constructing API Call<a class="headerlink" href="#constructing-api-call" title="Permalink to this headline">¶</a></h3>
+<p>Next, you will be redirected to the API Configurator page which contains three sections.</p>
+<ol class="arabic simple">
+<li><dl class="first docutils">
+<dt><strong>Catalogue and measure selection</strong></dt>
+<dd>Here you are required to select category, subcategory, catalogue and
+measures in the listed order. Brief description of each selection can be seen under the drop-down menu. These
+fields are searchable.</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Data selection</strong></dt>
+<dd>Here you are required to specify the data selection, typically <strong>Entity1ID</strong>. Optional parameters also include <em>aggregate by</em>,
+<em>aggregation type</em>, <em>top number of records</em> and <em>sort order</em>, which can be enabled/disabled depending on the selection in (1)
+<em>Catalogue and Measure selection</em>. You can also select the period by sliding the timeline. A valid Entity1ID
+depends on the selected data category and subcategory, and can consist of a single IMO number, list of IMO
+numbers, type size ID and more.</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Result configuration</strong></dt>
+<dd>Here you can change the response value label, period correction and delivery format and method. The
+constructed API URL call is generated at the bottom and the result can be executed directly or previewed. The
+preview button enables you to see the results in multiple formats, such as a plain JSON, table or even as a graph if
+possible.</dd>
+</dl>
+</li>
+</ol>
+</div>
+<div class="section" id="example-queries">
+<h3>Example Queries<a class="headerlink" href="#example-queries" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="single-measure-selection-speed-steaming">
+<h4>1.  Single-measure selection (Speed steaming)<a class="headerlink" href="#single-measure-selection-speed-steaming" title="Permalink to this headline">¶</a></h4>
+<p>Say we are simply interested in the <strong>daily</strong> speed of a vessel, in this case <span class="mb-blue">OLJAREN(9236315)</span>. We begin by selecting the appropriate category and subcategory.</p>
+<p><strong>Category</strong>: <span class="mb-green">Vessel statistics</span></p>
+<p><strong>Subcategory</strong>: <span class="mb-green">Vessel operational statistics</span></p>
+<p>We are interested in the daily statistics catalogue.</p>
+<p><strong>Catalogue</strong>: <span class="mb-green">Vessel Global Daily</span></p>
+<p>We only want the vessel speed in <em>steaming condition</em> (+6 kn). By searching for ‘speed steaming’ in the measure field we
+find three matching results. <strong>Speed steaming total</strong>, <strong>Speed steaming loaded</strong> and <strong>Speed steaming unloaded</strong>. Since we do not
+care about the vessel loaded or unloaded condition, we select <strong>Speed steaming total</strong>.</p>
+<p><strong>Measure(s)</strong>: <code class="docutils literal notranslate"><span class="pre">SPEEDSTTO</span> <span class="pre">-</span> <span class="pre">Speed</span> <span class="pre">steaming</span> <span class="pre">total</span></code></p>
+<p>For data selection we specify that we are interested in the entity <span class="mb-blue">OLJAREN(9236315)</span> by setting the state condition in SQL
+format as <code class="docutils literal notranslate"><span class="pre">Entity1ID</span> <span class="pre">in</span> <span class="pre">(9236315)</span></code>, and leave the rest of the fields empty, as we are not interested in an aggregated result.
+Do not forget to specify the period by sliding the timeline.</p>
+<a class="reference internal image-reference" href="_images/ex1.png"><img alt="_images/ex1.png" class="align-center" src="_images/ex1.png" style="width: 90%;" /></a>
+<p>The API URL is dynamically constructed and can be copied, executed directly in browser, or previewed at the bottom of the
+page</p>
+<a class="reference internal image-reference" href="_images/ex1-data.png"><img alt="_images/ex1-data.png" class="align-center" src="_images/ex1-data.png" style="width: 90%;" /></a>
+</div>
+<div class="section" id="multi-measure-selection-co2-emission">
+<h4>2.  Multi-measure selection (CO<sub>2</sub> Emission)<a class="headerlink" href="#multi-measure-selection-co2-emission" title="Permalink to this headline">¶</a></h4>
+<p>Say we are interested in the <strong>weekly</strong> CO<sub>2</sub> emission of a vessel, in this case <span class="mb-blue">SEAWAYS TANABE (9196632)</span> for both loaded
+and unloaded condition. Begin by selecting the appropriate category and subcategory for single vessel statistics.</p>
+<p><strong>Category</strong>: <span class="mb-green">Vessel statistics</span></p>
+<p><strong>Subcategory:</strong> <span class="mb-green">Vessel operational statistics</span></p>
+<p>We are interested in the weekly statistics catalogue.</p>
+<p><strong>Catalogue</strong>: <span class="mb-green">Vessel Global Weekly</span></p>
+<p>We search for CO<sub>2</sub> in the measure field and find multiple matching result. A brief description is available under the field. We
+specify that we are interested in main engine (ME) CO<sub>2</sub> emission for both loaded &amp; unloaded condition.</p>
+<p><strong>Measure(s)</strong>: <span class="mb-green">COMEMVLO - CO2 emission main engine moving loaded</span> and <span class="mb-green">COMEMVUL - CO2 emission main engine moving unloaded</span>. We also include the selected measure from example 1.</p>
+<p>For data selection we need to specify that we are interested in the entity <span class="mb-blue">SEAWAYS TANABE(9196632)</span> by setting the state
+condition in SQL Server format as <code class="docutils literal notranslate"><span class="pre">Entity1ID</span> <span class="pre">in</span> <span class="pre">(9236315)</span></code>, and leave the rest of the fields empty, as we are not interested
+in an aggregated result.</p>
+<p>Do not forget to specify the period by sliding the timeline.</p>
+<a class="reference internal image-reference" href="_images/ex2.png"><img alt="_images/ex2.png" class="align-center" src="_images/ex2.png" style="width: 90%;" /></a>
+<p>The API URL is dynamically constructed and can be copied, executed directly in browser, or previewed at the bottom of the
+page. Here the query is executed directly in browser to return a JSON string.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;TimeSerieCatalogueCode&quot;</span><span class="p">:</span> <span class="s2">&quot;MBVESGLOWEK&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieName&quot;</span><span class="p">:</span> <span class="s2">&quot;Vessel Global Weekly - Speed steaming total&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;MeasurementDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;speed steaming total in period. Steaming is all speed with a speed above 6 knots. Total is speed independent of loaded or unloaded.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;kn&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieMeasureCode&quot;</span><span class="p">:</span> <span class="s2">&quot;SPEDSTTO&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;TimeSerieCatalogueCode&quot;</span><span class="p">:</span> <span class="s2">&quot;MBVESGLOWEK&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieName&quot;</span><span class="p">:</span> <span class="s2">&quot;Vessel Global Weekly - CO2 emission ME moving loaded&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;MeasurementDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;CO2 emission ME fuel used  moving loaded in period. Moving is all ME fuel CO2 emission with a speed above 1 knot. Loaded is ME fuel CO2 emission loaded condition.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;ton&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieMeasureCode&quot;</span><span class="p">:</span> <span class="s2">&quot;COMEMVLO&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;TimeSerieCatalogueCode&quot;</span><span class="p">:</span> <span class="s2">&quot;MBVESGLOWEK&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieName&quot;</span><span class="p">:</span> <span class="s2">&quot;Vessel Global Weekly - CO2 emission ME moving unloaded&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;MeasurementDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;CO2 emission ME fuel used  moving unloaded in period. Moving is all ME fuel CO2 emission with a speed above 1 knot.Unloaded is ME fuel CO2 emission unloaded condition.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;ton&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieMeasureCode&quot;</span><span class="p">:</span> <span class="s2">&quot;COMEMVUL&quot;</span>
+      <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202052</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">9.825152248</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">277.451785714</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202053</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">9.781765803</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">94.361155733</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202101</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">9.384388274</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mf">25.950087109</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">98.353044065</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202102</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">10.400112008</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mf">386.090983049</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mi">0</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202103</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">9.742527332</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mf">610.031191552</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mi">0</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202104</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">9.544146377</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mf">601.987228291</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mi">0</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202105</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">9.310582679</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mf">616.352261058</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mi">0</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202106</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">9.628107174</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mf">668.504519397</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mi">0</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202107</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">8.172573283</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mf">419.516187405</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mi">0</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202108</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">9.452051906</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mf">620.575942675</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mi">0</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202109</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">9.06636166</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mf">587.675421308</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mi">0</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202110</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">9.437712552</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mf">433.162403702</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mi">0</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202111</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">8.720337952</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mf">32.644860597</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">149.636745548</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202112</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">8.197909278</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">47.397663472</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202113</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">8.008203655</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">96.575358921</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202114</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mi">0</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202115</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">9.229853466</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">63.384851685</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202116</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">8.663880789</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">51.312870561</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202117</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">8.62784789</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">70.476315616</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202118</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">8.639898968</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">51.961411806</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202119</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">7.990576399</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">111.83805265</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202120</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">6.807071043</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">12.968561411</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9196632</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202121</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;SPEDSTTO&quot;</span><span class="p">:</span> <span class="mf">9.457206319</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVLO&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;COMEMVUL&quot;</span><span class="p">:</span> <span class="mf">123.692038213</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="type-size-fuel-consumption">
+<h4>3.  Type size (Fuel consumption)<a class="headerlink" href="#type-size-fuel-consumption" title="Permalink to this headline">¶</a></h4>
+<p>Say we are interested in the monthly fuel consumption (main engine) of a vessel type size, in this case <span class="mb-blue">Tanker/VLCC -
+200’-329.9’ dwt</span> (210102). The type size ID can be found in <a class="reference internal" href="api_references.html#type-size-name-and-id"><span class="std std-ref">Type size name and ID</span></a>.</p>
+<p>We begin by selecting the appropriate category and subcategory for vessel type size statistics.</p>
+<p><strong>Category</strong>: <span class="mb-green">Vessel statistics</span></p>
+<p><strong>Subcategory</strong>: <span class="mb-green">Vessel type size operational statistics (segment)</span></p>
+<p>We are interested in the monthly statistics catalogue.</p>
+<p><strong>Catalogue</strong>: <span class="mb-green">Vessel type size Global Monthly</span></p>
+<p>We search for fuel in the measure field and find multiple matching result. A brief description is available under the field. We
+specify that we are interested in main engine (ME) fuel consumption in moving state (+1 kn), independent of vessel
+conditions (loaded/unloaded).</p>
+<p><strong>Measure(s)</strong>: <span class="mb-green">MEFUMVTO - ME fuel moving total</span></p>
+<p>For data selection we need to specify that we are interested in the type size entity <span class="mb-blue">Tanker/VLCC - 200’-329.9’ dwt</span>  by
+setting the state condition in SQL Server format as <code class="docutils literal notranslate"><span class="pre">Entity1ID</span> <span class="pre">in</span> <span class="pre">(210102)</span></code>, and leave the rest of the fields
+empty, as we are not interested aggregating the result further.</p>
+<p>Do not forget to specify the period by sliding the timeline.</p>
+<a class="reference internal image-reference" href="_images/ex3.png"><img alt="_images/ex3.png" class="align-center" src="_images/ex3.png" style="width: 90%;" /></a>
+<p>The API URL is dynamically constructed and can be copied, executed directly in browser, or previewed at the bottom of the
+page. Here the query is previewed to be displayed as a graph.</p>
+<a class="reference internal image-reference" href="_images/ex3-data.png"><img alt="_images/ex3-data.png" class="align-center" src="_images/ex3-data.png" style="width: 90%;" /></a>
+</div>
+<div class="section" id="distributions-water-temperature">
+<h4>4. Distributions (Water temperature)<a class="headerlink" href="#distributions-water-temperature" title="Permalink to this headline">¶</a></h4>
+<p>Distribution statistics are very powerful and are available from the Vessel distributions and Vessel type size distributions
+subcategory. These contains vessel distribution curves for various parameters such as speed, draft, water temperature and
+more.</p>
+<p>We want the <strong>distance</strong> and <strong>time spent</strong> in various <strong>water temperature</strong> for a specific vessel or vessel type size.
+For example: <code class="docutils literal notranslate"><span class="pre">Monthly</span> <span class="pre">Water</span> <span class="pre">temperature</span> <span class="pre">(WT5MON)</span></code> for the VLCC tanker <span class="mb-blue">PERFECT (9241114)</span></p>
+<p><strong>Category</strong>: <span class="mb-green">Vessel statistics</span></p>
+<p><strong>Subcategory</strong>: <span class="mb-green">Vessel distributions</span></p>
+<p><strong>Catalogue</strong>: <span class="mb-green">Monthly Water temperature</span></p>
+<p><strong>Measure(s)</strong>: <span class="mb-green">TIMEDITO – Time distributed total</span>, <span class="mb-green">DISTDITO – Distance distributed total</span></p>
+<p>State condition in SQL server format: <code class="docutils literal notranslate"><span class="pre">Entity1ID</span> <span class="pre">in</span> <span class="pre">(9241114)</span></code></p>
+<p>Resulting API URL after specifying period between 2020-06 and 2020-08:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>https://apigateway.marinebenchmark.com/v4/MBVEDWT5MON?key=xxxxxxxxxxx&amp;condition=Period%20between%20202006%20and%20202008%20and%20Entity1ID%20in%20(9241114)&amp;sort=Period&amp;LabelType=1&amp;PeriodCorrected=0&amp;sql=true&amp;measure=TIMEDITO,DISTDITO&amp;delivery=string&amp;format=json
+</pre></div>
+</div>
+<p>The distribution dimension for water temperature is here discretized with 0.5 °C increments. This may vary between different distributions.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;TimeSerieCatalogueCode&quot;</span><span class="p">:</span> <span class="s2">&quot;MBVEDWT5MON&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieName&quot;</span><span class="p">:</span> <span class="s2">&quot;Monthly Water temperature 1 - Time distributed total&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;MeasurementDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Time distributed total. Distributed time is time per catalogue dimension. Total is time independent of loaded or unloaded.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;hour&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieMeasureCode&quot;</span><span class="p">:</span> <span class="s2">&quot;TIMEDITO&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;TimeSerieCatalogueCode&quot;</span><span class="p">:</span> <span class="s2">&quot;MBVEDWT5MON&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieName&quot;</span><span class="p">:</span> <span class="s2">&quot;Monthly Water temperature 1 - Distance distributed total&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;MeasurementDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Distance distributed total. Distributed distance is distance per catalogue dimension. Total is time independent of loaded or unloaded.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;nm&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieMeasureCode&quot;</span><span class="p">:</span> <span class="s2">&quot;DISTDITO&quot;</span>
+      <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">25.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">9.033333333</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">105.39056504</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">26</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">19.959444444</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">238.751868733</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">26.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">19.546388889</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">225.157040374</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">130.024722222</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">587.511219182</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">27.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">199.367777778</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">999.302799815</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">28.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">33.488333333</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">382.532928054</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">160.480277778</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">954.411971474</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">29.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">115.644166667</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">754.336669079</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">32.455555556</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">362.883007108</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202007</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">18.719722222</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">198.023127729</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202007</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">31.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">266.246388889</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">513.121348278</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202007</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">61.656666667</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">655.333806698</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202007</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">28.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">59.139137664</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202007</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">27.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">256.253333333</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">605.836075343</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202007</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">69.585</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">790.82926165</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202007</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">26.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">49.7925</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">544.800785044</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202007</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">26</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">15.746388889</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">178.934397846</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202008</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">26.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">108.32</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">133.574303258</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202008</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">21.383333333</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">275.801711466</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202008</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">27.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">116.518333333</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">776.277682528</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202008</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">28.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">247.729722222</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">1787.984860932</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202008</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">29</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">162.713611111</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">1194.381359213</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202008</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">29.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">13.033611111</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">149.608177503</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9241114</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202008</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">74.301388889</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">651.298889737</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="distributions-per-type-size-speed">
+<h4>5. Distributions per type size (Speed)<a class="headerlink" href="#distributions-per-type-size-speed" title="Permalink to this headline">¶</a></h4>
+<p>Since distribution statistics also are available per type size (segments), here is another example for speed distribution for
+<span class="mb-blue">01 Tanker / B VLCC - 200’-329.9’ dwt</span>. The type size IDs can be found in <a class="reference internal" href="api_references.html#type-size-name-and-id"><span class="std std-ref">Type size name and ID</span></a>.</p>
+<p>We repeat the same process of choosing correct category, subcategory, and catalogue. For measures we again
+want both time spent and distance traveled.</p>
+<p><strong>Category</strong>: <span class="mb-green">Vessel statistics</span></p>
+<p><strong>Subcategory</strong>: <span class="mb-green">Vessel type size distributions (segment)</span></p>
+<p><strong>Catalogue</strong>: <span class="mb-green">Monthly Speed05</span></p>
+<p><strong>Measure(s)</strong>: <span class="mb-green">TIMEDITO – Time distributed total</span>, <span class="mb-green">DISTDITO – Distance distributed total</span></p>
+<p>State condition in SQL server format: <code class="docutils literal notranslate"><span class="pre">Entity1ID</span> <span class="pre">in</span> <span class="pre">(210102)</span></code></p>
+<p>Resulting API URL after specifying period 2020-06:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>https://apigateway.marinebenchmark.com/v4/MBVDTSP5MON?key=xxxxxxxxxxxxxxxx&amp;condition=Period%20between%20202006%20and%20202006%20and%20Entity1ID%20in%20(210102)&amp;sort=Period&amp;LabelType=1&amp;PeriodCorrected=0&amp;sql=true&amp;measure=TIMEDITO,DISTDITO&amp;delivery=string&amp;format=json
+</pre></div>
+</div>
+<p>The distribution dimension for speed is discretized with 0.5 knot increments.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;TimeSerieCatalogueCode&quot;</span><span class="p">:</span> <span class="s2">&quot;MBVDTSP5MON&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieName&quot;</span><span class="p">:</span> <span class="s2">&quot;Monthly Speed05 - Time distributed total&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;MeasurementDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Time distributed total. Distributed time is time per catalogue dimension. Total is time independent of loaded or unloaded.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;hour&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieMeasureCode&quot;</span><span class="p">:</span> <span class="s2">&quot;TIMEDITO&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;TimeSerieCatalogueCode&quot;</span><span class="p">:</span> <span class="s2">&quot;MBVDTSP5MON&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieName&quot;</span><span class="p">:</span> <span class="s2">&quot;Monthly Speed05 - Distance distributed total&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;MeasurementDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Distance distributed total. Distributed distance is distance per catalogue dimension. Total is time independent of loaded or unloaded.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;nm&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieMeasureCode&quot;</span><span class="p">:</span> <span class="s2">&quot;DISTDITO&quot;</span>
+      <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">194872.576111117</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">8055.797902625</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">21265.881388899</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">9719.153659359</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">9197.287499997</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">8828.355573422</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">5741.911111108</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">8569.649890786</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">3832.668611096</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">7585.47741671</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">2880.331388894</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">7142.167442422</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">2254.983333342</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">6771.847320204</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">2753.772777772</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">9599.393389672</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">2374.67111111</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">9377.666315417</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">4.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">1868.422222233</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">8412.997497892</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">1424.644722218</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">7163.307616438</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">5.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">1915.615833329</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">10515.805025793</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">1345.053055547</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">8077.420233957</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">6.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">1554.712222227</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">10134.994808919</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">2149.985555554</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">15187.187969921</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">7.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">3865.004166669</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">29089.092179951</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">3844.181666669</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">30824.882329003</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">8.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">4844.676944441</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">41191.70001198</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">6093.884444442</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">54902.201198909</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">9.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">9309.878888897</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">88506.0053603</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">10865.711111109</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">108796.258803321</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">10.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">13299.196111119</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">139671.141432985</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">18882.70555555</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">208145.312390321</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">11.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">28784.085833338</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">331500.298184571</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">36882.786111103</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">442911.888594152</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">12.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">43977.570555567</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">550135.924112397</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">43653.054999994</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">567127.514307294</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">13.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">28465.037777767</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">383748.348872757</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">20449.20444444</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">285975.86790419</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">14.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">13981.650000004</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">202521.643513031</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">10508.627222228</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">157469.947019423</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">15.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">7136.857499995</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">110643.229966504</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">4825.193888882</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">77132.217907411</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">16.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">2309.687777784</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">38046.946498414</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">17</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">1176.964166667</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">19956.409956307</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">17.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">454.449166676</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">7924.812541538</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">190.628611117</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">3441.227312951</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">18.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">49.243333342</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">908.404307869</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">41.144722231</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">779.672549996</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">19.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">22.913333358</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">446.903356999</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">11.992777792</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">239.644150907</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">20.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">2.168888893</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">44.056161883</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">0.001666668</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">0.034875071</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">210102</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202006</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension1&quot;</span><span class="p">:</span> <span class="mf">21.5</span><span class="p">,</span>
+        <span class="nt">&quot;Dimension2&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;TIMEDITO&quot;</span><span class="p">:</span> <span class="mf">0.001944445</span><span class="p">,</span>
+        <span class="nt">&quot;DISTDITO&quot;</span><span class="p">:</span> <span class="mf">0.041996349</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="area">
+<h4>6.  Area (..)<a class="headerlink" href="#area" title="Permalink to this headline">¶</a></h4>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">TBD..</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api_bespoke.html" class="btn btn-neutral float-right" title="Bespoke API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="api_general.html" class="btn btn-neutral float-left" title="General" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, Marine Benchmark
+      <span class="lastupdated">
+        Last updated on 2021/08/13.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

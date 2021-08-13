@@ -1,0 +1,511 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>General &mdash; Marine Benchmark Documentation (dev) 1.4.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Generic API" href="api_generic.html" />
+    <link rel="prev" title="Marine Benchmark Documentation Platform" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo1.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.4.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API DOCUMENTATION</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">General</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#purpose-and-scope">Purpose and Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-access">API Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#api-url">API URL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#api-authentication">API Authentication</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#language-and-time-encoding">Language and Time Encoding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#resource-information">Resource Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#url-parameters">URL Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-requests">Example Requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-response">Example Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_generic.html">Generic API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_bespoke.html">Bespoke API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Marine Benchmark Documentation (dev)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>General</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api_general.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="general">
+<h1>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>One of Marine Benchmark core services is to deliver data B2B via a robust API service. The service consists of both a generic data catalogue based service and bespoke calls as per agreement.</p>
+<p>The technology behind the API is a REST API written in Node and consists of multiple servers and a multiple services architecture ready to serve client calls.</p>
+<p>The API consists of two general API call types, Bespoke API and Generic API. Bespoke API is based on a client customized call structure. Generic API is a default large set of calls from our standard catalogues</p>
+</div>
+<div class="section" id="purpose-and-scope">
+<h2>Purpose and Scope<a class="headerlink" href="#purpose-and-scope" title="Permalink to this headline">¶</a></h2>
+<p>Bespoke data API is custom calls created for detailed information per customer. Technically it is a custom defined dataset that can be retrieved via API in formats and mean of delivery stated below. Please see abovefor what arguments are valid for bespoke calls.</p>
+<p>PlatformThe web services allow access to Marine Intelligence supplied by Marine Benchmark while keeping the data secured for authorized users.This document provides information about the technical features of the API, and describes its parameters formats and other details.</p>
+</div>
+<div class="section" id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>June 2021 - 1.4.1</dt>
+<dd><ul class="first last">
+<li>Ported to web and updated resources</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>April 2021 - 1.4</dt>
+<dd><ul class="first last">
+<li>Updating resources and examples for API v4</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>February 2021 - 1.3</dt>
+<dd><ul class="first last">
+<li>Updating appendix adding arguments and configurator reference</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>June2020 - 1.2</dt>
+<dd><ul class="first last">
+<li>Updating appendix etc.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Nov 2019 - 1.1</dt>
+<dd><ul class="first last">
+<li>Document creation</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="api-access">
+<h2>API Access<a class="headerlink" href="#api-access" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="api-url">
+<h3>API URL<a class="headerlink" href="#api-url" title="Permalink to this headline">¶</a></h3>
+<p>The API can be accessed from the following URL. Beside an URL, a <code class="docutils literal notranslate"><span class="pre">catalogue</span> <span class="pre">code</span></code> and <code class="docutils literal notranslate"><span class="pre">arguments</span></code> as per below are needed.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">apigateway</span><span class="o">.</span><span class="n">marinebenchmark</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">{</span><span class="n">API_CALL</span> <span class="n">CODE</span><span class="p">}</span><span class="o">&lt;</span><span class="n">URL</span><span class="o">-</span><span class="n">arguments</span><span class="o">/</span><span class="n">parameters</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="api-authentication">
+<h3>API Authentication<a class="headerlink" href="#api-authentication" title="Permalink to this headline">¶</a></h3>
+<p>Marine Benchmark API hosts two ways of authentication, simple and extended.</p>
+<ul class="simple">
+<li>Simple authentication is a combination of a key based authentication via a URL argument and an IP number white list requirement. The procedure is, you provide your public calling server IP and we provide it to our authentication system. You will also be provided with a API key to be added to the URL: For example: <code class="docutils literal notranslate"><span class="pre">key=kd48!kf%3kFmsaRy!qe</span></code></li>
+<li>Extended API authentication is a ticket-based login without need for a white list of the IP number. Though it might require some work on the API client side. Please contact our development team for more details.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="language-and-time-encoding">
+<h2>Language and Time Encoding<a class="headerlink" href="#language-and-time-encoding" title="Permalink to this headline">¶</a></h2>
+<p>When using special characters or spaces in URL, they must be URL encoded.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Hourly (1HR or 6HR)</td>
+<td><code class="docutils literal notranslate"><span class="pre">YYYYMMDDHH</span></code></td>
+</tr>
+<tr class="row-even"><td>Daily (DAY)</td>
+<td><code class="docutils literal notranslate"><span class="pre">YYYYMMDD</span></code></td>
+</tr>
+<tr class="row-odd"><td>Weekly (WEK)</td>
+<td><code class="docutils literal notranslate"><span class="pre">YYYYWW</span></code></td>
+</tr>
+<tr class="row-even"><td>Monthly (MON)</td>
+<td><code class="docutils literal notranslate"><span class="pre">YYYYMM</span></code></td>
+</tr>
+<tr class="row-odd"><td>Quarterly (QTR)</td>
+<td><code class="docutils literal notranslate"><span class="pre">YYYYQ</span></code></td>
+</tr>
+<tr class="row-even"><td>Yearly (YER)</td>
+<td><code class="docutils literal notranslate"><span class="pre">YYYY</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="resource-information">
+<h3>Resource Information<a class="headerlink" href="#resource-information" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id1">
+<caption><span class="caption-text">Resource information</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Response formats</td>
+<td><code class="docutils literal notranslate"><span class="pre">JSON</span></code>, <code class="docutils literal notranslate"><span class="pre">XML</span></code>, <code class="docutils literal notranslate"><span class="pre">CSV</span></code>, <code class="docutils literal notranslate"><span class="pre">Compact</span></code></td>
+</tr>
+<tr class="row-even"><td>Response delivery</td>
+<td><code class="docutils literal notranslate"><span class="pre">String</span></code>, <code class="docutils literal notranslate"><span class="pre">file</span></code></td>
+</tr>
+<tr class="row-odd"><td>Requires authentication?</td>
+<td><code class="docutils literal notranslate"><span class="pre">Yes</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="url-parameters">
+<h3>URL Parameters<a class="headerlink" href="#url-parameters" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given tight-table url-table docutils" id="id2">
+<caption><span class="caption-text">URL parameters</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="15%" />
+<col width="15%" />
+<col width="40%" />
+<col width="15%" />
+<col width="15%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Required</th>
+<th class="head">Description</th>
+<th class="head">Default Value</th>
+<th class="head">Example value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">key</span></code></td>
+<td><strong>required</strong></td>
+<td>Credential. An API key is required for every request. 19 characters long (for simple authentication mode).</td>
+<td>&#160;</td>
+<td><code class="docutils literal notranslate"><span class="pre">kd48!kf%3kFmsaRy!qe</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">condition</span></code></td>
+<td><strong>required</strong></td>
+<td>Sets the condition in SQL format. Typically period and an Entity. Also supports multiple entities by comma separation.</td>
+<td>&#160;</td>
+<td>Period between <strong>202001</strong> and <strong>202106</strong> and <strong>Entity1ID</strong> in (<strong>9236315</strong>)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">measure</span></code></td>
+<td><strong>required</strong></td>
+<td>Sets the requested measure(s). Multiple measure can be requested by a comma-separation. Aggregate conditions can also be specified but requires the aggregate parameter to be set.</td>
+<td>&#160;</td>
+<td><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">SPEDMVLO</span></code>  -    <em>Speed moving loaded</em></li>
+<li><code class="docutils literal notranslate"><span class="pre">SPEDMVLO,</span> <span class="pre">TOFUMVLO,</span> <span class="pre">TOFUMVUL</span></code>   -   <em>Speed moving loaded, Total fuel moving loaded, Total fuel moving unloaded</em></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">aggregate</span></code></td>
+<td><em>optional</em></td>
+<td>Sets the aggregate by clause.</td>
+<td>&#160;</td>
+<td><code class="docutils literal notranslate"><span class="pre">period</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">sort</span></code></td>
+<td><em>optional</em></td>
+<td>Sets the dimension to sort by.  Sort should be used with care as it can, on the margin, delay answer. Available options are <code class="docutils literal notranslate"><span class="pre">Period</span></code>, <code class="docutils literal notranslate"><span class="pre">Entity1ID</span></code>, <code class="docutils literal notranslate"><span class="pre">Value</span></code> (depending on labelType), <code class="docutils literal notranslate"><span class="pre">Area1ID</span></code> and more.. Ascending or descending order can also be specified.</td>
+<td><code class="docutils literal notranslate"><span class="pre">Period</span></code></td>
+<td><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">Period</span> <span class="pre">asc</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">Value</span> <span class="pre">desc</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">labelType</span></code></td>
+<td><em>optional</em></td>
+<td>Sets the label type for the json response.</td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+<td><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">0</span></code> - Unified</li>
+<li><code class="docutils literal notranslate"><span class="pre">1</span></code> - Code</li>
+<li><code class="docutils literal notranslate"><span class="pre">2</span></code> - Name</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">periodCorrected</span></code></td>
+<td><em>optional</em></td>
+<td>Corrects month to a normalized month. Normalized month consists of 30.45 days. NB good for compare in graphs but presents skewed values for each individual month.</td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span></code></td>
+<td><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">0</span></code> - Unified</li>
+<li><code class="docutils literal notranslate"><span class="pre">1</span></code> - Code</li>
+<li><code class="docutils literal notranslate"><span class="pre">2</span></code> - Name</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">delivery</span></code></td>
+<td><em>optional</em></td>
+<td>Sets the delivery method. Available methods are <code class="docutils literal notranslate"><span class="pre">string</span></code> and <code class="docutils literal notranslate"><span class="pre">file</span></code>.</td>
+<td><code class="docutils literal notranslate"><span class="pre">string</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">string</span></code> , <code class="docutils literal notranslate"><span class="pre">file</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">format</span></code></td>
+<td><em>optional</em></td>
+<td>Sets the delivery format. Available formats are <code class="docutils literal notranslate"><span class="pre">json</span></code>, <code class="docutils literal notranslate"><span class="pre">xml</span></code>, <code class="docutils literal notranslate"><span class="pre">csv</span></code> and <code class="docutils literal notranslate"><span class="pre">compact</span></code>.</td>
+<td><code class="docutils literal notranslate"><span class="pre">json</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">csv</span></code>, <code class="docutils literal notranslate"><span class="pre">xml</span></code>, <code class="docutils literal notranslate"><span class="pre">csv</span></code>, <code class="docutils literal notranslate"><span class="pre">compact</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please note than parameter values <strong>must</strong> be URL encoded.
+<code class="docutils literal notranslate"><span class="pre">condition=Period%20between%20202001%20and%20202106%20and%20Entity1ID%20in%20(9236315)</span></code></p>
+</div>
+</div>
+<div class="section" id="example-requests">
+<h3>Example Requests<a class="headerlink" href="#example-requests" title="Permalink to this headline">¶</a></h3>
+<p>URL: <code class="docutils literal notranslate"><span class="pre">https://apigateway.marinebenchmark.com/V4/{API_CATALOGUE_CODE}&lt;URL-parameters&gt;</span></code></p>
+<p>Method: <strong>GET</strong></p>
+<p>Example request:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>https://apigateway.marinebenchmark.com/V4/MBVESGLOWEK?key=xxxxxxxxxxx&amp;condition=Period%20between%20202001%20and%20202003%20and%20Entity1ID%20in%20(9236315)&amp;measure=SPEDSTTO&amp;sort=Period&amp;labelType=0&amp;periodCorrected=0&amp;delivery=string&amp;format=json
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-response">
+<h3>Example Response<a class="headerlink" href="#example-response" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">[</span>
+        <span class="p">{</span>
+        <span class="nt">&quot;TimeSerieCatalogueCode&quot;</span><span class="p">:</span> <span class="s2">&quot;MBVESGLOWEK&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieName&quot;</span><span class="p">:</span> <span class="s2">&quot;Vessel Global Weekly - Speed steaming total&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;MeasurementDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;speed steaming total in period. Steaming is all speed with a speed above 6 knots. Total is speed independent of loaded or unloaded.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieUnit&quot;</span><span class="p">:</span> <span class="s2">&quot;kn&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TimeSerieMeasureCode&quot;</span><span class="p">:</span> <span class="s2">&quot;SPEDSTTO&quot;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="p">[</span>
+        <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9236315</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202001</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Value&quot;</span><span class="p">:</span> <span class="mf">7.988872576</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9236315</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202002</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Value&quot;</span><span class="p">:</span> <span class="mf">8.80499174</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+        <span class="nt">&quot;Entity1ID&quot;</span><span class="p">:</span> <span class="mi">9236315</span><span class="p">,</span>
+        <span class="nt">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">202003</span><span class="p">,</span>
+        <span class="nt">&quot;Area1ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Area2ID&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Value&quot;</span><span class="p">:</span> <span class="mf">7.892691355</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api_generic.html" class="btn btn-neutral float-right" title="Generic API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Marine Benchmark Documentation Platform" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, Marine Benchmark
+      <span class="lastupdated">
+        Last updated on 2021/08/13.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
